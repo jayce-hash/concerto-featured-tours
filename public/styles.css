@@ -1,1 +1,366 @@
+/* ============================================================
+   Concerto — Featured Tours (Light Ultra-Clean Version)
+   Based on: Concerto Venue Map styles
+   ============================================================ */
 
+:root {
+  --bg: #F8F9F9;
+  --ink: #121E36;
+  --muted: #5E6B86;
+  --accent: #1F2B4A;
+  --accent-2: #2A3A63;
+  --line: #E2E7F0;
+  --card: #FFFFFF;
+  --shadow-soft: 0 4px 10px rgba(18, 30, 54, 0.10);
+  --shadow-strong: 0 16px 40px rgba(18, 30, 54, 0.20);
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* We want vertical scrolling for long tour lists */
+body {
+  overflow-y: auto;
+}
+
+/* ===== Layout Shell ===== */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+.page-header {
+  background: var(--bg);
+  box-shadow: 0 2px 8px rgba(18, 30, 54, 0.04);
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.page-header-inner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 120px;
+  max-width: 50%;
+  display: block;
+}
+
+/* Title + subtitle */
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.page-title {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Toolbar chips (optional filters) */
+.toolbar {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.toolbar-chip {
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease, transform 0.12s ease, color 0.15s ease;
+}
+
+.toolbar-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+.toolbar-chip--active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  color: #fff;
+}
+
+/* ===== Main Layout ===== */
+.layout {
+  flex: 1;
+  padding: 10px 0 20px;
+}
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto 8px;
+  padding: 0 16px;
+}
+
+.intro p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ===== Tours List ===== */
+.tours-root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== Tour Card ===== */
+.tour-card {
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  padding: 10px 12px;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 12px;
+}
+
+.tour-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tour-image-wrapper {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #D8DDE8;
+  position: relative;
+  min-height: 110px;
+}
+
+.tour-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Tour Body ===== */
+.tour-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tour-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tour-name {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tour-artist {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.tour-meta {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.tour-dates-summary {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ===== Date Pills Row ===== */
+.tour-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* Pill base style (similar to guide-pill) */
+.date-pill {
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 6px 10px;
+  font-size: 0.86rem;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease, transform 0.12s ease;
+  position: relative;
+  min-width: 0;
+}
+
+.date-pill:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+.date-pill-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.date-pill-venue {
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.date-pill-date {
+  font-size: 0.76rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.date-pill-chevron {
+  margin-left: auto;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+/* ===== Dropdown inside pill for the 6 links ===== */
+.pill-dropdown {
+  margin-top: 6px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(18, 30, 54, 0.18);
+  padding: 8px;
+  display: none;
+}
+
+.pill-dropdown.open {
+  display: block;
+}
+
+.pill-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.pill-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 0.78rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease, transform 0.12s ease, color 0.12s ease;
+}
+
+.pill-link-btn:hover {
+  background: #F5F7FB;
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-1px);
+}
+
+.pill-link-btn.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  color: #fff;
+}
+
+.pill-link-btn.primary:hover {
+  box-shadow: var(--shadow-strong);
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  .page-header-inner {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    width: 180px;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-header-inner {
+    align-items: flex-start;
+  }
+
+  .tour-card {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-image-wrapper {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .pill-links {
+    grid-template-columns: 1fr;
+  }
+}
