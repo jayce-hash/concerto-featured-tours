@@ -5,7 +5,7 @@
 const TOUR_FILES = [
   "jonas20-greetings-from-your-hometown.json",
   "iheartradio-jingle-ball-2025.json",
-  "mariah-carey-christmastime-in-las-vegas.json",
+  "mariah-carey-christmastime-in-las-vegas-2025.json",
   "demi-lovato-its-not-that-deep-tour.json",
   "conan-gray-wishbone-world-tour-na.json",
   "lady-gaga-the-mayhem-ball-na-2026.json"
