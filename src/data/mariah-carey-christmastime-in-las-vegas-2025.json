@@ -1,1 +1,179 @@
-
+{
+  "tourId": "mariah-carey-christmastime-in-las-vegas-2025",
+  "tourName": "Christmastime in Las Vegas",
+  "artist": "Mariah Carey",
+  "year": 2025,
+  "source": "Ticketmaster / Dolby Live",
+  "shows": [
+    {
+      "id": "2025-11-28-las-vegas-dolby-live",
+      "date": "2025-11-28",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-11-29-las-vegas-dolby-live",
+      "date": "2025-11-29",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-02-las-vegas-dolby-live",
+      "date": "2025-12-02",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-03-las-vegas-dolby-live",
+      "date": "2025-12-03",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-05-las-vegas-dolby-live",
+      "date": "2025-12-05",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-06-las-vegas-dolby-live",
+      "date": "2025-12-06",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-09-las-vegas-dolby-live",
+      "date": "2025-12-09",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-10-las-vegas-dolby-live",
+      "date": "2025-12-10",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-12-las-vegas-dolby-live",
+      "date": "2025-12-12",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    },
+    {
+      "id": "2025-12-13-las-vegas-dolby-live",
+      "date": "2025-12-13",
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "US",
+      "venueName": "Dolby Live at Park MGM",
+      "venueSlug": "dolby-live",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dolby-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dolby-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dolby-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dolby-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dolby-live"
+      }
+    }
+  ]
+}
