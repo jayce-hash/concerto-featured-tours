@@ -20,79 +20,88 @@
     <!-- Top header -->
     <header class="page-header">
       <div class="page-header-inner">
-        <div class="brand-block">
-          <!-- Place logo image at: public/images/brand/concerto-logo.png -->
-          <img
-            src="./images/brand/concerto-logo.png"
-            alt="Concerto - From the concert, to the city"
-            class="brand-logo"
-          />
-          <div class="brand-text">
-            <h1 class="page-title">Featured Tours</h1>
-            <p class="page-subtitle">From the concert, to the city.</p>
-          </div>
+        <img
+          src="./images/brand/concerto-logo.png"
+          alt="Concerto - From the concert, to the city"
+          class="brand-logo"
+        />
+        <div class="header-text">
+          <h1 class="page-title">Featured Tours</h1>
+          <p class="page-subtitle">From the concert, to the city.</p>
         </div>
 
-        <!-- Simple toolbar for future filtering / search (optional, JS hooks only) -->
+        <!-- Optional filter chips (hooks only, JS can toggle .toolbar-chip--active) -->
         <div class="toolbar">
-          <button class="toolbar-chip toolbar-chip--active" data-filter="all">
-            All Tours
-          </button>
-          <button class="toolbar-chip" data-filter="concerts">
-            Concerts
-          </button>
-          <button class="toolbar-chip" data-filter="residencies">
-            Residencies
-          </button>
+          <button class="toolbar-chip toolbar-chip--active" data-filter="all">All</button>
+          <button class="toolbar-chip" data-filter="concerts">Concerts</button>
+          <button class="toolbar-chip" data-filter="residencies">Residencies</button>
         </div>
       </div>
     </header>
 
     <!-- Main layout -->
-    <main class="page-main">
-      <!-- Intro blurb -->
+    <main class="layout">
       <section class="intro">
         <p>
-          Explore curated tours and residencies powered by Concerto. Tap a date pill to see
+          Explore curated tours and residencies powered by Concerto. Tap a date pill to open
           City Guides, tickets, rideshare, bag policies, concessions, and parking for each show.
         </p>
       </section>
 
-      <!-- Tours list (JS will inject tour cards here) -->
+      <!-- Tours list – JS will inject cards into this root -->
       <section id="toursRoot" class="tours-root">
-        <!-- Example structure for one tour card (for reference only; JS will create these):
+        <!--
+        Example structure (for reference; app.js will create this):
 
         <article class="tour-card">
           <div class="tour-media">
             <div class="tour-image-wrapper">
               <img
-                src="./images/tours/TourIdHere.jpg"
-                alt="Tour artwork for Tour Name"
+                src="./images/tours/iheartradio-jingle-ball-2025.jpg"
+                alt="iHeartRadio Jingle Ball 2025 artwork"
                 class="tour-image"
               />
             </div>
           </div>
+
           <div class="tour-body">
             <header class="tour-header">
-              <h2 class="tour-name">Tour Name</h2>
-              <p class="tour-artist">Artist Name</p>
-              <p class="tour-meta">2025 · North America</p>
+              <h2 class="tour-name">iHeartRadio Jingle Ball 2025</h2>
+              <p class="tour-artist">Various Artists</p>
+              <p class="tour-meta">7 shows · Dec 2025 · US</p>
             </header>
+
             <div class="tour-dates-summary">
-              <!-- JS can inject something like: 12 shows · Nov–Dec 2025 -->
+              <!-- JS can inject something like: "Detroit · New York · Boston · Atlanta · Miami" -->
             </div>
+
             <div class="tour-pill-row">
-              <!-- JS: one pill per date -->
+              <button class="date-pill">
+                <div class="date-pill-header">
+                  <span class="date-pill-venue">Little Caesars Arena</span>
+                  <span class="date-pill-date">Dec 9</span>
+                  <span class="date-pill-chevron">▾</span>
+                </div>
+                <div class="pill-dropdown">
+                  <div class="pill-links">
+                    <a href="#" class="pill-link-btn primary" target="_blank">Buy Tickets</a>
+                    <a href="#" class="pill-link-btn" target="_blank">City Guide</a>
+                    <a href="#" class="pill-link-btn" target="_blank">Rideshare</a>
+                    <a href="#" class="pill-link-btn" target="_blank">Bag Policy</a>
+                    <a href="#" class="pill-link-btn" target="_blank">Concessions</a>
+                    <a href="#" class="pill-link-btn" target="_blank">Parking</a>
+                  </div>
+                </div>
+              </button>
             </div>
           </div>
         </article>
-
         -->
       </section>
     </main>
   </div>
 
-  <!-- Your main logic lives in src/app.js, which will be copied to public/app.js -->
+  <!-- app.js will be copied from src/app.js into public/app.js via your build step -->
   <script type="module" src="./app.js"></script>
 </body>
 </html>
