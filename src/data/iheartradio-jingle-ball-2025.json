@@ -1,0 +1,128 @@
+{
+  "tourId": "iheartradio-jingle-ball-2025",
+  "tourName": "iHeartRadio Jingle Ball 2025",
+  "artist": "Various Artists",
+  "year": 2025,
+  "source": "Ticketmaster",
+  "shows": [
+    {
+      "id": "2025-12-09-detroit-little-caesars-arena",
+      "date": "2025-12-09",
+      "city": "Detroit",
+      "state": "MI",
+      "country": "US",
+      "venueName": "Little Caesars Arena",
+      "venueSlug": "little-caesars-arena",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=little-caesars-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=little-caesars-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=little-caesars-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=little-caesars-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=little-caesars-arena"
+      }
+    },
+    {
+      "id": "2025-12-12-new-york-madison-square-garden",
+      "date": "2025-12-12",
+      "city": "New York",
+      "state": "NY",
+      "country": "US",
+      "venueName": "Madison Square Garden",
+      "venueSlug": "madison-square-garden",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=madison-square-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=madison-square-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=madison-square-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=madison-square-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=madison-square-garden"
+      }
+    },
+    {
+      "id": "2025-12-14-boston-td-garden",
+      "date": "2025-12-14",
+      "city": "Boston",
+      "state": "MA",
+      "country": "US",
+      "venueName": "TD Garden",
+      "venueSlug": "td-garden",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=td-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=td-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=td-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=td-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=td-garden"
+      }
+    },
+    {
+      "id": "2025-12-15-philadelphia-xfinity-mobile-arena",
+      "date": "2025-12-15",
+      "city": "Philadelphia",
+      "state": "PA",
+      "country": "US",
+      "venueName": "Xfinity Mobile Arena",
+      "venueSlug": "xfinity-mobile-arena",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=xfinity-mobile-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=xfinity-mobile-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=xfinity-mobile-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=xfinity-mobile-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=xfinity-mobile-arena"
+      }
+    },
+    {
+      "id": "2025-12-16-washington-capital-one-arena",
+      "date": "2025-12-16",
+      "city": "Washington",
+      "state": "DC",
+      "country": "US",
+      "venueName": "Capital One Arena",
+      "venueSlug": "capital-one-arena",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=capital-one-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=capital-one-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=capital-one-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=capital-one-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=capital-one-arena"
+      }
+    },
+    {
+      "id": "2025-12-18-atlanta-state-farm-arena",
+      "date": "2025-12-18",
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "US",
+      "venueName": "State Farm Arena",
+      "venueSlug": "state-farm-arena",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=state-farm-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=state-farm-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=state-farm-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=state-farm-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=state-farm-arena"
+      }
+    },
+    {
+      "id": "2025-12-20-miami-kaseya-center",
+      "date": "2025-12-20",
+      "city": "Miami",
+      "state": "FL",
+      "country": "US",
+      "venueName": "Kaseya Center",
+      "venueSlug": "kaseya-center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kaseya-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kaseya-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kaseya-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kaseya-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kaseya-center"
+      }
+    }
+  ]
+}
