@@ -1,6 +1,5 @@
-// src/app.js
-// Concerto · Featured Tours
-// Loads tour JSON files and renders tour cards + per-date dropdown pills.
+// app.js
+// Concerto · Featured Tours — simple static loader
 
 const TOUR_FILES = [
   "jonas20-greetings-from-your-hometown.json",
@@ -11,9 +10,6 @@ const TOUR_FILES = [
   "lady-gaga-the-mayhem-ball-na-2026.json"
 ];
 
-/**
- * Fetch a single tour JSON file.
- */
 async function fetchTour(fileName) {
   try {
     const res = await fetch(`./data/${fileName}`);
@@ -21,61 +17,38 @@ async function fetchTour(fileName) {
       console.warn(`Failed to load tour file: ${fileName}`, res.status);
       return null;
     }
-    const tour = await res.json();
-    return tour;
+    return await res.json();
   } catch (err) {
     console.error(`Error loading tour file: ${fileName}`, err);
     return null;
   }
 }
 
-/**
- * Load all tours from TOUR_FILES.
- */
 async function loadTours() {
   const results = await Promise.all(TOUR_FILES.map(fetchTour));
   const tours = results.filter(Boolean);
 
-  // Sort shows inside each tour by date ascending
   tours.forEach((tour) => {
     if (Array.isArray(tour.shows)) {
-      tour.shows.sort((a, b) => {
-        const da = new Date(a.date);
-        const db = new Date(b.date);
-        return da - db;
-      });
+      tour.shows.sort((a, b) => new Date(a.date) - new Date(b.date));
     }
   });
 
-  // Sort tours by earliest show date
-  tours.sort((a, b) => {
-    const earliestA = getEarliestShowDate(a);
-    const earliestB = getEarliestShowDate(b);
-    return earliestA - earliestB;
-  });
-
+  tours.sort((a, b) => getEarliestShowDate(a) - getEarliestShowDate(b));
   return tours;
 }
 
-/**
- * Get earliest show date for a tour (for sorting).
- */
 function getEarliestShowDate(tour) {
   if (!tour.shows || tour.shows.length === 0) {
-    return new Date(8640000000000000); // max date
+    return new Date(8640000000000000);
   }
   return new Date(tour.shows[0].date);
 }
 
-/**
- * Derive a fallback tour image path from tourId or tourName.
- * Images should live at: public/images/tours/<tourId>.jpg
- */
 function getTourImageSrc(tour) {
   let id = tour.tourId;
 
   if (!id) {
-    // Fallback if tourId is missing: kebab-case of tourName
     const base = tour.tourName || "tour";
     id = base
       .toLowerCase()
@@ -86,27 +59,18 @@ function getTourImageSrc(tour) {
   return `./images/tours/${id}.jpg`;
 }
 
-/**
- * Format a date (YYYY-MM-DD) into "Dec 9" style.
- */
 function formatShortDate(isoDateStr) {
   if (!isoDateStr) return "";
   const d = new Date(isoDateStr);
   if (Number.isNaN(d.getTime())) return isoDateStr;
-  return d.toLocaleDateString(undefined, {
-    month: "short",
-    day: "numeric"
-  });
+  return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
-/**
- * Create the DOM for a single tour card.
- */
 function createTourCard(tour) {
   const card = document.createElement("article");
   card.className = "tour-card";
 
-  // ==== MEDIA (image) ====
+  // Media
   const media = document.createElement("div");
   media.className = "tour-media";
 
@@ -121,7 +85,7 @@ function createTourCard(tour) {
   imageWrapper.appendChild(img);
   media.appendChild(imageWrapper);
 
-  // ==== BODY ====
+  // Body
   const body = document.createElement("div");
   body.className = "tour-body";
 
@@ -151,10 +115,8 @@ function createTourCard(tour) {
   if (artist.textContent.trim()) header.appendChild(artist);
   if (meta.textContent.trim()) header.appendChild(meta);
 
-  // Optionally, you could add a "cities summary" line
-  const cities = (tour.shows || [])
-    .map((s) => s.city)
-    .filter(Boolean);
+  // City summary
+  const cities = (tour.shows || []).map((s) => s.city).filter(Boolean);
   const uniqueCities = Array.from(new Set(cities));
   const datesSummary = document.createElement("div");
   datesSummary.className = "tour-dates-summary";
@@ -168,14 +130,9 @@ function createTourCard(tour) {
     datesSummary.textContent = list;
   }
 
-  // ==== Pills ====
   const pillRow = document.createElement("div");
   pillRow.className = "tour-pill-row";
-
-  (tour.shows || []).forEach((show) => {
-    const pill = createDatePill(show);
-    pillRow.appendChild(pill);
-  });
+  (tour.shows || []).forEach((show) => pillRow.appendChild(createDatePill(show)));
 
   body.appendChild(header);
   if (datesSummary.textContent.trim()) body.appendChild(datesSummary);
@@ -187,9 +144,6 @@ function createTourCard(tour) {
   return card;
 }
 
-/**
- * Create a date pill with dropdown links for a single show.
- */
 function createDatePill(show) {
   const pill = document.createElement("button");
   pill.type = "button";
@@ -214,7 +168,6 @@ function createDatePill(show) {
   header.appendChild(dateSpan);
   header.appendChild(chevron);
 
-  // Dropdown container
   const dropdown = document.createElement("div");
   dropdown.className = "pill-dropdown";
 
@@ -223,7 +176,6 @@ function createDatePill(show) {
 
   const links = show.links || {};
 
-  // Helper to create each button link
   function addLink(label, url, isPrimary = false) {
     const a = document.createElement("a");
     a.textContent = label;
@@ -233,7 +185,6 @@ function createDatePill(show) {
       a.target = "_blank";
       a.rel = "noopener noreferrer";
     } else {
-      // If URL is missing, visually de-emphasize and disable
       a.href = "javascript:void(0)";
       a.style.opacity = "0.45";
       a.style.pointerEvents = "none";
@@ -252,28 +203,18 @@ function createDatePill(show) {
   pill.appendChild(header);
   pill.appendChild(dropdown);
 
-  // Toggle dropdown open/closed
   pill.addEventListener("click", (event) => {
     event.stopPropagation();
-
     const isOpen = dropdown.classList.contains("open");
-
-    // Close any other open dropdowns in the document
     document
       .querySelectorAll(".pill-dropdown.open")
       .forEach((el) => el.classList.remove("open"));
-
-    if (!isOpen) {
-      dropdown.classList.add("open");
-    }
+    if (!isOpen) dropdown.classList.add("open");
   });
 
   return pill;
 }
 
-/**
- * Close dropdowns when clicking outside any pill.
- */
 function setupGlobalClickToClose() {
   document.addEventListener("click", () => {
     document
@@ -282,15 +223,9 @@ function setupGlobalClickToClose() {
   });
 }
 
-/**
- * Main init.
- */
 async function initFeaturedTours() {
   const root = document.getElementById("toursRoot");
-  if (!root) {
-    console.error("#toursRoot not found");
-    return;
-  }
+  if (!root) return;
 
   const tours = await loadTours();
 
@@ -303,10 +238,7 @@ async function initFeaturedTours() {
     return;
   }
 
-  tours.forEach((tour) => {
-    const card = createTourCard(tour);
-    root.appendChild(card);
-  });
+  tours.forEach((tour) => root.appendChild(createTourCard(tour)));
 
   setupGlobalClickToClose();
 }
