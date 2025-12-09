@@ -2,32 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Featured Tours · Concerto</title>
+  <title>Concerto · Featured Tours</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
+    <!-- Top header -->
     <header class="page-header">
       <div class="page-header-inner">
-        <h1 class="page-title">Featured Tours</h1>
-        <p class="page-subtitle">From the concert, to the city.</p>
+        <div class="brand-block">
+          <!-- Place logo image at: public/images/brand/concerto-logo.png -->
+          <img
+            src="./images/brand/concerto-logo.png"
+            alt="Concerto - From the concert, to the city"
+            class="brand-logo"
+          />
+          <div class="brand-text">
+            <h1 class="page-title">Featured Tours</h1>
+            <p class="page-subtitle">From the concert, to the city.</p>
+          </div>
+        </div>
+
+        <!-- Simple toolbar for future filtering / search (optional, JS hooks only) -->
+        <div class="toolbar">
+          <button class="toolbar-chip toolbar-chip--active" data-filter="all">
+            All Tours
+          </button>
+          <button class="toolbar-chip" data-filter="concerts">
+            Concerts
+          </button>
+          <button class="toolbar-chip" data-filter="residencies">
+            Residencies
+          </button>
+        </div>
       </div>
     </header>
 
+    <!-- Main layout -->
     <main class="page-main">
-      <!-- Tours will be injected here -->
-      <section id="tours" class="tours"></section>
+      <!-- Intro blurb -->
+      <section class="intro">
+        <p>
+          Explore curated tours and residencies powered by Concerto. Tap a date pill to see
+          City Guides, tickets, rideshare, bag policies, concessions, and parking for each show.
+        </p>
+      </section>
+
+      <!-- Tours list (JS will inject tour cards here) -->
+      <section id="toursRoot" class="tours-root">
+        <!-- Example structure for one tour card (for reference only; JS will create these):
+
+        <article class="tour-card">
+          <div class="tour-media">
+            <div class="tour-image-wrapper">
+              <img
+                src="./images/tours/TourIdHere.jpg"
+                alt="Tour artwork for Tour Name"
+                class="tour-image"
+              />
+            </div>
+          </div>
+          <div class="tour-body">
+            <header class="tour-header">
+              <h2 class="tour-name">Tour Name</h2>
+              <p class="tour-artist">Artist Name</p>
+              <p class="tour-meta">2025 · North America</p>
+            </header>
+            <div class="tour-dates-summary">
+              <!-- JS can inject something like: 12 shows · Nov–Dec 2025 -->
+            </div>
+            <div class="tour-pill-row">
+              <!-- JS: one pill per date -->
+            </div>
+          </div>
+        </article>
+
+        -->
+      </section>
     </main>
   </div>
 
-  <script src="tours-data.js"></script>
-  <script src="app.js"></script>
+  <!-- Your main logic lives in src/app.js, which will be copied to public/app.js -->
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
