@@ -1,8 +1,5 @@
 {
   "name": "concerto-featured-tours",
   "version": "1.0.0",
-  "scripts": {
-    "build": "cp -R src/* public/"
-  },
-  "devDependencies": {}
+  "private": true
 }
