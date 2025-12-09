@@ -34,7 +34,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* We want vertical scrolling for long tour lists */
 body {
   overflow-y: auto;
 }
@@ -71,7 +70,6 @@ body {
   display: block;
 }
 
-/* Title + subtitle */
 .header-text {
   display: flex;
   flex-direction: column;
@@ -92,7 +90,7 @@ body {
   color: var(--muted);
 }
 
-/* Toolbar chips (optional filters) */
+/* Toolbar chips */
 .toolbar {
   margin-left: auto;
   display: flex;
@@ -174,7 +172,6 @@ body {
   border-radius: 14px;
   overflow: hidden;
   background: #D8DDE8;
-  position: relative;
   min-height: 110px;
 }
 
@@ -231,7 +228,7 @@ body {
   margin-top: 4px;
 }
 
-/* Pill base style (similar to guide-pill) */
+/* Date pill */
 .date-pill {
   border-radius: 999px;
   border: 1px solid var(--line);
@@ -277,7 +274,7 @@ body {
   color: var(--muted);
 }
 
-/* ===== Dropdown inside pill for the 6 links ===== */
+/* ===== Dropdown (6 links) ===== */
 .pill-dropdown {
   margin-top: 6px;
   border-radius: 14px;
