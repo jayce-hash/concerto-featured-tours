@@ -2,12 +2,18 @@
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
-  "jonas20-greetings-from-your-hometown.json",
-  "iheartradio-jingle-ball-2025.json",
-  "mariah-carey-christmastime-in-las-vegas-2025.json",
-  "demi-lovato-its-not-that-deep-tour.json",
-  "conan-gray-wishbone-world-tour-na.json",
-  "lady-gaga-the-mayhem-ball-na-2026.json"
+  'iheartradio-jingle-ball-2025.json',
+  'mariah-carey-christmastime-in-las-vegas-2025.json',
+  'jonas20-greetings-from-your-hometown.json',
+  'demi-lovato-its-not-that-deep-tour.json',
+  'conan-gray-wishbone-world-tour-na.json',
+  'lady-gaga-the-mayhem-ball-na-2026.json',
+  'backstreet-boys-into-the-millennium-sphere-las-vegas.json',
+  'ariana-grande-eternal-sunshine-tour-na-2026.json',
+  'ed-sheeran-loop-tour-na-2026.json',
+  'olivia-dean-the-art-of-loving-live-na-2026.json',
+  'parker-mccollum-2026-tour-na.json',
+  'zach-bryan-2026-tour-na.json'
 ];
 
 let allTours = [];
