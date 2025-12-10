@@ -5,11 +5,11 @@
   <title>Concerto · Featured Tours</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <!-- Inter only -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
     rel="stylesheet"
   >
 
@@ -37,11 +37,10 @@
       </div>
     </header>
 
-    <!-- Main content -->
     <main class="layout">
       <section id="infoPanel" class="info-panel info-panel--empty">
 
-        <!-- Empty state (library mode) -->
+        <!-- Empty state -->
         <div class="info-empty">
           <h2>Browse featured tours</h2>
           <p>
@@ -51,7 +50,7 @@
           </p>
         </div>
 
-        <!-- Selected tour content (detail “page” mode) -->
+        <!-- Selected tour content WITHOUT HERO IMAGE -->
         <div class="info-content" hidden>
           <header class="info-header">
             <div>
@@ -73,12 +72,11 @@
           </div>
         </div>
 
-        <!-- Library of all tours -->
+        <!-- Tour Library -->
         <section class="browse-list">
           <h3 class="browse-title">Tour Library</h3>
           <div id="toursBrowseList"></div>
         </section>
-
       </section>
     </main>
   </div>
