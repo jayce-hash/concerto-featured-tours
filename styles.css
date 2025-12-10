@@ -1,6 +1,6 @@
 /* ============================================================
-   Concerto — Featured Tours (Light Ultra-Clean Version)
-   Based on: Concerto Venue Map styles
+   Concerto — Featured Tours (Library + Date Dropdowns)
+   Based on Parking Guide (Light Ultra-Clean)
    ============================================================ */
 
 :root {
@@ -15,14 +15,15 @@
   --shadow-strong: 0 16px 40px rgba(18, 30, 54, 0.20);
 }
 
-/* ===== Reset ===== */
+/* Reset */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -34,268 +35,308 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Mobile-first: natural vertical scroll */
 body {
   overflow-y: auto;
 }
 
-/* ===== Layout Shell ===== */
+/* Layout shell */
 .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* ===== Header ===== */
+/* Header */
 .page-header {
   background: var(--bg);
   box-shadow: 0 2px 8px rgba(18, 30, 54, 0.04);
-  padding: 10px 0;
+  padding: 10px 0 10px;
   z-index: 10;
 }
 
 .page-header-inner {
   width: 100%;
-  max-width: 900px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 0 16px 6px;
+  padding: 0 16px 4px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   gap: 10px;
 }
 
 .brand-logo {
-  width: 120px;
-  max-width: 50%;
+  max-width: 260px;
+  width: 72%;
   display: block;
+  margin: 0 auto;
 }
 
-.header-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+/* Search */
+.search-wrapper {
+  position: relative;
 }
 
-.page-title {
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.page-subtitle {
-  margin: 0;
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-/* Toolbar chips */
-.toolbar {
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.toolbar-chip {
+#tourSearch {
+  width: 100%;
   border-radius: 999px;
   border: 1px solid var(--line);
+  padding: 9px 40px 9px 14px;
+  font-size: 15px;
   background: #fff;
-  padding: 5px 12px;
-  font-size: 0.78rem;
-  color: var(--muted);
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease,
-    box-shadow 0.15s ease, transform 0.12s ease, color 0.15s ease;
-}
-
-.toolbar-chip:hover {
-  transform: translateY(-1px);
+  color: var(--ink);
+  outline: none;
   box-shadow: var(--shadow-soft);
 }
 
-.toolbar-chip--active {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  border-color: transparent;
-  color: #fff;
+#tourSearch::placeholder {
+  color: #9aa3b5;
 }
 
-/* ===== Main Layout ===== */
+.search-wrapper::after {
+  content: "⌕";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Search dropdown */
+.search-results {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110%;
+  margin-top: 4px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 26px rgba(18, 30, 54, 0.18);
+  max-height: 260px;
+  overflow-y: auto;
+  display: none;
+  z-index: 20;
+}
+
+.search-results.visible {
+  display: block;
+}
+
+.search-result-item {
+  padding: 8px 11px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background: #f5f7fb;
+}
+
+/* Main layout */
 .layout {
   flex: 1;
-  padding: 10px 0 20px;
+  padding: 12px 14px 20px;
 }
 
-.intro {
-  max-width: 900px;
-  margin: 0 auto 8px;
-  padding: 0 16px;
+/* Info panel container */
+.info-panel {
+  max-width: 680px;
+  margin: 0 auto;
 }
 
-.intro p {
+.info-panel--empty .info-empty {
+  display: block;
+}
+
+/* Empty state */
+.info-empty {
+  text-align: left;
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 8px rgba(18, 30, 54, 0.06);
+}
+
+.info-empty h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info-empty p {
   margin: 0;
   font-size: 0.9rem;
   color: var(--muted);
 }
 
-/* ===== Tours List ===== */
-.tours-root {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 16px 20px;
+/* Selected tour content */
+.info-content {
+  margin-top: 14px;
+}
+
+/* Header inside tour panel */
+.info-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
   gap: 10px;
 }
 
-/* ===== Tour Card ===== */
-.tour-card {
-  background: var(--card);
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-  padding: 10px 12px;
-  display: grid;
-  grid-template-columns: 130px 1fr;
-  gap: 12px;
+.info-header h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
-.tour-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.tour-artist-line {
+  margin: 3px 0 0;
+  font-size: 0.88rem;
+  font-weight: 500;
 }
 
-.tour-image-wrapper {
-  width: 100%;
-  border-radius: 14px;
+.tour-meta-line {
+  margin: 1px 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Optional hero image */
+.tour-image-shell {
+  width: 120px;
+  height: 80px;
+  border-radius: 12px;
   overflow: hidden;
   background: #D8DDE8;
-  min-height: 110px;
+  flex-shrink: 0;
 }
 
-.tour-image {
-  display: block;
+.tour-hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* ===== Tour Body ===== */
-.tour-body {
+/* Cards */
+.info-cards {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
 }
 
-.tour-header {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.tour-name {
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.tour-artist {
-  margin: 0;
-  font-size: 0.88rem;
-  font-weight: 500;
-}
-
-.tour-meta {
-  margin: 0;
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-
-.tour-dates-summary {
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-
-/* ===== Date Pills Row ===== */
-.tour-pill-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-}
-
-/* Date pill */
-.date-pill {
-  border-radius: 999px;
+.info-card {
+  background: var(--card);
+  border-radius: 16px;
   border: 1px solid var(--line);
-  background: #fff;
-  padding: 6px 10px;
-  font-size: 0.86rem;
+  padding: 12px 14px;
+  box-shadow: 0 2px 6px rgba(18, 30, 54, 0.06);
+}
+
+.info-card h3 {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.card-body {
+  margin: 0 0 4px;
+  font-size: 0.88rem;
   color: var(--ink);
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease,
-    box-shadow 0.15s ease, transform 0.12s ease;
-  position: relative;
-  min-width: 0;
 }
 
-.date-pill:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-soft);
+.card-body--hint {
+  font-size: 0.82rem;
+  color: var(--muted);
 }
 
-.date-pill-header {
+/* Shows list (dates) */
+.shows-list {
+  margin-top: 6px;
+  border-radius: 12px;
+  border: 1px solid #eef1f7;
+  overflow: hidden;
+}
+
+/* Each date row */
+.show-row {
+  border-bottom: 1px solid #eef1f7;
+}
+
+.show-row:last-child {
+  border-bottom: none;
+}
+
+/* Row header (tap to expand) */
+.show-row-header {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  background: #fff;
   display: flex;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
+  font-size: 0.86rem;
+  text-align: left;
 }
 
-.date-pill-venue {
-  font-size: 0.82rem;
+.show-row-header:hover {
+  background: #f5f7fb;
+}
+
+.show-venue {
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.date-pill-date {
-  font-size: 0.76rem;
+.show-city {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.show-date {
+  margin-left: auto;
+  font-size: 0.8rem;
   color: var(--muted);
   white-space: nowrap;
 }
 
-.date-pill-chevron {
-  margin-left: auto;
+.show-chevron {
   font-size: 0.7rem;
   color: var(--muted);
+  margin-left: 6px;
 }
 
-/* ===== Dropdown (6 links) ===== */
-.pill-dropdown {
-  margin-top: 6px;
-  border-radius: 14px;
-  border: 1px solid var(--line);
-  background: #fff;
-  box-shadow: 0 10px 26px rgba(18, 30, 54, 0.18);
-  padding: 8px;
+/* Dropdown for 6 links */
+.show-dropdown {
   display: none;
+  padding: 8px 10px 10px;
+  background: #fbfcff;
+  border-top: 1px solid #eef1f7;
 }
 
-.pill-dropdown.open {
+.show-dropdown.open {
   display: block;
 }
 
-.pill-links {
+/* Links grid */
+.show-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
 }
 
-.pill-link-btn {
+.show-link-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -314,25 +355,67 @@ body {
     box-shadow 0.15s ease, transform 0.12s ease, color 0.12s ease;
 }
 
-.pill-link-btn:hover {
+.show-link-btn:hover {
   background: #F5F7FB;
   box-shadow: var(--shadow-soft);
   transform: translateY(-1px);
 }
 
-.pill-link-btn.primary {
+.show-link-btn.primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   border-color: transparent;
   color: #fff;
 }
 
-.pill-link-btn.primary:hover {
+.show-link-btn.primary:hover {
   box-shadow: var(--shadow-strong);
 }
 
-/* ===== Responsive ===== */
+/* Tour library (browse list) */
+.browse-list {
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 6px rgba(18, 30, 54, 0.06);
+  padding: 8px 10px 10px;
+}
+
+.browse-title {
+  margin: 0 0 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.browse-item {
+  padding: 6px 4px;
+  font-size: 0.86rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.browse-item + .browse-item {
+  border-top: 1px solid #eef1f7;
+}
+
+.browse-item:hover {
+  background: #f5f7fb;
+}
+
+.browse-item-name {
+  font-weight: 500;
+}
+
+.browse-item-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Tablet/Desktop adjustments */
 @media (min-width: 768px) {
   .page-header-inner {
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
@@ -340,24 +423,21 @@ body {
   .brand-logo {
     width: 180px;
     max-width: 180px;
+    margin: 0;
+  }
+
+  .search-wrapper {
+    max-width: 320px;
+  }
+
+  .layout {
+    padding-bottom: 32px;
   }
 }
 
-@media (max-width: 720px) {
-  .page-header-inner {
-    align-items: flex-start;
-  }
-
-  .tour-card {
-    grid-template-columns: 1fr;
-  }
-
-  .tour-image-wrapper {
-    max-width: 260px;
-    margin: 0 auto;
-  }
-
-  .pill-links {
+/* Extra mobile friendliness: stack links in 1 column on narrow screens */
+@media (max-width: 560px) {
+  .show-links {
     grid-template-columns: 1fr;
   }
 }
