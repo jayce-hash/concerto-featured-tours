@@ -10,7 +10,7 @@ const TOUR_FILES = [
   'lady-gaga-the-mayhem-ball-na-2026.json',
   'backstreet-boys-into-the-millenium-sphere-las-vegas.json',
   'ariana-grande-the-eternal-sunshine-tour-na-2026.json',
-  'ed-sheeran-loop-tour-na-2026.json',
+  'ed-sheeran-the-loop-tour-na-2026.json',
   'olivia-dean-the-art-of-loving-live-na-2026.json',
   'parker-mccollum-2026-tour-na.json',
   'zach-bryan-2026-tour-na.json'
