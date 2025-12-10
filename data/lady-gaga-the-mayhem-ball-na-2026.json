@@ -1,0 +1,409 @@
+{
+  "tourId": "lady-gaga-the-mayhem-ball-na-2026",
+  "artist": "Lady Gaga",
+  "tourName": "The Mayhem Ball",
+  "leg": "North America 2026",
+  "source": "ticketmaster",
+  "shows": [
+    {
+      "date": "2026-02-14",
+      "city": "Glendale",
+      "region": "AZ",
+      "country": "US",
+      "venueName": "Desert Diamond Arena",
+      "venueSlug": "desert-diamond-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=desert-diamond-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=desert-diamond-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=desert-diamond-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=desert-diamond-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=desert-diamond-arena"
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "city": "Glendale",
+      "region": "AZ",
+      "country": "US",
+      "venueName": "Desert Diamond Arena",
+      "venueSlug": "desert-diamond-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=desert-diamond-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=desert-diamond-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=desert-diamond-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=desert-diamond-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=desert-diamond-arena"
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "city": "Inglewood",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Kia Forum",
+      "venueSlug": "kia-forum",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kia-forum",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kia-forum",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kia-forum",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kia-forum",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kia-forum"
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "city": "Inglewood",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Kia Forum",
+      "venueSlug": "kia-forum",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kia-forum",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kia-forum",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kia-forum",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kia-forum",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kia-forum"
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "city": "Inglewood",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Kia Forum",
+      "venueSlug": "kia-forum",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kia-forum",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kia-forum",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kia-forum",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kia-forum",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kia-forum"
+      }
+    },
+    {
+      "date": "2026-02-23",
+      "city": "Inglewood",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Kia Forum",
+      "venueSlug": "kia-forum",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kia-forum",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kia-forum",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kia-forum",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kia-forum",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kia-forum"
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "city": "Fort Worth",
+      "region": "TX",
+      "country": "US",
+      "venueName": "Dickies Arena",
+      "venueSlug": "dickies-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dickies-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dickies-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dickies-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dickies-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dickies-arena"
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "city": "Fort Worth",
+      "region": "TX",
+      "country": "US",
+      "venueName": "Dickies Arena",
+      "venueSlug": "dickies-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dickies-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dickies-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dickies-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dickies-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dickies-arena"
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "city": "Atlanta",
+      "region": "GA",
+      "country": "US",
+      "venueName": "State Farm Arena",
+      "venueSlug": "state-farm-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=state-farm-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=state-farm-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=state-farm-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=state-farm-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=state-farm-arena"
+      }
+    },
+    {
+      "date": "2026-03-05",
+      "city": "Atlanta",
+      "region": "GA",
+      "country": "US",
+      "venueName": "State Farm Arena",
+      "venueSlug": "state-farm-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=state-farm-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=state-farm-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=state-farm-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=state-farm-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=state-farm-arena"
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "city": "Austin",
+      "region": "TX",
+      "country": "US",
+      "venueName": "Moody Center",
+      "venueSlug": "moody-center",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=moody-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=moody-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=moody-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=moody-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=moody-center"
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "city": "Austin",
+      "region": "TX",
+      "country": "US",
+      "venueName": "Moody Center",
+      "venueSlug": "moody-center",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=moody-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=moody-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=moody-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=moody-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=moody-center"
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "city": "Miami",
+      "region": "FL",
+      "country": "US",
+      "venueName": "Kaseya Center",
+      "venueSlug": "kaseya-center",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kaseya-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kaseya-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kaseya-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kaseya-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kaseya-center"
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "city": "New York City",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Madison Square Garden",
+      "venueSlug": "madison-square-garden",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=madison-square-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=madison-square-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=madison-square-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=madison-square-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=madison-square-garden"
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "city": "New York City",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Madison Square Garden",
+      "venueSlug": "madison-square-garden",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=madison-square-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=madison-square-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=madison-square-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=madison-square-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=madison-square-garden"
+      }
+    },
+    {
+      "date": "2026-03-23",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "venueName": "Capital One Arena",
+      "venueSlug": "capital-one-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=capital-one-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=capital-one-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=capital-one-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=capital-one-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=capital-one-arena"
+      }
+    },
+    {
+      "date": "2026-03-24",
+      "city": "Washington",
+      "region": "DC",
+      "country": "US",
+      "venueName": "Capital One Arena",
+      "venueSlug": "capital-one-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=capital-one-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=capital-one-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=capital-one-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=capital-one-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=capital-one-arena"
+      }
+    },
+    {
+      "date": "2026-03-29",
+      "city": "Boston",
+      "region": "MA",
+      "country": "US",
+      "venueName": "TD Garden",
+      "venueSlug": "td-garden",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=td-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=td-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=td-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=td-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=td-garden"
+      }
+    },
+    {
+      "date": "2026-03-30",
+      "city": "Boston",
+      "region": "MA",
+      "country": "US",
+      "venueName": "TD Garden",
+      "venueSlug": "td-garden",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=td-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=td-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=td-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=td-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=td-garden"
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "city": "Montreal",
+      "region": "QC",
+      "country": "CA",
+      "venueName": "Centre Bell",
+      "venueSlug": "centre-bell",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=centre-bell",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=centre-bell",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=centre-bell",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=centre-bell",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=centre-bell"
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "city": "Montreal",
+      "region": "QC",
+      "country": "CA",
+      "venueName": "Centre Bell",
+      "venueSlug": "centre-bell",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=centre-bell",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=centre-bell",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=centre-bell",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=centre-bell",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=centre-bell"
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "city": "Montreal",
+      "region": "QC",
+      "country": "CA",
+      "venueName": "Centre Bell",
+      "venueSlug": "centre-bell",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=centre-bell",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=centre-bell",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=centre-bell",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=centre-bell",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=centre-bell"
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "city": "Saint Paul",
+      "region": "MN",
+      "country": "US",
+      "venueName": "Grand Casino Arena",
+      "venueSlug": "grand-casino-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=grand-casino-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=grand-casino-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=grand-casino-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=grand-casino-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=grand-casino-arena"
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "city": "Saint Paul",
+      "region": "MN",
+      "country": "US",
+      "venueName": "Grand Casino Arena",
+      "venueSlug": "grand-casino-arena",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=grand-casino-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=grand-casino-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=grand-casino-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=grand-casino-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=grand-casino-arena"
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "city": "New York City",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Madison Square Garden",
+      "venueSlug": "madison-square-garden",
+      "ticketUrl": "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=madison-square-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=madison-square-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=madison-square-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=madison-square-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=madison-square-garden"
+      }
+    }
+  ]
+}
