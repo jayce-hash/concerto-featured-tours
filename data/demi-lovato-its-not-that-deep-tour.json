@@ -1,0 +1,328 @@
+{
+  "tourId": "demi-lovato-its-not-that-deep-tour",
+  "artist": "Demi Lovato",
+  "tourName": "It's Not That Deep Tour",
+  "source": "ticketmaster",
+  "shows": [
+    {
+      "date": "2025-09-10",
+      "city": "Denver",
+      "region": "CO",
+      "country": "US",
+      "venueName": "Ball Arena",
+      "venueSlug": "ball-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ball-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ball-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ball-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ball-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ball-arena"
+      }
+    },
+    {
+      "date": "2025-09-11",
+      "city": "Salt Lake City",
+      "region": "UT",
+      "country": "US",
+      "venueName": "Delta Center",
+      "venueSlug": "delta-center",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=delta-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=delta-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=delta-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=delta-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=delta-center"
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "city": "Seattle",
+      "region": "WA",
+      "country": "US",
+      "venueName": "Climate Pledge Arena",
+      "venueSlug": "climate-pledge-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=climate-pledge-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=climate-pledge-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=climate-pledge-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=climate-pledge-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=climate-pledge-arena"
+      }
+    },
+    {
+      "date": "2025-09-16",
+      "city": "Vancouver",
+      "region": "BC",
+      "country": "CA",
+      "venueName": "Rogers Arena",
+      "venueSlug": "rogers-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=rogers-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=rogers-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=rogers-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=rogers-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=rogers-arena"
+      }
+    },
+    {
+      "date": "2025-09-18",
+      "city": "Edmonton",
+      "region": "AB",
+      "country": "CA",
+      "venueName": "Rogers Place",
+      "venueSlug": "rogers-place",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=rogers-place",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=rogers-place",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=rogers-place",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=rogers-place",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=rogers-place"
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "city": "Winnipeg",
+      "region": "MB",
+      "country": "CA",
+      "venueName": "Canada Life Centre",
+      "venueSlug": "canada-life-centre",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=canada-life-centre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=canada-life-centre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=canada-life-centre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=canada-life-centre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=canada-life-centre"
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "city": "Saint Paul",
+      "region": "MN",
+      "country": "US",
+      "venueName": "Xcel Energy Center",
+      "venueSlug": "xcel-energy-center",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=xcel-energy-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=xcel-energy-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=xcel-energy-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=xcel-energy-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=xcel-energy-center"
+      }
+    },
+    {
+      "date": "2025-09-26",
+      "city": "Rosemont",
+      "region": "IL",
+      "country": "US",
+      "venueName": "Allstate Arena",
+      "venueSlug": "allstate-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=allstate-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=allstate-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=allstate-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=allstate-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=allstate-arena"
+      }
+    },
+    {
+      "date": "2025-09-29",
+      "city": "Toronto",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "Scotiabank Arena",
+      "venueSlug": "scotiabank-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=scotiabank-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=scotiabank-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=scotiabank-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=scotiabank-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=scotiabank-arena"
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "city": "Ottawa",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "Canadian Tire Centre",
+      "venueSlug": "canadian-tire-centre",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=canadian-tire-centre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=canadian-tire-centre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=canadian-tire-centre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=canadian-tire-centre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=canadian-tire-centre"
+      }
+    },
+    {
+      "date": "2025-10-03",
+      "city": "Montreal",
+      "region": "QC",
+      "country": "CA",
+      "venueName": "Bell Centre",
+      "venueSlug": "bell-centre",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=bell-centre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=bell-centre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=bell-centre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=bell-centre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=bell-centre"
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "city": "London",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "Budweiser Gardens",
+      "venueSlug": "budweiser-gardens",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=budweiser-gardens",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=budweiser-gardens",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=budweiser-gardens",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=budweiser-gardens",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=budweiser-gardens"
+      }
+    },
+    {
+      "date": "2025-10-08",
+      "city": "Boston",
+      "region": "MA",
+      "country": "US",
+      "venueName": "TD Garden",
+      "venueSlug": "td-garden",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=td-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=td-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=td-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=td-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=td-garden"
+      }
+    },
+    {
+      "date": "2025-10-09",
+      "city": "Newark",
+      "region": "NJ",
+      "country": "US",
+      "venueName": "Prudential Center",
+      "venueSlug": "prudential-center",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=prudential-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=prudential-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=prudential-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=prudential-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=prudential-center"
+      }
+    },
+    {
+      "date": "2025-10-11",
+      "city": "Elmont",
+      "region": "NY",
+      "country": "US",
+      "venueName": "UBS Arena",
+      "venueSlug": "ubs-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ubs-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ubs-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ubs-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ubs-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ubs-arena"
+      }
+    },
+    {
+      "date": "2025-10-14",
+      "city": "Baltimore",
+      "region": "MD",
+      "country": "US",
+      "venueName": "CFG Bank Arena",
+      "venueSlug": "cfg-bank-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=cfg-bank-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=cfg-bank-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=cfg-bank-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=cfg-bank-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=cfg-bank-arena"
+      }
+    },
+    {
+      "date": "2025-10-16",
+      "city": "Philadelphia",
+      "region": "PA",
+      "country": "US",
+      "venueName": "Wells Fargo Center",
+      "venueSlug": "wells-fargo-center",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=wells-fargo-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=wells-fargo-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=wells-fargo-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=wells-fargo-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=wells-fargo-center"
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "city": "Raleigh",
+      "region": "NC",
+      "country": "US",
+      "venueName": "PNC Arena",
+      "venueSlug": "pnc-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=pnc-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=pnc-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=pnc-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=pnc-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=pnc-arena"
+      }
+    },
+    {
+      "date": "2025-10-20",
+      "city": "Orlando",
+      "region": "FL",
+      "country": "US",
+      "venueName": "Kia Center",
+      "venueSlug": "kia-center",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kia-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kia-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kia-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kia-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kia-center"
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "city": "Sunrise",
+      "region": "FL",
+      "country": "US",
+      "venueName": "Amerant Bank Arena",
+      "venueSlug": "amerant-bank-arena",
+      "ticketUrl": "https://www.ticketmaster.com/demi-lovato-tickets/artist/1224909",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=amerant-bank-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=amerant-bank-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=amerant-bank-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=amerant-bank-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=amerant-bank-arena"
+      }
+    }
+  ]
+}
