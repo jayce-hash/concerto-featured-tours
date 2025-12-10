@@ -1,6 +1,6 @@
 /* ============================================================
    Concerto — Featured Tours (Library + Date Dropdowns)
-   Based on Parking Guide (Light Ultra-Clean)
+   Ultra-Clean, Image-Free, Inter Only
    ============================================================ */
 
 :root {
@@ -27,20 +27,17 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", sans-serif;
   background: var(--bg);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Mobile-first: natural vertical scroll */
 body {
   overflow-y: auto;
 }
 
-/* Layout shell */
+/* Layout */
 .page {
   min-height: 100vh;
   display: flex;
@@ -51,7 +48,7 @@ body {
 .page-header {
   background: var(--bg);
   box-shadow: 0 2px 8px rgba(18, 30, 54, 0.04);
-  padding: 10px 0 10px;
+  padding: 10px 0;
   z-index: 10;
 }
 
@@ -67,8 +64,8 @@ body {
 }
 
 .brand-logo {
-  max-width: 260px;
-  width: 72%;
+  max-width: 240px;
+  width: 68%;
   display: block;
   margin: 0 auto;
 }
@@ -85,15 +82,10 @@ body {
   padding: 9px 40px 9px 14px;
   font-size: 15px;
   background: #fff;
-  color: var(--ink);
-  outline: none;
   box-shadow: var(--shadow-soft);
 }
 
-#tourSearch::placeholder {
-  color: #9aa3b5;
-}
-
+/* Dropdown */
 .search-wrapper::after {
   content: "⌕";
   position: absolute;
@@ -104,7 +96,6 @@ body {
   color: var(--muted);
 }
 
-/* Search dropdown */
 .search-results {
   position: absolute;
   left: 0;
@@ -135,37 +126,31 @@ body {
   background: #f5f7fb;
 }
 
-/* Main layout */
+/* Layout */
 .layout {
   flex: 1;
   padding: 12px 14px 20px;
 }
 
-/* Info panel container */
 .info-panel {
   max-width: 680px;
   margin: 0 auto;
 }
 
-.info-panel--empty .info-empty {
-  display: block;
-}
-
-/* Empty state */
 .info-empty {
-  text-align: left;
   margin-top: 16px;
   padding: 14px 16px;
   background: #fff;
   border-radius: 16px;
   border: 1px solid var(--line);
-  box-shadow: 0 2px 8px rgba(18, 30, 54, 0.06);
 }
 
 .info-empty h2 {
   margin: 0 0 6px;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .info-empty p {
@@ -174,31 +159,21 @@ body {
   color: var(--muted);
 }
 
-/* Selected tour content */
-.info-content {
-  margin-top: 14px;
-}
-
-/* Header inside tour panel */
+/* Tour header (no image) */
 .info-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 10px;
-  gap: 10px;
 }
 
 .info-header h2 {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: "Cormorant Garamond", serif;
-  letter-spacing: 0.14em;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .tour-artist-line {
-  margin: 3px 0 0;
+  margin: 2px 0 0;
   font-size: 0.88rem;
   font-weight: 500;
 }
@@ -209,29 +184,7 @@ body {
   color: var(--muted);
 }
 
-/* Optional hero image */
-.tour-image-shell {
-  width: 120px;
-  height: 80px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #D8DDE8;
-  flex-shrink: 0;
-}
-
-.tour-hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* Cards */
-.info-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .info-card {
   background: var(--card);
   border-radius: 16px;
@@ -246,18 +199,7 @@ body {
   font-weight: 600;
 }
 
-.card-body {
-  margin: 0 0 4px;
-  font-size: 0.88rem;
-  color: var(--ink);
-}
-
-.card-body--hint {
-  font-size: 0.82rem;
-  color: var(--muted);
-}
-
-/* Shows list (dates) */
+/* Shows list */
 .shows-list {
   margin-top: 6px;
   border-radius: 12px;
@@ -265,59 +207,21 @@ body {
   overflow: hidden;
 }
 
-/* Each date row */
-.show-row {
-  border-bottom: 1px solid #eef1f7;
-}
-
-.show-row:last-child {
-  border-bottom: none;
-}
-
-/* Row header (tap to expand) */
 .show-row-header {
   width: 100%;
   padding: 8px 10px;
-  border: none;
   background: #fff;
   display: flex;
   align-items: center;
   gap: 6px;
-  cursor: pointer;
   font-size: 0.86rem;
-  text-align: left;
+  cursor: pointer;
 }
 
 .show-row-header:hover {
   background: #f5f7fb;
 }
 
-.show-venue {
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.show-city {
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-.show-date {
-  margin-left: auto;
-  font-size: 0.8rem;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.show-chevron {
-  font-size: 0.7rem;
-  color: var(--muted);
-  margin-left: 6px;
-}
-
-/* Dropdown for 6 links */
 .show-dropdown {
   display: none;
   padding: 8px 10px 10px;
@@ -329,55 +233,27 @@ body {
   display: block;
 }
 
-/* Links grid */
-.show-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
-}
-
+/* Buttons */
 .show-link-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: 6px 8px;
   border-radius: 999px;
   border: 1px solid var(--line);
   background: #fff;
   font-size: 0.78rem;
-  text-decoration: none;
   color: var(--ink);
   font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: background 0.15s ease, border-color 0.15s ease,
-    box-shadow 0.15s ease, transform 0.12s ease, color 0.12s ease;
-}
-
-.show-link-btn:hover {
-  background: #F5F7FB;
-  box-shadow: var(--shadow-soft);
-  transform: translateY(-1px);
 }
 
 .show-link-btn.primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  border-color: transparent;
   color: #fff;
 }
 
-.show-link-btn.primary:hover {
-  box-shadow: var(--shadow-strong);
-}
-
-/* Tour library (browse list) */
+/* Library list */
 .browse-list {
   margin-top: 16px;
   background: #fff;
   border-radius: 16px;
-  border: 1px solid var(--line);
-  box-shadow: 0 2px 6px rgba(18, 30, 54, 0.06);
   padding: 8px 10px 10px;
 }
 
@@ -385,57 +261,19 @@ body {
   margin: 0 0 4px;
   font-size: 0.92rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .browse-item {
   padding: 6px 4px;
   font-size: 0.86rem;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}
-
-.browse-item + .browse-item {
-  border-top: 1px solid #eef1f7;
 }
 
 .browse-item:hover {
   background: #f5f7fb;
 }
 
-.browse-item-name {
-  font-weight: 500;
-}
-
-.browse-item-meta {
-  font-size: 0.78rem;
-  color: var(--muted);
-}
-
-/* Tablet/Desktop adjustments */
-@media (min-width: 768px) {
-  .page-header-inner {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .brand-logo {
-    width: 180px;
-    max-width: 180px;
-    margin: 0;
-  }
-
-  .search-wrapper {
-    max-width: 320px;
-  }
-
-  .layout {
-    padding-bottom: 32px;
-  }
-}
-
-/* Extra mobile friendliness: stack links in 1 column on narrow screens */
+/* Responsive tweaks */
 @media (max-width: 560px) {
   .show-links {
     grid-template-columns: 1fr;
