@@ -6,51 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
     rel="stylesheet"
-  />
+  >
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <div class="page">
-    <!-- Top header -->
+    <!-- Header with logo + tour search -->
     <header class="page-header">
       <div class="page-header-inner">
         <img
           src="./images/brand/concerto-logo.png"
-          alt="Concerto - From the concert, to the city"
+          alt="Concerto"
           class="brand-logo"
         />
-        <div class="header-text">
-          <h1 class="page-title">Featured Tours</h1>
-          <p class="page-subtitle">From the concert, to the city.</p>
-        </div>
-
-        <div class="toolbar">
-          <button class="toolbar-chip toolbar-chip--active" data-filter="all">All</button>
-          <button class="toolbar-chip" data-filter="concerts">Concerts</button>
-          <button class="toolbar-chip" data-filter="residencies">Residencies</button>
+        <div class="search-wrapper">
+          <input
+            id="tourSearch"
+            type="text"
+            placeholder="Search a tour..."
+            autocomplete="off"
+          />
+          <div id="searchResults" class="search-results"></div>
         </div>
       </div>
     </header>
 
+    <!-- Main content -->
     <main class="layout">
-      <section class="intro">
-        <p>
-          Explore curated tours and residencies powered by Concerto. Tap a date pill to open
-          City Guides, tickets, rideshare, bag policies, concessions, and parking for each show.
-        </p>
-      </section>
+      <section id="infoPanel" class="info-panel info-panel--empty">
+        <!-- Empty state (library mode) -->
+        <div class="info-empty">
+          <h2>Browse featured tours</h2>
+          <p>
+            Search for a tour above or pick one from the library below. Once selected, you’ll see
+            each date with quick links to City Guides, tickets, rideshare, bag policies,
+            concessions, and parking.
+          </p>
+        </div>
 
-      <!-- JS injects tour cards here -->
-      <section id="toursRoot" class="tours-root"></section>
+        <!-- Selected tour content (detail “page” mode) -->
+        <div class="info-content" hidden>
+          <header class="info-header">
+            <div>
+              <h2 id="tourName"></h2>
+              <p id="tourArtist" class="tour-artist-line"></p>
+              <p id="tourMeta" class="tour-meta-line"></p>
+            </div>
+            <div class="tour-image-shell">
+              <!-- Tour hero image: images/tours/<tourId>.jpg -->
+              <img
+                id="tourImage"
+                src=""
+                alt=""
+                class="tour-hero-image"
+              />
+            </div>
+          </header>
+
+          <div class="info-cards">
+            <article class="info-card">
+              <h3>Tour Dates</h3>
+              <p class="card-body card-body--hint">
+                Tap a date row to reveal City Guides, tickets, rideshare, bag policies,
+                concessions, and parking.
+              </p>
+              <div id="showsList" class="shows-list">
+                <!-- JS injects show rows here -->
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Library of all tours -->
+        <section class="browse-list">
+          <h3 class="browse-title">Tour Library</h3>
+          <div id="toursBrowseList">
+            <!-- JS injects .browse-item for each tour -->
+          </div>
+        </section>
+      </section>
     </main>
   </div>
 
-  <script type="module" src="./app.js"></script>
+  <script src="./app.js" defer></script>
 </body>
 </html>
