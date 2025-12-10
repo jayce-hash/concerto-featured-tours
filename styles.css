@@ -1,6 +1,6 @@
 /* ============================================================
-   Concerto — Featured Tours  
-   Minor revision: removed images + Inter for tour header
+   Concerto — Featured Tours (Library + Date Dropdowns)
+   Based on Parking Guide (Light Ultra-Clean)
    ============================================================ */
 
 :root {
@@ -27,17 +27,27 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   background: var(--bg);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
 }
 
+/* Mobile-first: natural vertical scroll */
 body {
   overflow-y: auto;
 }
 
-/* Header retained */
+/* Layout shell */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
 .page-header {
   background: var(--bg);
   box-shadow: 0 2px 8px rgba(18, 30, 54, 0.04);
@@ -63,7 +73,8 @@ body {
   margin: 0 auto;
 }
 
-/* Search retained */
+/* Search */
+.search-wrapper is positioned relative for the icon */
 .search-wrapper {
   position: relative;
 }
@@ -80,6 +91,10 @@ body {
   box-shadow: var(--shadow-soft);
 }
 
+#tourSearch::placeholder {
+  color: #9aa3b5;
+}
+
 .search-wrapper::after {
   content: "⌕";
   position: absolute;
@@ -90,20 +105,328 @@ body {
   color: var(--muted);
 }
 
-/* Remove image containers */
-.tour-image-shell,
-.tour-hero-image {
-  display: none !important;
+/* Search dropdown */
+.search-results {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110%;
+  margin-top: 4px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 26px rgba(18, 30, 54, 0.18);
+  max-height: 260px;
+  overflow-y: auto;
+  display: none;
+  z-index: 20;
 }
 
-/* TOUR NAME — changed to Inter */
+.search-results.visible {
+  display: block;
+}
+
+.search-result-item {
+  padding: 8px 11px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.search-result-item:hover {
+  background: #f5f7fb;
+}
+
+/* Main layout */
+.layout {
+  flex: 1;
+  padding: 12px 14px 20px;
+}
+
+/* Info panel container */
+.info-panel {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.info-panel--empty .info-empty {
+  display: block;
+}
+
+/* Empty state */
+.info-empty {
+  text-align: left;
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 8px rgba(18, 30, 54, 0.06);
+}
+
+.info-empty h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info-empty p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Selected tour content */
+.info-content {
+  margin-top: 14px;
+}
+
+/* Header inside tour panel */
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
 .info-header h2 {
   margin: 0;
   font-size: 1rem;
-  font-weight: 700;
-  font-family: "Inter", sans-serif !important;
+  font-weight: 600;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-/* Everything else BELOW is untouched from your original file */
+.tour-artist-line {
+  margin: 3px 0 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.tour-meta-line {
+  margin: 1px 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* (Removed tour-image-shell and tour-hero-image, no longer used) */
+
+/* Cards */
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-card {
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  padding: 12px 14px;
+  box-shadow: 0 2px 6px rgba(18, 30, 54, 0.06);
+}
+
+.info-card h3 {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.card-body {
+  margin: 0 0 4px;
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+
+.card-body--hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* Shows list (dates) */
+.shows-list {
+  margin-top: 6px;
+  border-radius: 12px;
+  border: 1px solid #eef1f7;
+  overflow: hidden;
+}
+
+/* Each date row */
+.show-row {
+  border-bottom: 1px solid #eef1f7;
+}
+
+.show-row:last-child {
+  border-bottom: none;
+}
+
+/* Row header (tap to expand) */
+.show-row-header {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 0.86rem;
+  text-align: left;
+}
+
+.show-row-header:hover {
+  background: #f5f7fb;
+}
+
+.show-venue {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.show-city {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.show-date {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.show-chevron {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-left: 6px;
+}
+
+/* Dropdown for 6 links */
+.show-dropdown {
+  display: none;
+  padding: 8px 10px 10px;
+  background: #fbfcff;
+  border-top: 1px solid #eef1f7;
+}
+
+.show-dropdown.open {
+  display: block;
+}
+
+/* Links grid */
+.show-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.show-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 0.78rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.15s ease, border-color 0.15s ease,
+    box-shadow 0.15s ease, transform 0.12s ease, color 0.12s ease;
+}
+
+.show-link-btn:hover {
+  background: #F5F7FB;
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-1px);
+}
+
+.show-link-btn.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-color: transparent;
+  color: #fff;
+}
+
+.show-link-btn.primary:hover {
+  box-shadow: var(--shadow-strong);
+}
+
+/* Tour library (browse list) */
+.browse-list {
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 6px rgba(18, 30, 54, 0.06);
+  padding: 8px 10px 10px;
+}
+
+.browse-title {
+  margin: 0 0 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.browse-item {
+  padding: 6px 4px;
+  font-size: 0.86rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.browse-item + .browse-item {
+  border-top: 1px solid #eef1f7;
+}
+
+.browse-item:hover {
+  background: #f5f7fb;
+}
+
+.browse-item-name {
+  font-weight: 500;
+}
+
+.browse-item-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Tablet/Desktop adjustments */
+@media (min-width: 768px) {
+  .page-header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-logo {
+    width: 180px;
+    max-width: 180px;
+    margin: 0;
+  }
+
+  .search-wrapper {
+    max-width: 320px;
+  }
+
+  .layout {
+    padding-bottom: 32px;
+  }
+}
+
+/* Extra mobile friendliness: stack links in 1 column on narrow screens */
+@media (max-width: 560px) {
+  .show-links {
+    grid-template-columns: 1fr;
+  }
+}
