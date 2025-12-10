@@ -1,5 +1,5 @@
 // app.js
-// Concerto · Featured Tours — simple static loader
+// Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
   "jonas20-greetings-from-your-hometown.json",
@@ -9,6 +9,11 @@ const TOUR_FILES = [
   "conan-gray-wishbone-world-tour-na.json",
   "lady-gaga-the-mayhem-ball-na-2026.json"
 ];
+
+let allTours = [];
+let selectedTour = null;
+
+/* ---------- Loading ---------- */
 
 async function fetchTour(fileName) {
   try {
@@ -45,17 +50,21 @@ function getEarliestShowDate(tour) {
   return new Date(tour.shows[0].date);
 }
 
+/* ---------- Helpers ---------- */
+
+function slugify(str) {
+  return (str || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function getTourSlug(tour) {
+  return tour.tourId || slugify(tour.tourName || "tour");
+}
+
 function getTourImageSrc(tour) {
-  let id = tour.tourId;
-
-  if (!id) {
-    const base = tour.tourName || "tour";
-    id = base
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/(^-|-$)/g, "");
-  }
-
+  const id = getTourSlug(tour);
   return `./images/tours/${id}.jpg`;
 }
 
@@ -66,181 +75,293 @@ function formatShortDate(isoDateStr) {
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
-function createTourCard(tour) {
-  const card = document.createElement("article");
-  card.className = "tour-card";
+/* ---------- UI: Tour Library ---------- */
 
-  // Media
-  const media = document.createElement("div");
-  media.className = "tour-media";
+function renderTourLibrary(tours) {
+  const listEl = document.getElementById("toursBrowseList");
+  if (!listEl) return;
+  listEl.innerHTML = "";
 
-  const imageWrapper = document.createElement("div");
-  imageWrapper.className = "tour-image-wrapper";
+  tours.forEach((tour) => {
+    const item = document.createElement("div");
+    item.className = "browse-item";
+    const slug = getTourSlug(tour);
+    item.dataset.tourSlug = slug;
 
-  const img = document.createElement("img");
-  img.className = "tour-image";
-  img.src = getTourImageSrc(tour);
-  img.alt = `${tour.tourName || "Tour artwork"}`;
+    const name = document.createElement("div");
+    name.className = "browse-item-name";
+    name.textContent = tour.tourName || "Untitled Tour";
 
-  imageWrapper.appendChild(img);
-  media.appendChild(imageWrapper);
+    const meta = document.createElement("div");
+    meta.className = "browse-item-meta";
+    const artist = tour.artist || "";
+    const showCount = tour.shows ? tour.shows.length : 0;
+    const year = tour.year || "";
+    const bits = [];
+    if (artist) bits.push(artist);
+    if (showCount) bits.push(`${showCount} show${showCount > 1 ? "s" : ""}`);
+    if (year) bits.push(year);
+    meta.textContent = bits.join(" · ");
 
-  // Body
-  const body = document.createElement("div");
-  body.className = "tour-body";
+    item.appendChild(name);
+    if (meta.textContent.trim()) item.appendChild(meta);
 
-  const header = document.createElement("header");
-  header.className = "tour-header";
+    item.addEventListener("click", () => {
+      navigateToTour(tour);
+    });
 
-  const title = document.createElement("h2");
-  title.className = "tour-name";
-  title.textContent = tour.tourName || "Untitled Tour";
+    listEl.appendChild(item);
+  });
+}
 
-  const artist = document.createElement("p");
-  artist.className = "tour-artist";
-  artist.textContent = tour.artist || "";
+/* ---------- UI: Selected Tour (Detail Page Mode) ---------- */
 
-  const meta = document.createElement("p");
-  meta.className = "tour-meta";
+function selectTour(tour, { hideLibrary = false } = {}) {
+  selectedTour = tour;
+  const panel = document.getElementById("infoPanel");
+  const emptyState = panel.querySelector(".info-empty");
+  const content = panel.querySelector(".info-content");
+  const browseSection = document.querySelector(".browse-list");
+
+  if (hideLibrary && browseSection) {
+    browseSection.style.display = "none";
+  } else if (browseSection) {
+    browseSection.style.display = "";
+  }
+
+  if (emptyState) emptyState.style.display = "none";
+  if (content) content.hidden = false;
+  panel.classList.remove("info-panel--empty");
+
+  // Header content
+  const nameEl = document.getElementById("tourName");
+  const artistEl = document.getElementById("tourArtist");
+  const metaEl = document.getElementById("tourMeta");
+  const imgEl = document.getElementById("tourImage");
+
+  nameEl.textContent = tour.tourName || "Untitled Tour";
+  artistEl.textContent = tour.artist || "";
+
   const showCount = tour.shows ? tour.shows.length : 0;
-  const yearLabel = tour.year || "";
-  const regionLabel = tour.region || tour.note || "";
-  const parts = [];
-  if (showCount) parts.push(`${showCount} show${showCount > 1 ? "s" : ""}`);
-  if (yearLabel) parts.push(String(yearLabel));
-  if (regionLabel) parts.push(regionLabel);
-  meta.textContent = parts.join(" · ");
+  const year = tour.year || "";
+  const region = tour.region || tour.note || "";
+  const bits = [];
+  if (showCount) bits.push(`${showCount} show${showCount > 1 ? "s" : ""}`);
+  if (year) bits.push(year);
+  if (region) bits.push(region);
+  metaEl.textContent = bits.join(" · ");
 
-  header.appendChild(title);
-  if (artist.textContent.trim()) header.appendChild(artist);
-  if (meta.textContent.trim()) header.appendChild(meta);
-
-  // City summary
-  const cities = (tour.shows || []).map((s) => s.city).filter(Boolean);
-  const uniqueCities = Array.from(new Set(cities));
-  const datesSummary = document.createElement("div");
-  datesSummary.className = "tour-dates-summary";
-  if (uniqueCities.length) {
-    const list =
-      uniqueCities.length <= 4
-        ? uniqueCities.join(" · ")
-        : `${uniqueCities.slice(0, 3).join(" · ")} · +${
-            uniqueCities.length - 3
-          } more`;
-    datesSummary.textContent = list;
+  if (imgEl) {
+    const src = getTourImageSrc(tour);
+    imgEl.src = src;
+    imgEl.alt = `${tour.tourName || "Tour artwork"}`;
   }
 
-  const pillRow = document.createElement("div");
-  pillRow.className = "tour-pill-row";
-  (tour.shows || []).forEach((show) => pillRow.appendChild(createDatePill(show)));
-
-  body.appendChild(header);
-  if (datesSummary.textContent.trim()) body.appendChild(datesSummary);
-  body.appendChild(pillRow);
-
-  card.appendChild(media);
-  card.appendChild(body);
-
-  return card;
+  renderShowsList(tour);
 }
 
-function createDatePill(show) {
-  const pill = document.createElement("button");
-  pill.type = "button";
-  pill.className = "date-pill";
+function renderShowsList(tour) {
+  const listEl = document.getElementById("showsList");
+  if (!listEl) return;
+  listEl.innerHTML = "";
 
-  const header = document.createElement("div");
-  header.className = "date-pill-header";
+  (tour.shows || []).forEach((show) => {
+    const row = document.createElement("div");
+    row.className = "show-row";
 
-  const venueSpan = document.createElement("span");
-  venueSpan.className = "date-pill-venue";
-  venueSpan.textContent = show.venueName || "Venue";
+    const headerBtn = document.createElement("button");
+    headerBtn.type = "button";
+    headerBtn.className = "show-row-header";
 
-  const dateSpan = document.createElement("span");
-  dateSpan.className = "date-pill-date";
-  dateSpan.textContent = formatShortDate(show.date);
+    const venueSpan = document.createElement("span");
+    venueSpan.className = "show-venue";
+    venueSpan.textContent = show.venueName || "Venue";
 
-  const chevron = document.createElement("span");
-  chevron.className = "date-pill-chevron";
-  chevron.textContent = "▾";
+    const citySpan = document.createElement("span");
+    citySpan.className = "show-city";
+    const cityBits = [];
+    if (show.city) cityBits.push(show.city);
+    if (show.state) cityBits.push(show.state);
+    citySpan.textContent = cityBits.join(", ");
 
-  header.appendChild(venueSpan);
-  header.appendChild(dateSpan);
-  header.appendChild(chevron);
+    const dateSpan = document.createElement("span");
+    dateSpan.className = "show-date";
+    dateSpan.textContent = formatShortDate(show.date);
 
-  const dropdown = document.createElement("div");
-  dropdown.className = "pill-dropdown";
+    const chevron = document.createElement("span");
+    chevron.className = "show-chevron";
+    chevron.textContent = "▾";
 
-  const linksGrid = document.createElement("div");
-  linksGrid.className = "pill-links";
+    headerBtn.appendChild(venueSpan);
+    if (citySpan.textContent.trim()) headerBtn.appendChild(citySpan);
+    headerBtn.appendChild(dateSpan);
+    headerBtn.appendChild(chevron);
 
-  const links = show.links || {};
+    const dropdown = document.createElement("div");
+    dropdown.className = "show-dropdown";
 
-  function addLink(label, url, isPrimary = false) {
-    const a = document.createElement("a");
-    a.textContent = label;
-    a.className = "pill-link-btn" + (isPrimary ? " primary" : "");
-    if (url) {
-      a.href = url;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-    } else {
-      a.href = "javascript:void(0)";
-      a.style.opacity = "0.45";
-      a.style.pointerEvents = "none";
+    const linksWrap = document.createElement("div");
+    linksWrap.className = "show-links";
+
+    const links = show.links || {};
+
+    function addLink(label, url, isPrimary = false) {
+      const a = document.createElement("a");
+      a.textContent = label;
+      a.className = "show-link-btn" + (isPrimary ? " primary" : "");
+      if (url) {
+        a.href = url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      } else {
+        a.href = "javascript:void(0)";
+        a.style.opacity = "0.45";
+        a.style.pointerEvents = "none";
+      }
+      linksWrap.appendChild(a);
     }
-    linksGrid.appendChild(a);
-  }
 
-  addLink("Buy Tickets", links.ticketUrl, true);
-  addLink("City Guide", links.cityGuide);
-  addLink("Rideshare", links.rideshare);
-  addLink("Bag Policy", links.bagPolicy);
-  addLink("Concessions", links.concessions);
-  addLink("Parking", links.parking);
+    addLink("Buy Tickets", links.ticketUrl, true);
+    addLink("City Guide", links.cityGuide);
+    addLink("Rideshare", links.rideshare);
+    addLink("Bag Policy", links.bagPolicy);
+    addLink("Concessions", links.concessions);
+    addLink("Parking", links.parking);
 
-  dropdown.appendChild(linksGrid);
-  pill.appendChild(header);
-  pill.appendChild(dropdown);
+    dropdown.appendChild(linksWrap);
 
-  pill.addEventListener("click", (event) => {
-    event.stopPropagation();
-    const isOpen = dropdown.classList.contains("open");
-    document
-      .querySelectorAll(".pill-dropdown.open")
-      .forEach((el) => el.classList.remove("open"));
-    if (!isOpen) dropdown.classList.add("open");
-  });
+    headerBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const isOpen = dropdown.classList.contains("open");
+      document
+        .querySelectorAll(".show-dropdown.open")
+        .forEach((el) => el.classList.remove("open"));
+      if (!isOpen) dropdown.classList.add("open");
+    });
 
-  return pill;
-}
-
-function setupGlobalClickToClose() {
-  document.addEventListener("click", () => {
-    document
-      .querySelectorAll(".pill-dropdown.open")
-      .forEach((el) => el.classList.remove("open"));
+    row.appendChild(headerBtn);
+    row.appendChild(dropdown);
+    listEl.appendChild(row);
   });
 }
+
+/* ---------- URL Routing ---------- */
+
+function navigateToTour(tour) {
+  const slug = getTourSlug(tour);
+  const url = new URL(window.location.href);
+  url.searchParams.set("tour", slug);
+
+  // Update address bar without full reload
+  window.history.pushState({ tourSlug: slug }, "", url.toString());
+
+  // Enter "tour page" mode (hide library)
+  selectTour(tour, { hideLibrary: true });
+}
+
+function enterFromUrl() {
+  const url = new URL(window.location.href);
+  const slug = url.searchParams.get("tour");
+  if (!slug) return null;
+
+  const match = allTours.find((t) => getTourSlug(t) === slug);
+  if (!match) return null;
+
+  // Direct link to this tour: hide library so it feels like its own page
+  selectTour(match, { hideLibrary: true });
+  return match;
+}
+
+/* ---------- Search ---------- */
+
+function setupSearch() {
+  const input = document.getElementById("tourSearch");
+  const resultsEl = document.getElementById("searchResults");
+  if (!input || !resultsEl) return;
+
+  input.addEventListener("input", () => {
+    const q = input.value.trim().toLowerCase();
+    resultsEl.innerHTML = "";
+    if (!q) {
+      resultsEl.classList.remove("visible");
+      return;
+    }
+
+    const matches = allTours.filter((tour) => {
+      const name = (tour.tourName || "").toLowerCase();
+      const artist = (tour.artist || "").toLowerCase();
+      return name.includes(q) || artist.includes(q);
+    });
+
+    if (!matches.length) {
+      resultsEl.classList.remove("visible");
+      return;
+    }
+
+    matches.forEach((tour) => {
+      const item = document.createElement("div");
+      item.className = "search-result-item";
+      item.textContent = tour.tourName || "Untitled Tour";
+      item.addEventListener("click", () => {
+        input.value = tour.tourName || "";
+        resultsEl.classList.remove("visible");
+        navigateToTour(tour);
+      });
+      resultsEl.appendChild(item);
+    });
+
+    resultsEl.classList.add("visible");
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!resultsEl.contains(event.target) && event.target !== input) {
+      resultsEl.classList.remove("visible");
+    }
+  });
+}
+
+/* ---------- Init ---------- */
 
 async function initFeaturedTours() {
-  const root = document.getElementById("toursRoot");
-  if (!root) return;
+  allTours = await loadTours();
 
-  const tours = await loadTours();
+  renderTourLibrary(allTours);
+  setupSearch();
 
-  if (!tours.length) {
-    const msg = document.createElement("p");
-    msg.textContent = "No tours available at the moment.";
-    msg.style.fontSize = "0.9rem";
-    msg.style.color = "var(--muted)";
-    root.appendChild(msg);
-    return;
+  // If URL has ?tour=..., go straight into that tour's page mode
+  const fromUrl = enterFromUrl();
+
+  // If no tour in URL, we stay in library mode (empty state + browse list)
+  if (!fromUrl && allTours.length === 1) {
+    // Optional: auto-open if only one tour exists
+    // navigateToTour(allTours[0]);
   }
 
-  tours.forEach((tour) => root.appendChild(createTourCard(tour)));
+  // Handle back/forward navigation
+  window.addEventListener("popstate", () => {
+    const url = new URL(window.location.href);
+    const slug = url.searchParams.get("tour");
+    const browseSection = document.querySelector(".browse-list");
+    const panel = document.getElementById("infoPanel");
+    const emptyState = panel.querySelector(".info-empty");
+    const content = panel.querySelector(".info-content");
 
-  setupGlobalClickToClose();
+    if (!slug) {
+      // Back to library view
+      if (browseSection) browseSection.style.display = "";
+      if (content) content.hidden = true;
+      if (emptyState) {
+        emptyState.style.display = "block";
+        panel.classList.add("info-panel--empty");
+      }
+      return;
+    }
+
+    const match = allTours.find((t) => getTourSlug(t) === slug);
+    if (match) {
+      selectTour(match, { hideLibrary: true });
+    }
+  });
 }
 
 window.addEventListener("DOMContentLoaded", initFeaturedTours);
