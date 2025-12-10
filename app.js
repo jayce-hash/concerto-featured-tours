@@ -12,7 +12,6 @@ const TOUR_FILES = [
   'ariana-grande-the-eternal-sunshine-tour-na-2026.json',
   'ed-sheeran-the-loop-tour-na-2026.json',
   'olivia-dean-the-art-of-loving-live-na-2026.json',
-  'parker-mccollum-2026-tour-na.json',
   'zach-bryan-2026-tour-na.json'
 ];
 
