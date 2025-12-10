@@ -37,10 +37,10 @@
       </div>
     </header>
 
+    <!-- Main content -->
     <main class="layout">
       <section id="infoPanel" class="info-panel info-panel--empty">
-
-        <!-- Empty state -->
+        <!-- Empty state (library mode) -->
         <div class="info-empty">
           <h2>Browse featured tours</h2>
           <p>
@@ -50,7 +50,7 @@
           </p>
         </div>
 
-        <!-- Selected tour content WITHOUT HERO IMAGE -->
+        <!-- Selected tour content (detail “page” mode) -->
         <div class="info-content" hidden>
           <header class="info-header">
             <div>
@@ -67,15 +67,19 @@
                 Tap a date row to reveal City Guides, tickets, rideshare, bag policies,
                 concessions, and parking.
               </p>
-              <div id="showsList" class="shows-list"></div>
+              <div id="showsList" class="shows-list">
+                <!-- JS injects show rows here -->
+              </div>
             </article>
           </div>
         </div>
 
-        <!-- Tour Library -->
+        <!-- Library of all tours -->
         <section class="browse-list">
           <h3 class="browse-title">Tour Library</h3>
-          <div id="toursBrowseList"></div>
+          <div id="toursBrowseList">
+            <!-- JS injects .browse-item for each tour -->
+          </div>
         </section>
       </section>
     </main>
