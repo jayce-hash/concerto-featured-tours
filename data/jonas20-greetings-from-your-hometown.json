@@ -1,1 +1,206 @@
-
+[
+  {
+    "id": "2025-12-09-north-little-rock-ar-simmons-bank-arena",
+    "date": "2025-12-09",
+    "city": "North Little Rock",
+    "region": "AR",
+    "country": "US",
+    "venueName": "Simmons Bank Arena",
+    "venueSlug": "simmons-bank-arena",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-north-little-rock-arkansas-12-09-2025/event/1B006330EE9B6BD4",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=simmons-bank-arena",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=simmons-bank-arena",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=simmons-bank-arena",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=simmons-bank-arena",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=simmons-bank-arena"
+    }
+  },
+  {
+    "id": "2025-12-11-rosemont-il-allstate-arena",
+    "date": "2025-12-11",
+    "city": "Rosemont",
+    "region": "IL",
+    "country": "US",
+    "venueName": "Allstate Arena",
+    "venueSlug": "allstate-arena",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-rosemont-illinois-12-11-2025/event/0400633102A05B8A",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=allstate-arena",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=allstate-arena",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=allstate-arena",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=allstate-arena",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=allstate-arena"
+    }
+  },
+  {
+    "id": "2025-12-12-grand-rapids-mi-van-andel-arena",
+    "date": "2025-12-12",
+    "city": "Grand Rapids",
+    "region": "MI",
+    "country": "US",
+    "venueName": "Van Andel Arena",
+    "venueSlug": "van-andel-arena",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-grand-rapids-michigan-12-12-2025/event/080063309FA92158",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=van-andel-arena",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=van-andel-arena",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=van-andel-arena",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=van-andel-arena",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=van-andel-arena"
+    }
+  },
+  {
+    "id": "2025-12-14-hamilton-on-td-coliseum",
+    "date": "2025-12-14",
+    "city": "Hamilton",
+    "region": "ON",
+    "country": "CA",
+    "venueName": "TD Coliseum",
+    "venueSlug": "td-coliseum",
+    "ticketUrl": "https://www.ticketmaster.ca/jonas-brothers-jonas20-greetings-from-your-hamilton-ontario-12-14-2025/event/10006330E9FB6A21",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=td-coliseum",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=td-coliseum",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=td-coliseum",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=td-coliseum",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=td-coliseum"
+    }
+  },
+  {
+    "id": "2025-12-15-kanata-on-canadian-tire-centre",
+    "date": "2025-12-15",
+    "city": "Kanata",
+    "region": "ON",
+    "country": "CA",
+    "venueName": "Canadian Tire Centre",
+    "venueSlug": "canadian-tire-centre",
+    "ticketUrl": "https://www.ticketmaster.ca/jonas-brothers-jonas20-greetings-from-your-ottawa-ontario-12-15-2025/event/3100632ACAD22BF5",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=canadian-tire-centre",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=canadian-tire-centre",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=canadian-tire-centre",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=canadian-tire-centre",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=canadian-tire-centre"
+    }
+  },
+  {
+    "id": "2025-12-17-montreal-qc-centre-bell",
+    "date": "2025-12-17",
+    "city": "Montreal",
+    "region": "QC",
+    "country": "CA",
+    "venueName": "Centre Bell",
+    "venueSlug": "centre-bell",
+    "ticketUrl": "https://www.ticketmaster.ca/jonas-brothers-jonas20-greetings-from-your-montreal-quebec-12-17-2025/event/3100632BB91F2E53",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=centre-bell",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=centre-bell",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=centre-bell",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=centre-bell",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=centre-bell"
+    }
+  },
+  {
+    "id": "2025-12-18-manchester-nh-snhu-arena",
+    "date": "2025-12-18",
+    "city": "Manchester",
+    "region": "NH",
+    "country": "US",
+    "venueName": "SNHU Arena",
+    "venueSlug": "snhu-arena",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-manchester-new-hampshire-12-18-2025/event/01006338CED76597",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=snhu-arena",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=snhu-arena",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=snhu-arena",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=snhu-arena",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=snhu-arena"
+    }
+  },
+  {
+    "id": "2025-12-20-baltimore-md-cfg-bank-arena",
+    "date": "2025-12-20",
+    "city": "Baltimore",
+    "region": "MD",
+    "country": "US",
+    "venueName": "CFG Bank Arena",
+    "venueSlug": "cfg-bank-arena",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-baltimore-maryland-12-20-2025/event/150063302A016E3E",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=cfg-bank-arena",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=cfg-bank-arena",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=cfg-bank-arena",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=cfg-bank-arena",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=cfg-bank-arena"
+    }
+  },
+  {
+    "id": "2025-12-21-belmont-park-ny-ubs-arena",
+    "date": "2025-12-21",
+    "city": "Belmont Park",
+    "region": "NY",
+    "country": "US",
+    "venueName": "UBS Arena",
+    "venueSlug": "ubs-arena",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-belmont-park-new-york-12-21-2025/event/30006330249D6C43",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ubs-arena",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ubs-arena",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ubs-arena",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ubs-arena",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ubs-arena"
+    }
+  },
+  {
+    "id": "2025-12-22-brooklyn-ny-barclays-center",
+    "date": "2025-12-22",
+    "city": "Brooklyn",
+    "region": "NY",
+    "country": "US",
+    "venueName": "Barclays Center",
+    "venueSlug": "barclays-center",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-brooklyn-new-york-12-22-2025/event/30006331B0653A9C",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=barclays-center",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=barclays-center",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=barclays-center",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=barclays-center",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=barclays-center"
+    }
+  },
+  {
+    "id": "2025-12-30-jacksonville-fl-dailys-place",
+    "date": "2025-12-30",
+    "city": "Jacksonville",
+    "region": "FL",
+    "country": "US",
+    "venueName": "Daily's Place",
+    "venueSlug": "dailys-place",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-jonas20-greetings-from-your-jacksonville-florida-12-30-2025/event/22006371CE176006",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dailys-place",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dailys-place",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dailys-place",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dailys-place",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dailys-place"
+    }
+  },
+  {
+    "id": "2025-12-31-hollywood-fl-hard-rock-live",
+    "date": "2025-12-31",
+    "city": "Hollywood",
+    "region": "FL",
+    "country": "US",
+    "venueName": "Hard Rock Live (Seminole Hard Rock Hollywood)",
+    "venueSlug": "hard-rock-live-hollywood",
+    "ticketUrl": "https://www.ticketmaster.com/jonas-brothers-greetings-from-2026-hollywood-florida-12-31-2025/event/0D006366FBC49914",
+    "links": {
+      "cityGuide": "https://concerto-venue-map.netlify.app/?venue=hard-rock-live-hollywood",
+      "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=hard-rock-live-hollywood",
+      "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=hard-rock-live-hollywood",
+      "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=hard-rock-live-hollywood",
+      "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=hard-rock-live-hollywood"
+    }
+  }
+]
