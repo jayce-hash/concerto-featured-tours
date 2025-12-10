@@ -5,11 +5,11 @@
   <title>Concerto · Featured Tours</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  <!-- Fonts -->
+  <!-- Inter only -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
 
@@ -40,6 +40,7 @@
     <!-- Main content -->
     <main class="layout">
       <section id="infoPanel" class="info-panel info-panel--empty">
+
         <!-- Empty state (library mode) -->
         <div class="info-empty">
           <h2>Browse featured tours</h2>
@@ -58,15 +59,6 @@
               <p id="tourArtist" class="tour-artist-line"></p>
               <p id="tourMeta" class="tour-meta-line"></p>
             </div>
-            <div class="tour-image-shell">
-              <!-- Tour hero image: images/tours/<tourId>.jpg -->
-              <img
-                id="tourImage"
-                src=""
-                alt=""
-                class="tour-hero-image"
-              />
-            </div>
           </header>
 
           <div class="info-cards">
@@ -76,9 +68,7 @@
                 Tap a date row to reveal City Guides, tickets, rideshare, bag policies,
                 concessions, and parking.
               </p>
-              <div id="showsList" class="shows-list">
-                <!-- JS injects show rows here -->
-              </div>
+              <div id="showsList" class="shows-list"></div>
             </article>
           </div>
         </div>
@@ -86,10 +76,9 @@
         <!-- Library of all tours -->
         <section class="browse-list">
           <h3 class="browse-title">Tour Library</h3>
-          <div id="toursBrowseList">
-            <!-- JS injects .browse-item for each tour -->
-          </div>
+          <div id="toursBrowseList"></div>
         </section>
+
       </section>
     </main>
   </div>
