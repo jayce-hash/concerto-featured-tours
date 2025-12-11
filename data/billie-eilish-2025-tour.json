@@ -1,1 +1,304 @@
+{
+  "tourId": "billie-eilish-2025-tour",
+  "tourName": "Billie Eilish · 2025 Tour",
+  "artist": "Billie Eilish",
+  "year": "2025",
+  "region": "North America 2025",
+  "shows": [
+    {
+      "date": "2025-10-09",
+      "city": "Miami",
+      "state": "FL",
+      "venueName": "Kaseya Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-11",
+      "city": "Miami",
+      "state": "FL",
+      "venueName": "Kaseya Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-12",
+      "city": "Miami",
+      "state": "FL",
+      "venueName": "Kaseya Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-14",
+      "city": "Orlando",
+      "state": "FL",
+      "venueName": "Kia Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-16",
+      "city": "Raleigh",
+      "state": "NC",
+      "venueName": "Lenovo Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-17",
+      "city": "Raleigh",
+      "state": "NC",
+      "venueName": "Lenovo Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-19",
+      "city": "Charlotte",
+      "state": "NC",
+      "venueName": "Spectrum Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-20",
+      "city": "Charlotte",
+      "state": "NC",
+      "venueName": "Spectrum Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "city": "Philadelphia",
+      "state": "PA",
+      "venueName": "Wells Fargo Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "city": "Belmont Park",
+      "state": "NY",
+      "venueName": "UBS Arena",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "city": "Belmont Park",
+      "state": "NY",
+      "venueName": "UBS Arena",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-07",
+      "city": "New Orleans",
+      "state": "LA",
+      "venueName": "Smoothie King Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "city": "New Orleans",
+      "state": "LA",
+      "venueName": "Smoothie King Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-10",
+      "city": "Tulsa",
+      "state": "OK",
+      "venueName": "BOK Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-11",
+      "city": "Tulsa",
+      "state": "OK",
+      "venueName": "BOK Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-13",
+      "city": "Austin",
+      "state": "TX",
+      "venueName": "Moody Center ATX",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-14",
+      "city": "Austin",
+      "state": "TX",
+      "venueName": "Moody Center ATX",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-18",
+      "city": "Phoenix",
+      "state": "AZ",
+      "venueName": "PHX Arena (formerly Footprint Center)",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-19",
+      "city": "Phoenix",
+      "state": "AZ",
+      "venueName": "PHX Arena (formerly Footprint Center)",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "city": "San Francisco",
+      "state": "CA",
+      "venueName": "Chase Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "city": "San Francisco",
+      "state": "CA",
+      "venueName": "Chase Center",
+      "links": {
+        "ticketUrl": "",
+        "cityGuide": "",
+        "rideshare": "",
+        "bagPolicy": "",
+        "concessions": "",
+        "parking": ""
+      }
+    }
+  ]
+}
 
