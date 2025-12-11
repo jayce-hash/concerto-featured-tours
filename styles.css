@@ -73,8 +73,7 @@ body {
   margin: 0 auto;
 }
 
-/* Search */
-.search-wrapper is positioned relative for the icon */
+/* Search (wrapper positioned relative for the icon) */
 .search-wrapper {
   position: relative;
 }
@@ -212,8 +211,6 @@ body {
   color: var(--muted);
 }
 
-/* (Removed tour-image-shell and tour-hero-image, no longer used) */
-
 /* Cards */
 .info-cards {
   display: flex;
@@ -275,35 +272,27 @@ body {
   cursor: pointer;
   font-size: 0.86rem;
   text-align: left;
+  color: var(--ink); /* ← NEW: ensures text isn't iOS blue */
 }
 
-.show-row-header:hover {
-  background: #f5f7fb;
-}
-
+/* NEW OVERRIDES: Fix light blue text */
 .show-venue {
   font-weight: 500;
+  color: var(--ink); /* ← force navy */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.show-city {
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-.show-date {
-  margin-left: auto;
-  font-size: 0.8rem;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
+.show-city,
+.show-date,
 .show-chevron {
-  font-size: 0.7rem;
-  color: var(--muted);
-  margin-left: 6px;
+  color: var(--muted); /* keep muted gray */
+}
+
+/* Row hover */
+.show-row-header:hover {
+  background: #f5f7fb;
 }
 
 /* Dropdown for 6 links */
@@ -401,7 +390,7 @@ body {
   color: var(--muted);
 }
 
-/* Tablet/Desktop adjustments */
+/* Tablet/Desktop */
 @media (min-width: 768px) {
   .page-header-inner {
     flex-direction: row;
@@ -424,7 +413,7 @@ body {
   }
 }
 
-/* Extra mobile friendliness: stack links in 1 column on narrow screens */
+/* Extra mobile friendliness */
 @media (max-width: 560px) {
   .show-links {
     grid-template-columns: 1fr;
