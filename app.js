@@ -225,7 +225,8 @@ function renderShowsList(tour) {
       linksWrap.appendChild(a);
     }
 
-    addLink("Buy Tickets", links.ticketUrl, true);
+    // 🔥 FIX: use show.ticketUrl (with a fallback to links.ticketUrl just in case)
+    addLink("Buy Tickets", show.ticketUrl || links.ticketUrl, true);
     addLink("City Guide", links.cityGuide);
     addLink("Rideshare", links.rideshare);
     addLink("Bag Policy", links.bagPolicy);
