@@ -31,7 +31,7 @@
       "venueName": "Madison Square Garden",
       "venueSlug": "madison-square-garden",
       "links": {
-        "ticketUrl": "",
+        "ticketUrl": "https://www.ticketmaster.com/z100s-jingle-ball-presented-by-capital-new-york-new-york-12-12-2025/event/3B006339C9951A53",
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=madison-square-garden",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=madison-square-garden",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=madison-square-garden",
@@ -48,7 +48,7 @@
       "venueName": "TD Garden",
       "venueSlug": "td-garden",
       "links": {
-        "ticketUrl": "",
+        "ticketUrl": "https://www.ticketmaster.com/kiss-108s-jingle-ball-presented-by-boston-massachusetts-12-14-2025/event/0100631D9F8248D4",
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=td-garden",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=td-garden",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=td-garden",
@@ -65,7 +65,7 @@
       "venueName": "Xfinity Mobile Arena",
       "venueSlug": "xfinity-mobile-arena",
       "links": {
-        "ticketUrl": "",
+        "ticketUrl": "https://www.ticketmaster.com/q102s-jingle-ball-presented-by-capital-philadelphia-pennsylvania-12-15-2025/event/3000632BF0484A56",
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=xfinity-mobile-arena",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=xfinity-mobile-arena",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=xfinity-mobile-arena",
@@ -82,7 +82,7 @@
       "venueName": "Capital One Arena",
       "venueSlug": "capital-one-arena",
       "links": {
-        "ticketUrl": "",
+        "ticketUrl": "https://www.ticketmaster.com/hot-995s-jingle-ball-presented-by-washington-district-of-columbia-12-16-2025/event/1500631D80D119DE",
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=capital-one-arena",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=capital-one-arena",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=capital-one-arena",
@@ -99,7 +99,7 @@
       "venueName": "State Farm Arena",
       "venueSlug": "state-farm-arena",
       "links": {
-        "ticketUrl": "",
+        "ticketUrl": "https://www.ticketmaster.com/961-the-beats-jingle-ball-presented-atlanta-georgia-12-18-2025/event/0E0063310C9C6BB0",
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=state-farm-arena",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=state-farm-arena",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=state-farm-arena",
@@ -116,7 +116,7 @@
       "venueName": "Kaseya Center",
       "venueSlug": "kaseya-center",
       "links": {
-        "ticketUrl": "",
+        "ticketUrl": "https://www.ticketmaster.com/y1007s-jingle-ball-presented-by-capital-miami-florida-12-20-2025/event/0D00632A2FE0611C",
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kaseya-center",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kaseya-center",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kaseya-center",
