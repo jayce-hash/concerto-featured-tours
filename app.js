@@ -3,7 +3,6 @@
 
 const TOUR_FILES = [
   'iheartradio-jingle-ball-2025.json',
-  'mariah-carey-christmastime-in-las-vegas-2025.json',
   'jonas20-greetings-from-your-hometown.json',
   'demi-lovato-its-not-that-deep-tour.json',
   'conan-gray-wishbone-world-tour-na.json',
@@ -11,8 +10,7 @@ const TOUR_FILES = [
   'backstreet-boys-into-the-millenium-sphere-las-vegas.json',
   'ariana-grande-the-eternal-sunshine-tour-na-2026.json',
   'ed-sheeran-the-loop-tour-na-2026.json',
-  'olivia-dean-the-art-of-loving-live-na-2026.json',
-  'billie-eilish-2025-tour.json'
+  'olivia-dean-the-art-of-loving-live-na-2026.json'
 ];
 
 let allTours = [];
