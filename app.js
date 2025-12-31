@@ -176,16 +176,30 @@ function renderShowsList(tour) {
     headerBtn.type = "button";
     headerBtn.className = "show-row-header";
 
-    const venueSpan = document.createElement("span");
-    venueSpan.className = "show-venue";
-    venueSpan.textContent = show.venueName || "Venue";
+    const isFifa = getTourSlug(tour) === "fifa-world-cup-2026" || tour.tourId === "fifa-world-cup-2026";
 
-    const citySpan = document.createElement("span");
-    citySpan.className = "show-city";
-    const cityBits = [];
-    if (show.city) cityBits.push(show.city);
-    if (show.state) cityBits.push(show.state);
-    citySpan.textContent = cityBits.join(", ");
+const venueSpan = document.createElement("span");
+venueSpan.className = "show-venue";
+
+// FIFA: main line should be the matchup (fallbacks included)
+// Other tours: keep venue name
+venueSpan.textContent = isFifa
+  ? (show.matchup || show.match || show.title || "Match")
+  : (show.venueName || "Venue");
+
+const citySpan = document.createElement("span");
+citySpan.className = "show-city";
+
+// FIFA: show city only (no state)
+// Other tours: keep city + state
+if (isFifa) {
+  citySpan.textContent = show.city || "";
+} else {
+  const cityBits = [];
+  if (show.city) cityBits.push(show.city);
+  if (show.state) cityBits.push(show.state);
+  citySpan.textContent = cityBits.join(", ");
+}
 
     const dateSpan = document.createElement("span");
     dateSpan.className = "show-date";
