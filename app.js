@@ -2,7 +2,7 @@
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
-  'iheartradio-jingle-ball-2025.json',
+  'fifa-world-cup-2026.json',
   'jonas20-greetings-from-your-hometown.json',
   'demi-lovato-its-not-that-deep-tour.json',
   'conan-gray-wishbone-world-tour-na.json',
