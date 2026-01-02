@@ -1,0 +1,77 @@
+{
+  "tourId": "hilary-duff-small-rooms-big-nerves-tour-2026",
+  "artist": "Hilary Duff",
+  "tourName": "Small Rooms, Big Nerves Tour",
+  "year": 2026,
+  "notes": "Mini-tour with intimate shows in London, Toronto, Brooklyn, and Los Angeles.",
+  "shows": [
+    {
+      "id": "2026-01-19-london-gb-o2-shepherds-bush-empire",
+      "date": "2026-01-19",
+      "city": "London",
+      "region": "",
+      "country": "GB",
+      "venueName": "O2 Shepherds Bush Empire",
+      "venueSlug": "o2-shepherds-bush-empire",
+      "ticketUrl": "https://www.ticketmaster.co.uk/hilary-duff-small-rooms-big-nerves-london-19-01-2026/event/3E006365CF9673D0",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=o2-shepherds-bush-empire",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=o2-shepherds-bush-empire",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=o2-shepherds-bush-empire",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=o2-shepherds-bush-empire",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=o2-shepherds-bush-empire"
+      }
+    },
+    {
+      "id": "2026-01-24-toronto-on-history",
+      "date": "2026-01-24",
+      "city": "Toronto",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "History",
+      "venueSlug": "history",
+      "ticketUrl": "https://www.ticketmaster.ca/hilary-duff-small-rooms-big-nerves-toronto-on-01-24-2026/event/0C006365CFF67E77",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=history",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=history",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=history",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=history",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=history"
+      }
+    },
+    {
+      "id": "2026-01-27-brooklyn-ny-brooklyn-paramount",
+      "date": "2026-01-27",
+      "city": "Brooklyn",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Brooklyn Paramount",
+      "venueSlug": "brooklyn-paramount",
+      "ticketUrl": "https://www.ticketmaster.com/hilary-duff-small-rooms-big-nerves-brooklyn-new-york-01-27-2026/event/01006365D0E47B69",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=brooklyn-paramount",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=brooklyn-paramount",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=brooklyn-paramount",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=brooklyn-paramount",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=brooklyn-paramount"
+      }
+    },
+    {
+      "id": "2026-01-29-los-angeles-ca-the-wiltern",
+      "date": "2026-01-29",
+      "city": "Los Angeles",
+      "region": "CA",
+      "country": "US",
+      "venueName": "The Wiltern",
+      "venueSlug": "the-wiltern",
+      "ticketUrl": "https://www.ticketmaster.com/hilary-duff-small-rooms-big-nerves-los-angeles-california-01-29-2026/event/1B006365D4C37EC9",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-wiltern",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-wiltern",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-wiltern",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-wiltern",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-wiltern"
+      }
+    }
+  ]
+}
