@@ -7,7 +7,7 @@ const TOUR_FILES = [
   'hilary-duff-small-rooms-big-nerves-tour.json',
   'halsey-back-to-the-badlands-tour.json',
   'demi-lovato-its-not-that-deep-tour.json',
-  'alex-warren-little-orphan-alex-live.json'
+  'alex-warren-little-orphan-alex-live.json',
   'conan-gray-wishbone-world-tour-na.json',
   'lady-gaga-the-mayhem-ball-na-2026.json',
   'backstreet-boys-into-the-millenium-sphere-las-vegas.json',
