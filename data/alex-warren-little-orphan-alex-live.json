@@ -3,8 +3,138 @@
   "artist": "Alex Warren",
   "tourName": "Little Orphan Alex Live",
   "year": 2026,
-  "notes": "North American leg of Alex Warren’s 2026 Little Orphan Alex Live tour.",
+  "notes": "Full 2026 Little Orphan Alex Live tour dates — EU/UK arena leg in April/May and North American arena leg May–July 2026.",
   "shows": [
+    {
+      "id": "2026-04-04-dusseldorf-de-psd-bank-dome",
+      "date": "2026-04-04",
+      "city": "Düsseldorf",
+      "region": "",
+      "country": "DE",
+      "venueName": "PSD Bank Dome",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-dusseldorf-germany-04-04-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-06-amsterdam-nl-ziggo-dome",
+      "date": "2026-04-06",
+      "city": "Amsterdam",
+      "region": "",
+      "country": "NL",
+      "venueName": "Ziggo Dome",
+      "ticketUrl": "https://www.ticketmaster.nl/alex-warren-presents-little-orphan-alex-live-amsterdam-netherlands-04-06-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-07-amsterdam-nl-ziggo-dome",
+      "date": "2026-04-07",
+      "city": "Amsterdam",
+      "region": "",
+      "country": "NL",
+      "venueName": "Ziggo Dome",
+      "ticketUrl": "https://www.ticketmaster.nl/alex-warren-presents-little-orphan-alex-live-amsterdam-netherlands-04-07-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-10-frankfurt-de-festhalle",
+      "date": "2026-04-10",
+      "city": "Frankfurt am Main",
+      "region": "",
+      "country": "DE",
+      "venueName": "Festhalle",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-frankfurt-germany-04-10-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-13-berlin-de-uber-arena",
+      "date": "2026-04-13",
+      "city": "Berlin",
+      "region": "",
+      "country": "DE",
+      "venueName": "Uber Arena",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-berlin-germany-04-13-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-23-newcastle-uk-utilita-arena-newcastle",
+      "date": "2026-04-23",
+      "city": "Newcastle Upon Tyne",
+      "region": "",
+      "country": "UK",
+      "venueName": "Utilita Arena Newcastle",
+      "ticketUrl": "https://www.ticketmaster.co.uk/alex-warren-presents-little-orphan-alex-live-newcastle-uk-04-23-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-24-birmingham-uk-utilita-arena-birmingham",
+      "date": "2026-04-24",
+      "city": "Birmingham",
+      "region": "",
+      "country": "UK",
+      "venueName": "Utilita Arena Birmingham",
+      "ticketUrl": "https://www.ticketmaster.co.uk/alex-warren-presents-little-orphan-alex-live-birmingham-uk-04-24-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-26-glasgow-uk-ovo-hydro",
+      "date": "2026-04-26",
+      "city": "Glasgow",
+      "region": "",
+      "country": "UK",
+      "venueName": "OVO Hydro",
+      "ticketUrl": "https://www.ticketmaster.co.uk/alex-warren-presents-little-orphan-alex-live-glasgow-uk-04-26-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-27-manchester-uk-co-op-live",
+      "date": "2026-04-27",
+      "city": "Manchester",
+      "region": "",
+      "country": "UK",
+      "venueName": "Co-op Live",
+      "ticketUrl": "https://www.ticketmaster.co.uk/alex-warren-presents-little-orphan-alex-live-manchester-uk-04-27-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-29-leeds-uk-first-direct-bank-arena",
+      "date": "2026-04-29",
+      "city": "Leeds",
+      "region": "",
+      "country": "UK",
+      "venueName": "First Direct Bank Arena",
+      "ticketUrl": "https://www.ticketmaster.co.uk/alex-warren-presents-little-orphan-alex-live-leeds-uk-04-29-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-04-30-nottingham-uk-motorpoint-arena-nottingham",
+      "date": "2026-04-30",
+      "city": "Nottingham",
+      "region": "",
+      "country": "UK",
+      "venueName": "Motorpoint Arena Nottingham",
+      "ticketUrl": "https://www.ticketmaster.co.uk/alex-warren-presents-little-orphan-alex-live-nottingham-uk-04-30-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-05-02-belfast-uk-sse-arena-belfast",
+      "date": "2026-05-02",
+      "city": "Belfast",
+      "region": "",
+      "country": "UK",
+      "venueName": "The SSE Arena Belfast",
+      "ticketUrl": "https://www.ticketmaster.co.uk/alex-warren-presents-little-orphan-alex-live-belfast-uk-05-02-2026/event/XXXXXXXX",
+      "links": {}
+    },
+    {
+      "id": "2026-05-06-dublin-ie-3arena",
+      "date": "2026-05-06",
+      "city": "Dublin",
+      "region": "",
+      "country": "IE",
+      "venueName": "3Arena",
+      "ticketUrl": "https://www.ticketmaster.ie/alex-warren-presents-little-orphan-alex-live-dublin-ireland-05-06-2026/event/XXXXXXXX",
+      "links": {}
+    },
     {
       "id": "2026-05-25-nashville-tn-bridgestone-arena",
       "date": "2026-05-25",
@@ -12,7 +142,7 @@
       "region": "TN",
       "country": "US",
       "venueName": "Bridgestone Arena",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-nashville-tennessee-05-25-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-nashville-tn-05-25-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -22,7 +152,7 @@
       "region": "TX",
       "country": "US",
       "venueName": "Toyota Center",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-houston-texas-05-27-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-houston-tx-05-27-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -32,7 +162,7 @@
       "region": "TX",
       "country": "US",
       "venueName": "Dickies Arena",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-fort-worth-texas-05-29-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-fort-worth-tx-05-29-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -42,7 +172,7 @@
       "region": "TX",
       "country": "US",
       "venueName": "Moody Center",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-austin-texas-05-30-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-austin-tx-05-30-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -52,7 +182,7 @@
       "region": "CO",
       "country": "US",
       "venueName": "Red Rocks Amphitheatre",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-morrison-co-06-02-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-morrison-co-06-02-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -62,7 +192,7 @@
       "region": "AZ",
       "country": "US",
       "venueName": "Mortgage Matchup Center",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-phoenix-az-06-05-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-phoenix-az-06-05-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -72,7 +202,7 @@
       "region": "CA",
       "country": "US",
       "venueName": "Crypto.com Arena",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-los-angeles-ca-06-06-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-los-angeles-ca-06-06-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -82,7 +212,7 @@
       "region": "CA",
       "country": "US",
       "venueName": "Viejas Arena",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-san-diego-ca-06-08-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-san-diego-ca-06-08-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -92,7 +222,7 @@
       "region": "OR",
       "country": "US",
       "venueName": "Moda Center",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-portland-or-06-12-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-portland-or-06-12-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -102,7 +232,7 @@
       "region": "WA",
       "country": "US",
       "venueName": "Climate Pledge Arena",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-seattle-wa-06-13-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-seattle-wa-06-13-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -112,7 +242,7 @@
       "region": "BC",
       "country": "CA",
       "venueName": "Rogers Arena",
-      "ticketUrl": "https://www.ticketmaster.ca/alex-warren-little-orphan-alex-live-vancouver-bc-06-14-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.ca/alex-warren-presents-little-orphan-alex-live-vancouver-bc-06-14-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -122,17 +252,17 @@
       "region": "UT",
       "country": "US",
       "venueName": "Utah First Credit Union Amphitheatre",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-salt-lake-city-ut-06-17-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-salt-lake-city-ut-06-17-2026/event/XXXXXXXX",
       "links": {}
     },
     {
-      "id": "2026-06-19-omaha-ne-chi-health-center",
+      "id": "2026-06-19-omaha-ne-chi-health-center-omaha",
       "date": "2026-06-19",
       "city": "Omaha",
       "region": "NE",
       "country": "US",
       "venueName": "CHI Health Center Omaha",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-omaha-ne-06-19-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-omaha-ne-06-19-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -142,7 +272,7 @@
       "region": "MO",
       "country": "US",
       "venueName": "T-Mobile Center",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-kansas-city-mo-06-21-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-kansas-city-mo-06-21-2026/event/XXXXXXXX",
       "links": {}
     },
     {
@@ -152,9 +282,16 @@
       "region": "PA",
       "country": "US",
       "venueName": "PPG Paints Arena",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-pittsburgh-pa-06-23-2026/event/XXXXXXXX",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-presents-little-orphan-alex-live-pittsburgh-pa-06-23-2026/event/XXXXXXXX",
       "links": {}
     },
+    {
+  "tourId": "alex-warren-little-orphan-alex-live-2026-post-june-23",
+  "artist": "Alex Warren",
+  "tourName": "Little Orphan Alex Live (Post June 23)",
+  "year": 2026,
+  "notes": "Alex Warren Little Orphan Alex Live tour dates after June 23, 2026.",
+  "shows": [
     {
       "id": "2026-06-25-atlanta-ga-state-farm-arena",
       "date": "2026-06-25",
@@ -192,7 +329,7 @@
       "region": "IL",
       "country": "US",
       "venueName": "United Center",
-      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-chicago-il-06-29-2026/event/040063671761A0BD",
+      "ticketUrl": "https://www.ticketmaster.com/alex-warren-little-orphan-alex-live-chicago-il-06-29-2026/event/XXXXXXXX",
       "links": {}
     },
     {
