@@ -3,7 +3,9 @@
 
 const TOUR_FILES = [
   'fifa-world-cup-2026.json',
-  'jonas20-greetings-from-your-hometown.json',
+  'jessie-j-no-secrets-tour.json'
+  'hilary-duff-small-rooms-big-nerves-tour.json'
+  'halsey-back-to-the-badlands-tour.json'
   'demi-lovato-its-not-that-deep-tour.json',
   'conan-gray-wishbone-world-tour-na.json',
   'lady-gaga-the-mayhem-ball-na-2026.json',
