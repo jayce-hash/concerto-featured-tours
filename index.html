@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>Concerto · Featured Tours</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-  <!-- Fonts -->
+  <!-- Fonts (match Festivals pairing) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -25,13 +25,19 @@
           alt="Concerto"
           class="brand-logo"
         />
+
+        <!-- Festivals-style title + tagline -->
+        <h1 class="feature-title">Featured Tours</h1>
+        <p class="tagline">Pick a tour. Plan every stop.</p>
+
         <div class="search-wrapper">
           <input
             id="tourSearch"
-            type="text"
-            placeholder="Search a tour..."
+            type="search"
+            placeholder="Search tours or artists"
             autocomplete="off"
           />
+          <button id="clearSearchBtn" class="icon-btn" title="Clear" aria-label="Clear">×</button>
           <div id="searchResults" class="search-results"></div>
         </div>
       </div>
@@ -44,7 +50,7 @@
         <div class="info-empty">
           <h2>Browse featured tours</h2>
           <p>
-            Search for a tour above or pick one from the library below. Once selected, you’ll see
+            Search above or pick one from the library below. Once selected, you’ll see
             each date with quick links to City Guides, tickets, rideshare, bag policies,
             concessions, and parking.
           </p>
@@ -53,8 +59,9 @@
         <!-- Selected tour content (detail “page” mode) -->
         <div class="info-content" hidden>
           <button id="backToLibrary" class="back-btn" type="button" aria-label="Back to Tour Library">
-  ← Tour Library
-</button>
+            ← Tour Library
+          </button>
+
           <header class="info-header">
             <div>
               <h2 id="tourName"></h2>
@@ -70,16 +77,18 @@
                 Tap a date row to reveal City Guides, tickets, rideshare, bag policies,
                 concessions, and parking.
               </p>
-              <div id="showsList" class="shows-list">
-                <!-- JS injects show rows here -->
-              </div>
+              <div id="showsList" class="shows-list"></div>
             </article>
           </div>
         </div>
 
         <!-- Library of all tours -->
         <section class="browse-list">
-          <h3 class="browse-title">Tour Library</h3>
+          <div class="browse-head">
+            <h3 class="browse-title">Tour Library</h3>
+            <div class="browse-meta" id="libraryMeta"></div>
+          </div>
+
           <div id="toursBrowseList">
             <!-- JS injects .browse-item for each tour -->
           </div>
@@ -89,5 +98,35 @@
   </div>
 
   <script src="./app.js" defer></script>
+
+  <!-- UI-only helpers (does not change your app logic) -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const input = document.getElementById("tourSearch");
+      const clearBtn = document.getElementById("clearSearchBtn");
+      const resultsEl = document.getElementById("searchResults");
+      const metaEl = document.getElementById("libraryMeta");
+
+      // Clear button UX
+      if (clearBtn && input) {
+        clearBtn.addEventListener("click", () => {
+          input.value = "";
+          input.dispatchEvent(new Event("input"));
+          resultsEl?.classList.remove("visible");
+          input.focus();
+        });
+      }
+
+      // Simple library count label (optional)
+      const list = document.getElementById("toursBrowseList");
+      if (metaEl && list) {
+        const observer = new MutationObserver(() => {
+          const count = list.querySelectorAll(".browse-item").length;
+          metaEl.textContent = count ? `${count} tours` : "";
+        });
+        observer.observe(list, { childList: true });
+      }
+    });
+  </script>
 </body>
 </html>
