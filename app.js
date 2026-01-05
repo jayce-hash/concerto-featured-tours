@@ -12,7 +12,7 @@ const TOUR_FILES = [
   'ariana-grande-the-eternal-sunshine-tour-na-2026.json',
   'ed-sheeran-the-loop-tour-na-2026.json',
   'fifa-world-cup-2026.json',
-  'olivia-dean-the-art-of-loving-live-na-2026.json',
+  'olivia-dean-the-art-of-loving-tour.json',
   'demi-lovato-its-not-that-deep-tour.json'
 ];
 
