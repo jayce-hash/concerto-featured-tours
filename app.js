@@ -2,18 +2,18 @@
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
-  'fifa-world-cup-2026.json',
-  'jessie-j-no-secrets-tour.json',
-  'hilary-duff-small-rooms-big-nerves-tour.json',
-  'halsey-back-to-the-badlands-tour.json',
-  'demi-lovato-its-not-that-deep-tour.json',
-  'alex-warren-little-orphan-alex-live.json',
-  'conan-gray-wishbone-world-tour-na.json',
-  'lady-gaga-the-mayhem-ball-na-2026.json',
   'backstreet-boys-into-the-millenium-sphere-las-vegas.json',
+  'halsey-back-to-the-badlands-tour.json',
+  'hilary-duff-small-rooms-big-nerves-tour.json',
+  'jessie-j-no-secrets-tour.json',
+  'lady-gaga-the-mayhem-ball-na-2026.json',
+  'conan-gray-wishbone-world-tour-na.json',
+  'alex-warren-little-orphan-alex-live.json',
   'ariana-grande-the-eternal-sunshine-tour-na-2026.json',
   'ed-sheeran-the-loop-tour-na-2026.json',
-  'olivia-dean-the-art-of-loving-live-na-2026.json'
+  'fifa-world-cup-2026.json',
+  'olivia-dean-the-art-of-loving-live-na-2026.json',
+  'demi-lovato-its-not-that-deep-tour.json'
 ];
 
 let allTours = [];
@@ -81,6 +81,31 @@ function formatShortDate(isoDateStr) {
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
+/* ---------- Back Button (Tour -> Library) ---------- */
+
+function goBackToLibrary() {
+  // Close any open dropdowns
+  document.querySelectorAll(".show-dropdown.open").forEach((el) => el.classList.remove("open"));
+
+  // Remove ?tour= from URL
+  const url = new URL(window.location.href);
+  url.searchParams.delete("tour");
+  window.history.pushState({}, "", url.toString());
+
+  // Restore library view
+  const browseSection = document.querySelector(".browse-list");
+  const panel = document.getElementById("infoPanel");
+  const emptyState = panel?.querySelector(".info-empty");
+  const content = panel?.querySelector(".info-content");
+
+  if (browseSection) browseSection.style.display = "";
+  if (content) content.hidden = true;
+  if (emptyState) emptyState.style.display = "block";
+  panel?.classList.add("info-panel--empty");
+
+  selectedTour = null;
+}
+
 /* ---------- UI: Tour Library ---------- */
 
 function renderTourLibrary(tours) {
@@ -139,6 +164,13 @@ function selectTour(tour, { hideLibrary = false } = {}) {
   if (content) content.hidden = false;
   panel.classList.remove("info-panel--empty");
 
+  // Ensure back button works (requires HTML element with id="backToLibrary")
+  const backBtn = document.getElementById("backToLibrary");
+  if (backBtn && !backBtn.dataset.bound) {
+    backBtn.addEventListener("click", goBackToLibrary);
+    backBtn.dataset.bound = "1";
+  }
+
   // Header content
   const nameEl = document.getElementById("tourName");
   const artistEl = document.getElementById("tourArtist");
@@ -171,6 +203,8 @@ function renderShowsList(tour) {
   if (!listEl) return;
   listEl.innerHTML = "";
 
+  const isFifa = getTourSlug(tour) === "fifa-world-cup-2026" || tour.tourId === "fifa-world-cup-2026";
+
   (tour.shows || []).forEach((show) => {
     const row = document.createElement("div");
     row.className = "show-row";
@@ -179,30 +213,28 @@ function renderShowsList(tour) {
     headerBtn.type = "button";
     headerBtn.className = "show-row-header";
 
-    const isFifa = getTourSlug(tour) === "fifa-world-cup-2026" || tour.tourId === "fifa-world-cup-2026";
+    const venueSpan = document.createElement("span");
+    venueSpan.className = "show-venue";
 
-const venueSpan = document.createElement("span");
-venueSpan.className = "show-venue";
+    // FIFA: main line should be the matchup (fallbacks included)
+    // Other tours: keep venue name
+    venueSpan.textContent = isFifa
+      ? (show.matchup || show.match || show.title || "Match")
+      : (show.venueName || "Venue");
 
-// FIFA: main line should be the matchup (fallbacks included)
-// Other tours: keep venue name
-venueSpan.textContent = isFifa
-  ? (show.matchup || show.match || show.title || "Match")
-  : (show.venueName || "Venue");
+    const citySpan = document.createElement("span");
+    citySpan.className = "show-city";
 
-const citySpan = document.createElement("span");
-citySpan.className = "show-city";
-
-// FIFA: show city only (no state)
-// Other tours: keep city + state
-if (isFifa) {
-  citySpan.textContent = show.city || "";
-} else {
-  const cityBits = [];
-  if (show.city) cityBits.push(show.city);
-  if (show.state) cityBits.push(show.state);
-  citySpan.textContent = cityBits.join(", ");
-}
+    // FIFA: show city only (no state)
+    // Other tours: keep city + state
+    if (isFifa) {
+      citySpan.textContent = show.city || "";
+    } else {
+      const cityBits = [];
+      if (show.city) cityBits.push(show.city);
+      if (show.state) cityBits.push(show.state);
+      citySpan.textContent = cityBits.join(", ");
+    }
 
     const dateSpan = document.createElement("span");
     dateSpan.className = "show-date";
@@ -241,7 +273,7 @@ if (isFifa) {
       linksWrap.appendChild(a);
     }
 
-    // 🔥 FIX: use show.ticketUrl (with a fallback to links.ticketUrl just in case)
+    // Buy Tickets uses show.ticketUrl with fallback to links.ticketUrl
     addLink("Buy Tickets", show.ticketUrl || links.ticketUrl, true);
     addLink("City Guide", links.cityGuide);
     addLink("Rideshare", links.rideshare);
@@ -254,9 +286,7 @@ if (isFifa) {
     headerBtn.addEventListener("click", (event) => {
       event.stopPropagation();
       const isOpen = dropdown.classList.contains("open");
-      document
-        .querySelectorAll(".show-dropdown.open")
-        .forEach((el) => el.classList.remove("open"));
+      document.querySelectorAll(".show-dropdown.open").forEach((el) => el.classList.remove("open"));
       if (!isOpen) dropdown.classList.add("open");
     });
 
@@ -349,14 +379,15 @@ async function initFeaturedTours() {
   renderTourLibrary(allTours);
   setupSearch();
 
+  // Wire back button once (requires HTML element with id="backToLibrary")
+  const backBtn = document.getElementById("backToLibrary");
+  if (backBtn && !backBtn.dataset.bound) {
+    backBtn.addEventListener("click", goBackToLibrary);
+    backBtn.dataset.bound = "1";
+  }
+
   // If URL has ?tour=..., go straight into that tour's page mode
   const fromUrl = enterFromUrl();
-
-  // If no tour in URL, we stay in library mode (empty state + browse list)
-  if (!fromUrl && allTours.length === 1) {
-    // Optional: auto-open if only one tour exists
-    // navigateToTour(allTours[0]);
-  }
 
   // Handle back/forward navigation
   window.addEventListener("popstate", () => {
@@ -375,6 +406,7 @@ async function initFeaturedTours() {
         emptyState.style.display = "block";
         panel.classList.add("info-panel--empty");
       }
+      selectedTour = null;
       return;
     }
 
