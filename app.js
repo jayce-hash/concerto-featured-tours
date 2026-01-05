@@ -41,7 +41,7 @@ async function loadTours() {
 
   tours.forEach((tour) => {
     if (Array.isArray(tour.shows)) {
-      tour.shows.sort((a, b) => new Date(a.date) - new Date(b.date));
+      tour.shows.sort((a, b) => parseLocalYMD(a.date) - parseLocalYMD(b.date));
     }
   });
 
@@ -53,10 +53,16 @@ function getEarliestShowDate(tour) {
   if (!tour.shows || tour.shows.length === 0) {
     return new Date(8640000000000000);
   }
-  return new Date(tour.shows[0].date);
+  return parseLocalYMD(tour.shows[0].date);
 }
 
 /* ---------- Helpers ---------- */
+
+function parseLocalYMD(isoDateStr) {
+  const m = String(isoDateStr).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return new Date(isoDateStr);
+  return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+}
 
 function slugify(str) {
   return (str || "")
@@ -76,8 +82,24 @@ function getTourImageSrc(tour) {
 
 function formatShortDate(isoDateStr) {
   if (!isoDateStr) return "";
-  const d = new Date(isoDateStr);
-  if (Number.isNaN(d.getTime())) return isoDateStr;
+
+  // Expect "YYYY-MM-DD"
+  const m = String(isoDateStr).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+
+  // Fallback if format is unexpected
+  if (!m) {
+    const dFallback = new Date(isoDateStr);
+    if (Number.isNaN(dFallback.getTime())) return isoDateStr;
+    return dFallback.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+  }
+
+  const year = Number(m[1]);
+  const monthIndex = Number(m[2]) - 1; // 0-based
+  const day = Number(m[3]);
+
+  // Create LOCAL date (prevents “day before” bug)
+  const d = new Date(year, monthIndex, day);
+
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }
 
