@@ -6,7 +6,7 @@
   "slug": "bruno-mars-the-romantic-tour",
   "ticketmasterUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
   "image": "bruno-mars-the-romantic-tour-2026.jpg",
-  "notes": "Bruno Mars — The Romantic Tour 2026 across North America, Canada & Europe.",
+  "notes": "Bruno Mars’ 2026 global stadium tour supporting the album The Romantic.",
   "shows": [
     {
       "id": "2026-04-10-las-vegas-nv-allegiant-stadium",
@@ -130,36 +130,36 @@
     {
       "id": "2026-05-06-nashville-tn-nissan-stadium",
       "date": "2026-05-06",
-      "city": "Nashville",
-      "region": "TN",
-      "country": "US",
-      "venueName": "Nissan Stadium",
-      "venueSlug": "nissan-stadium",
-      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
-      "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=nissan-stadium",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=nissan-stadium",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=nissan-stadium",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=nissan-stadium",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=nissan-stadium"
-      }
-    },
+      "city": "Nashville",  
+      "region": "TN",  
+      "country": "US",  
+      "venueName": "Nissan Stadium",  
+      "venueSlug": "nissan-stadium",  
+      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",  
+      "links": {  
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=nissan-stadium",  
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=nissan-stadium",  
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=nissan-stadium",  
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=nissan-stadium",  
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=nissan-stadium"  
+      }  
+    },  
     {
       "id": "2026-05-09-detroit-mi-ford-field",
-      "date": "2026-05-09",
-      "city": "Detroit",
-      "region": "MI",
-      "country": "US",
-      "venueName": "Ford Field",
-      "venueSlug": "ford-field",
-      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
-      "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ford-field",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ford-field",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ford-field",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ford-field",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ford-field"
-      }
+      "date": "2026-05-09",  
+      "city": "Detroit",  
+      "region": "MI",  
+      "country": "US",  
+      "venueName": "Ford Field",  
+      "venueSlug": "ford-field",  
+      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",  
+      "links": {  
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ford-field",  
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ford-field",  
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ford-field",  
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ford-field",  
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ford-field"  
+      }  
     },
     {
       "id": "2026-05-13-minneapolis-mn-us-bank-stadium",
@@ -171,15 +171,48 @@
       "venueSlug": "us-bank-stadium",
       "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=us-bank-stadium",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=us-bank-stadium", 
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=us-bank-stadium",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=us-bank-stadium",
         "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=us-bank-stadium",
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=us-bank-stadium"
       }
     },
+    {
+      "id": "2026-05-16-chicago-il-soldier-field",
+      "date": "2026-05-16",
+      "city": "Chicago",
+      "region": "IL",
+      "country": "US",
+      "venueName": "Soldier Field",
+      "venueSlug": "soldier-field",
+      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=soldier-field", 
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=soldier-field",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=soldier-field",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=soldier-field",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=soldier-field"
+      }
+    },
 
-    // — CANADA —
+    {
+      "id": "2026-05-20-columbus-oh-ohio-stadium",  
+      "date": "2026-05-20",  
+      "city": "Columbus",  
+      "region": "OH",  
+      "country": "US",  
+      "venueName": "Ohio Stadium",  
+      "venueSlug": "ohio-stadium",  
+      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",  
+      "links": {  
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ohio-stadium",  
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ohio-stadium",  
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ohio-stadium",  
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ohio-stadium",  
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ohio-stadium"  
+      }  
+    },
     {
       "id": "2026-05-23-toronto-on-rogers-stadium",
       "date": "2026-05-23",
@@ -198,7 +231,7 @@
       }
     },
     {
-      "id": "2026-05-24-toronto-on-rogers-stadium-ii",
+      "id": "2026-05-24-toronto-on-rogers-stadium-2",
       "date": "2026-05-24",
       "city": "Toronto",
       "region": "ON",
@@ -214,8 +247,6 @@
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=rogers-stadium"
       }
     },
-
-    // — EUROPE —
     {
       "id": "2026-06-20-paris-fr-stade-de-france",
       "date": "2026-06-20",
@@ -234,7 +265,7 @@
       }
     },
     {
-      "id": "2026-06-21-paris-fr-stade-de-france-ii",
+      "id": "2026-06-21-paris-fr-stade-de-france-2",
       "date": "2026-06-21",
       "city": "Paris",
       "region": "",
@@ -285,7 +316,7 @@
       }
     },
     {
-      "id": "2026-07-05-amsterdam-nl-johan-cruijff-arena-ii",
+      "id": "2026-07-05-amsterdam-nl-johan-cruijff-arena-2",
       "date": "2026-07-05",
       "city": "Amsterdam",
       "region": "",
@@ -341,11 +372,11 @@
       "city": "London",
       "region": "",
       "country": "UK",
-      "venueName": "Wembley Stadium Connected by EE",
+      "venueName": "Wembley Stadium",
       "venueSlug": "wembley-stadium",
       "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
       "links": {
-        "cityGuide": "https://concerto-venue-map-netlify.app/?venue=wembley-stadium",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=wembley-stadium",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=wembley-stadium",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=wembley-stadium",
         "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=wembley-stadium",
@@ -353,24 +384,22 @@
       }
     },
     {
-      "id": "2026-07-19-london-uk-wembley-stadium-ii",
+      "id": "2026-07-19-london-uk-wembley-stadium-2",
       "date": "2026-07-19",
       "city": "London",
       "region": "",
       "country": "UK",
-      "venueName": "Wembley Stadium Connected by EE",
+      "venueName": "Wembley Stadium",
       "venueSlug": "wembley-stadium",
       "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
       "links": {
-        "cityGuide": "https://concerto-venue-map-netlify.app/?venue=wembley-stadium",
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=wembley-stadium",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=wembley-stadium",
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=wembley-stadium",
         "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=wembley-stadium",
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=wembley-stadium"
       }
     },
-
-    // — Second North American Leg (Aug–Oct 2026) —
     {
       "id": "2026-08-21-east-rutherford-nj-metlife-stadium",
       "date": "2026-08-21",
@@ -389,7 +418,7 @@
       }
     },
     {
-      "id": "2026-08-22-east-rutherford-nj-metlife-stadium-ii",
+      "id": "2026-08-22-east-rutherford-nj-metlife-stadium-2",
       "date": "2026-08-22",
       "city": "East Rutherford",
       "region": "NJ",
@@ -437,7 +466,7 @@
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=lincoln-financial-field",
         "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=lincoln-financial-field",
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=lincoln-financial-field"
-      }
+      }  
     },
     {
       "id": "2026-09-05-foxborough-ma-gillette-stadium",
@@ -530,16 +559,16 @@
       "city": "San Antonio",
       "region": "TX",
       "country": "US",
-      "venueName": "Alamodome",
+      "venueName": "Alamodome",  
       "venueSlug": "alamodome",
-      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",
+      "ticketUrl": "https://www.ticketmaster.com/bruno-mars-tickets/artist/1466801",  
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=alamodome",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=alamodome",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=alamodome",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=alamodome",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=alamodome"
-      }
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=alamodome",  
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=alamodome",  
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=alamodome",  
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=alamodome",  
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=alamodome"  
+      }  
     },
     {
       "id": "2026-09-26-air-force-academy-co-falcon-stadium",
@@ -576,7 +605,7 @@
       }
     },
     {
-      "id": "2026-10-03-inglewood-ca-sofi-stadium-ii",
+      "id": "2026-10-03-inglewood-ca-sofi-stadium-2",
       "date": "2026-10-03",
       "city": "Inglewood",
       "region": "CA",
