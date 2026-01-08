@@ -32,9 +32,59 @@ async function fetchTour(fileName) {
 
     const tour = await res.json();
 
-    // OPTIONAL: If tour is Ticketmaster-powered, hydrate its shows from your proxy function
-    if (tour?.ticketmaster?.attractionId) {
-      await hydrateTourFromTicketmaster(tour);
+    // ✅ Auto-populate Ticketmaster tours that have an attractionId
+    if (
+      tour &&
+      String(tour.source || "").toLowerCase() === "ticketmaster" &&
+      tour.ticketmaster &&
+      tour.ticketmaster.attractionId
+    ) {
+      const attractionId = tour.ticketmaster.attractionId;
+
+      const tmRes = await fetch(`/.netlify/functions/tm-events?attractionId=${encodeURIComponent(attractionId)}`);
+      if (tmRes.ok) {
+        const tmJson = await tmRes.json();
+        const events = tmJson.events || [];
+
+        // Map Ticketmaster events -> your show format
+        tour.shows = events
+          .map((ev) => {
+            const venue = ev?._embedded?.venues?.[0];
+            const dt = ev?.dates?.start?.localDate; // "YYYY-MM-DD"
+            if (!dt || !venue) return null;
+
+            const city = venue?.city?.name || "";
+            const region = venue?.state?.stateCode || ""; // US
+            const country = venue?.country?.countryCode || "";
+            const venueName = venue?.name || "Venue";
+
+            const venueSlug = (venue?.id)
+              ? `tm-${venue.id}` // most reliable unique key
+              : slugify(venueName);
+
+            return {
+              id: `${dt}-${slugify(city)}-${slugify(venueName)}`,
+              date: dt,
+              city,
+              region,
+              country,
+              venueName,
+              venueSlug,
+              ticketUrl: ev?.url || tour.ticketUrl || "",
+              links: {
+                cityGuide: `https://concerto-venue-map.netlify.app/?venue=${venueSlug}`,
+                bagPolicy: `https://concerto-microfeatures.netlify.app/bag-policy/?venue=${venueSlug}`,
+                concessions: `https://concerto-microfeatures.netlify.app/concessions/?venue=${venueSlug}`,
+                parking: `https://concerto-microfeatures.netlify.app/parking/?venue=${venueSlug}`,
+                rideshare: `https://concerto-microfeatures.netlify.app/rideshare/?venue=${venueSlug}`
+              }
+            };
+          })
+          .filter(Boolean);
+
+      } else {
+        console.warn("Ticketmaster function failed:", tmRes.status);
+      }
     }
 
     return tour;
