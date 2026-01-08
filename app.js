@@ -14,7 +14,8 @@ const TOUR_FILES = [
   'fifa-world-cup-2026.json',
   'olivia-dean-the-art-of-loving-tour.json',
   'demi-lovato-its-not-that-deep-tour.json',
-  'bruno-mars-the-romantic-tour.json'
+  'bruno-mars-the-romantic-tour.json',
+  'journey-final-frontier-tour.json'
 ];
 
 let allTours = [];
