@@ -1,4 +1,4 @@
-// app.js
+ // app.js
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
@@ -14,7 +14,7 @@ const TOUR_FILES = [
   'fifa-world-cup-2026.json',
   'olivia-dean-the-art-of-loving-tour.json',
   'demi-lovato-its-not-that-deep-tour.json',
-  'bruno-mars-ticketmaster.json'
+  'bruno-mars-the-romantic-tour.json'
 ];
 
 let allTours = [];
@@ -29,65 +29,7 @@ async function fetchTour(fileName) {
       console.warn(`Failed to load tour file: ${fileName}`, res.status);
       return null;
     }
-
-    const tour = await res.json();
-
-    // ✅ Auto-populate Ticketmaster tours that have an attractionId
-    if (
-      tour &&
-      String(tour.source || "").toLowerCase() === "ticketmaster" &&
-      tour.ticketmaster &&
-      tour.ticketmaster.attractionId
-    ) {
-      const attractionId = tour.ticketmaster.attractionId;
-
-      const tmRes = await fetch(`/.netlify/functions/tm-events?attractionId=${encodeURIComponent(attractionId)}`);
-      if (tmRes.ok) {
-        const tmJson = await tmRes.json();
-        const events = tmJson.events || [];
-
-        // Map Ticketmaster events -> your show format
-        tour.shows = events
-          .map((ev) => {
-            const venue = ev?._embedded?.venues?.[0];
-            const dt = ev?.dates?.start?.localDate; // "YYYY-MM-DD"
-            if (!dt || !venue) return null;
-
-            const city = venue?.city?.name || "";
-            const region = venue?.state?.stateCode || ""; // US
-            const country = venue?.country?.countryCode || "";
-            const venueName = venue?.name || "Venue";
-
-            const venueSlug = (venue?.id)
-              ? `tm-${venue.id}` // most reliable unique key
-              : slugify(venueName);
-
-            return {
-              id: `${dt}-${slugify(city)}-${slugify(venueName)}`,
-              date: dt,
-              city,
-              region,
-              country,
-              venueName,
-              venueSlug,
-              ticketUrl: ev?.url || tour.ticketUrl || "",
-              links: {
-                cityGuide: `https://concerto-venue-map.netlify.app/?venue=${venueSlug}`,
-                bagPolicy: `https://concerto-microfeatures.netlify.app/bag-policy/?venue=${venueSlug}`,
-                concessions: `https://concerto-microfeatures.netlify.app/concessions/?venue=${venueSlug}`,
-                parking: `https://concerto-microfeatures.netlify.app/parking/?venue=${venueSlug}`,
-                rideshare: `https://concerto-microfeatures.netlify.app/rideshare/?venue=${venueSlug}`
-              }
-            };
-          })
-          .filter(Boolean);
-
-      } else {
-        console.warn("Ticketmaster function failed:", tmRes.status);
-      }
-    }
-
-    return tour;
+    return await res.json();
   } catch (err) {
     console.error(`Error loading tour file: ${fileName}`, err);
     return null;
@@ -142,8 +84,10 @@ function getTourImageSrc(tour) {
 function formatShortDate(isoDateStr) {
   if (!isoDateStr) return "";
 
+  // Expect "YYYY-MM-DD"
   const m = String(isoDateStr).match(/^(\d{4})-(\d{2})-(\d{2})$/);
 
+  // Fallback if format is unexpected
   if (!m) {
     const dFallback = new Date(isoDateStr);
     if (Number.isNaN(dFallback.getTime())) return isoDateStr;
@@ -151,98 +95,27 @@ function formatShortDate(isoDateStr) {
   }
 
   const year = Number(m[1]);
-  const monthIndex = Number(m[2]) - 1;
+  const monthIndex = Number(m[2]) - 1; // 0-based
   const day = Number(m[3]);
 
+  // Create LOCAL date (prevents “day before” bug)
   const d = new Date(year, monthIndex, day);
+
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
-}
-
-function buildVenueLinks(venueSlug) {
-  if (!venueSlug) return {};
-  return {
-    cityGuide: `https://concerto-venue-map.netlify.app/?venue=${venueSlug}`,
-    bagPolicy: `https://concerto-microfeatures.netlify.app/bag-policy/?venue=${venueSlug}`,
-    concessions: `https://concerto-microfeatures.netlify.app/concessions/?venue=${venueSlug}`,
-    parking: `https://concerto-microfeatures.netlify.app/parking/?venue=${venueSlug}`,
-    rideshare: `https://concerto-microfeatures.netlify.app/rideshare/?venue=${venueSlug}`
-  };
-}
-
-function resolveConcertoVenueSlug(tour, { venueId, venueName }) {
-  const overrides = tour?.ticketmaster?.venueSlugOverrides || {};
-  if (venueId && overrides[venueId]) return overrides[venueId];
-  if (venueName && overrides[venueName]) return overrides[venueName];
-  if (venueName) return slugify(venueName);
-  return "";
-}
-
-/* ---------- Ticketmaster Hydration (requires Netlify function proxy) ---------- */
-
-async function hydrateTourFromTicketmaster(tour) {
-  const attractionId = tour.ticketmaster.attractionId;
-
-  // This expects you to have: /.netlify/functions/tm-events?attractionId=XXXX
-  const url = `/.netlify/functions/tm-events?attractionId=${encodeURIComponent(attractionId)}`;
-
-  try {
-    const res = await fetch(url);
-    if (!res.ok) {
-      console.warn(`Ticketmaster proxy failed for ${tour.tourName}:`, res.status);
-      tour.shows = tour.shows || [];
-      return;
-    }
-
-    const data = await res.json();
-    const events = data?._embedded?.events || [];
-
-    const shows = events
-      .map((ev) => {
-        const localDate = ev?.dates?.start?.localDate;
-        const venue = ev?._embedded?.venues?.[0];
-        const venueName = venue?.name || "";
-        const city = venue?.city?.name || "";
-        const region = venue?.state?.stateCode || venue?.state?.name || "";
-        const country = venue?.country?.countryCode || "";
-
-        const venueId = venue?.id || "";
-        const venueSlug = resolveConcertoVenueSlug(tour, { venueId, venueName });
-        const ticketUrl = ev?.url || "";
-
-        return {
-          date: localDate,
-          city,
-          region,
-          country,
-          venueName,
-          venueSlug,
-          ticketUrl,
-          links: buildVenueLinks(venueSlug)
-        };
-      })
-      .filter((s) => s.date && s.venueName);
-
-    shows.sort((a, b) => parseLocalYMD(a.date) - parseLocalYMD(b.date));
-    tour.shows = shows;
-
-    if (!tour.year && shows[0]?.date) {
-      tour.year = Number(String(shows[0].date).slice(0, 4)) || tour.year;
-    }
-  } catch (err) {
-    console.error("Ticketmaster hydration error:", err);
-    tour.shows = tour.shows || [];
-  }
 }
 
 /* ---------- Back Button (Tour -> Library) ---------- */
 
 function goBackToLibrary() {
+  // Close any open dropdowns
   document.querySelectorAll(".show-dropdown.open").forEach((el) => el.classList.remove("open"));
 
+  // Remove ?tour= from URL
   const url = new URL(window.location.href);
   url.searchParams.delete("tour");
   window.history.pushState({}, "", url.toString());
 
+  // Restore library view
   const browseSection = document.querySelector(".browse-list");
   const panel = document.getElementById("infoPanel");
   const emptyState = panel?.querySelector(".info-empty");
@@ -314,12 +187,14 @@ function selectTour(tour, { hideLibrary = false } = {}) {
   if (content) content.hidden = false;
   panel.classList.remove("info-panel--empty");
 
+  // Ensure back button works (requires HTML element with id="backToLibrary")
   const backBtn = document.getElementById("backToLibrary");
   if (backBtn && !backBtn.dataset.bound) {
     backBtn.addEventListener("click", goBackToLibrary);
     backBtn.dataset.bound = "1";
   }
 
+  // Header content
   const nameEl = document.getElementById("tourName");
   const artistEl = document.getElementById("tourArtist");
   const metaEl = document.getElementById("tourMeta");
@@ -364,6 +239,8 @@ function renderShowsList(tour) {
     const venueSpan = document.createElement("span");
     venueSpan.className = "show-venue";
 
+    // FIFA: main line should be the matchup (fallbacks included)
+    // Other tours: keep venue name
     venueSpan.textContent = isFifa
       ? (show.matchup || show.match || show.title || "Match")
       : (show.venueName || "Venue");
@@ -371,13 +248,14 @@ function renderShowsList(tour) {
     const citySpan = document.createElement("span");
     citySpan.className = "show-city";
 
+    // FIFA: show city only (no state)
+    // Other tours: keep city + state
     if (isFifa) {
       citySpan.textContent = show.city || "";
     } else {
       const cityBits = [];
       if (show.city) cityBits.push(show.city);
-      // ✅ FIX: most of your JSON uses "region", not "state"
-      if (show.region) cityBits.push(show.region);
+      if (show.state) cityBits.push(show.state);
       citySpan.textContent = cityBits.join(", ");
     }
 
@@ -418,6 +296,7 @@ function renderShowsList(tour) {
       linksWrap.appendChild(a);
     }
 
+    // Buy Tickets uses show.ticketUrl with fallback to links.ticketUrl
     addLink("Buy Tickets", show.ticketUrl || links.ticketUrl, true);
     addLink("City Guide", links.cityGuide);
     addLink("Rideshare", links.rideshare);
@@ -447,7 +326,10 @@ function navigateToTour(tour) {
   const url = new URL(window.location.href);
   url.searchParams.set("tour", slug);
 
+  // Update address bar without full reload
   window.history.pushState({ tourSlug: slug }, "", url.toString());
+
+  // Enter "tour page" mode (hide library)
   selectTour(tour, { hideLibrary: true });
 }
 
@@ -459,6 +341,7 @@ function enterFromUrl() {
   const match = allTours.find((t) => getTourSlug(t) === slug);
   if (!match) return null;
 
+  // Direct link to this tour: hide library so it feels like its own page
   selectTour(match, { hideLibrary: true });
   return match;
 }
@@ -519,14 +402,17 @@ async function initFeaturedTours() {
   renderTourLibrary(allTours);
   setupSearch();
 
+  // Wire back button once (requires HTML element with id="backToLibrary")
   const backBtn = document.getElementById("backToLibrary");
   if (backBtn && !backBtn.dataset.bound) {
     backBtn.addEventListener("click", goBackToLibrary);
     backBtn.dataset.bound = "1";
   }
 
-  enterFromUrl();
+  // If URL has ?tour=..., go straight into that tour's page mode
+  const fromUrl = enterFromUrl();
 
+  // Handle back/forward navigation
   window.addEventListener("popstate", () => {
     const url = new URL(window.location.href);
     const slug = url.searchParams.get("tour");
@@ -536,6 +422,7 @@ async function initFeaturedTours() {
     const content = panel.querySelector(".info-content");
 
     if (!slug) {
+      // Back to library view
       if (browseSection) browseSection.style.display = "";
       if (content) content.hidden = true;
       if (emptyState) {
