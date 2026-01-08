@@ -1,0 +1,15 @@
+{
+  "tourId": "bruno-mars-ticketmaster",
+  "artist": "Bruno Mars",
+  "tourName": "Bruno Mars",
+  "year": 2026,
+  "source": "ticketmaster-attraction",
+  "notes": "Auto-populated from Ticketmaster (worldwide) via attractionId.",
+  "ticketmaster": {
+    "attractionId": "1466801",
+    "venueSlugOverrides": {
+      "Sphere": "sphere-las-vegas"
+    }
+  },
+  "shows": []
+}
