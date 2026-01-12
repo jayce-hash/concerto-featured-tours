@@ -489,9 +489,9 @@ a{ color:inherit; text-decoration:none; }
 .browse-item + .browse-item{ border-top:none; }
 
 .browse-item-name{
-  font-size:18px;
-  font-weight:800;
-  letter-spacing:.01em;
+  font-size:var(--fs-14);   /* match “Browse featured tours” */
+  font-weight:750;
+  letter-spacing:.02em;
 }
 
 .browse-item-meta{
