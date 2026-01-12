@@ -1,0 +1,486 @@
+{
+  "tourId": "hayley-williams-at-a-bachelorette-party-tour-2026",
+  "tourName": "Good Dye Young Presents: Hayley Williams At A Bachelorette Party",
+  "artist": "Hayley Williams",
+  "year": 2026,
+  "slug": "hayley-williams-bachelorette-party-tour-2026",
+  "ticketmasterUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+  "image": "hayley-williams-at-a-bachelorette-party-tour-2026.jpg",
+  "notes": "Hayley Williams’ 2026 solo tour supporting *Ego Death at a Bachelorette Party*, with North American shows across the U.S. and Canada. Dates and venues compiled from official Ticketmaster listings.  [oai_citation:2‡Ticketmaster US](https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627?utm_source=chatgpt.com)",
+  "shows": [
+    {
+      "id": "2026-03-27-atlanta-ga-tabernacle",
+      "date": "2026-03-27",
+      "city": "Atlanta",
+      "region": "GA",
+      "country": "US",
+      "venueName": "The Tabernacle",
+      "venueSlug": "the-tabernacle",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-tabernacle",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-tabernacle",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-tabernacle",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-tabernacle",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-tabernacle"
+      }
+    },
+    {
+      "id": "2026-03-28-atlanta-ga-tabernacle",
+      "date": "2026-03-28",
+      "city": "Atlanta",
+      "region": "GA",
+      "country": "US",
+      "venueName": "The Tabernacle",
+      "venueSlug": "the-tabernacle",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-tabernacle",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-tabernacle",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-tabernacle",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-tabernacle",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-tabernacle"
+      }
+    },
+    {
+      "id": "2026-03-31-toronto-on-massey-hall",
+      "date": "2026-03-31",
+      "city": "Toronto",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "Massey Hall",
+      "venueSlug": "massey-hall",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=massey-hall",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=massey-hall",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=massey-hall",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=massey-hall",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=massey-hall"
+      }
+    },
+    {
+      "id": "2026-04-01-toronto-on-massey-hall",
+      "date": "2026-04-01",
+      "city": "Toronto",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "Massey Hall",
+      "venueSlug": "massey-hall",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=massey-hall",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=massey-hall",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=massey-hall",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=massey-hall",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=massey-hall"
+      }
+    },
+    {
+      "id": "2026-04-03-boston-ma-citizens-house-of-blues",
+      "date": "2026-04-03",
+      "city": "Boston",
+      "region": "MA",
+      "country": "US",
+      "venueName": "Citizens House of Blues",
+      "venueSlug": "citizens-house-of-blues",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=citizens-house-of-blues",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=citizens-house-of-blues",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=citizens-house-of-blues",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=citizens-house-of-blues",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=citizens-house-of-blues"
+      }
+    },
+    {
+      "id": "2026-04-04-boston-ma-citizens-house-of-blues",
+      "date": "2026-04-04",
+      "city": "Boston",
+      "region": "MA",
+      "country": "US",
+      "venueName": "Citizens House of Blues",
+      "venueSlug": "citizens-house-of-blues",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=citizens-house-of-blues",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=citizens-house-of-blues",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=citizens-house-of-blues",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=citizens-house-of-blues",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=citizens-house-of-blues"
+      }
+    },
+    {
+      "id": "2026-04-06-philadelphia-pa-franklin-music-hall",
+      "date": "2026-04-06",
+      "city": "Philadelphia",
+      "region": "PA",
+      "country": "US",
+      "venueName": "Franklin Music Hall",
+      "venueSlug": "franklin-music-hall",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=franklin-music-hall",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=franklin-music-hall",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=franklin-music-hall",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=franklin-music-hall",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=franklin-music-hall"
+      }
+    },
+    {
+      "id": "2026-04-07-philadelphia-pa-franklin-music-hall",
+      "date": "2026-04-07",
+      "city": "Philadelphia",
+      "region": "PA",
+      "country": "US",
+      "venueName": "Franklin Music Hall",
+      "venueSlug": "franklin-music-hall",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=franklin-music-hall",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=franklin-music-hall",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=franklin-music-hall",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=franklin-music-hall",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=franklin-music-hall"
+      }
+    },
+    {
+      "id": "2026-04-09-new-york-ny-hammerstein-ballroom",
+      "date": "2026-04-09",
+      "city": "New York",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Manhattan Center Hammerstein Ballroom",
+      "venueSlug": "hammerstein-ballroom",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=hammerstein-ballroom",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=hammerstein-ballroom",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=hammerstein-ballroom",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=hammerstein-ballroom",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=hammerstein-ballroom"
+      }
+    },
+    {
+  "id": "2026-04-10-new-york-ny-hammerstein-ballroom",
+  "date": "2026-04-10",
+  "city": "New York",
+  "region": "NY",
+  "country": "US",
+  "venueName": "Manhattan Center Hammerstein Ballroom",
+  "venueSlug": "hammerstein-ballroom",
+  "ticketUrl": "https://www.ticketmaster.com/good-dye-young-presents-hayley-williams-at-a-bachelorette-party-new-york-new-york-04-10-2026/event/000063690468EAA7",
+  "links": {
+    "cityGuide": "https://concerto-venue-map.netlify.app/?venue=hammerstein-ballroom",
+    "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=hammerstein-ballroom",
+    "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=hammerstein-ballroom",
+    "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=hammerstein-ballroom",
+    "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=hammerstein-ballroom"
+  }
+},
+        {
+      "id": "2026-04-14-baltimore-md-the-lyric",
+      "date": "2026-04-14",
+      "city": "Baltimore",
+      "region": "MD",
+      "country": "US",
+      "venueName": "The Lyric",
+      "venueSlug": "the-lyric",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-lyric",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-lyric",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-lyric",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-lyric",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-lyric"
+      }
+    },
+    {
+      "id": "2026-04-15-silver-spring-md-the-fillmore-silver-spring",
+      "date": "2026-04-15",
+      "city": "Silver Spring",
+      "region": "MD",
+      "country": "US",
+      "venueName": "The Fillmore Silver Spring",
+      "venueSlug": "the-fillmore-silver-spring",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-fillmore-silver-spring",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-fillmore-silver-spring",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-fillmore-silver-spring",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-fillmore-silver-spring",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-fillmore-silver-spring"
+      }
+    },
+    {
+      "id": "2026-04-17-minneapolis-mn-fillmore-minneapolis",
+      "date": "2026-04-17",
+      "city": "Minneapolis",
+      "region": "MN",
+      "country": "US",
+      "venueName": "Fillmore Minneapolis presented by Affinity Plus",
+      "venueSlug": "fillmore-minneapolis",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fillmore-minneapolis",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fillmore-minneapolis",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fillmore-minneapolis",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fillmore-minneapolis",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fillmore-minneapolis"
+      }
+    },
+    {
+      "id": "2026-04-18-minneapolis-mn-fillmore-minneapolis",
+      "date": "2026-04-18",
+      "city": "Minneapolis",
+      "region": "MN",
+      "country": "US",
+      "venueName": "Fillmore Minneapolis presented by Affinity Plus",
+      "venueSlug": "fillmore-minneapolis",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fillmore-minneapolis",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fillmore-minneapolis",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fillmore-minneapolis",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fillmore-minneapolis",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fillmore-minneapolis"
+      }
+    },
+    {
+      "id": "2026-04-21-chicago-il-byline-bank-aragon-ballroom",
+      "date": "2026-04-21",
+      "city": "Chicago",
+      "region": "IL",
+      "country": "US",
+      "venueName": "Byline Bank Aragon Ballroom",
+      "venueSlug": "byline-bank-aragon-ballroom",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=byline-bank-aragon-ballroom",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=byline-bank-aragon-ballroom",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=byline-bank-aragon-ballroom",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=byline-bank-aragon-ballroom",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=byline-bank-aragon-ballroom"
+      }
+    },
+    {
+      "id": "2026-04-22-chicago-il-byline-bank-aragon-ballroom",
+      "date": "2026-04-22",
+      "city": "Chicago",
+      "region": "IL",
+      "country": "US",
+      "venueName": "Byline Bank Aragon Ballroom",
+      "venueSlug": "byline-bank-aragon-ballroom",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=byline-bank-aragon-ballroom",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=byline-bank-aragon-ballroom",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=byline-bank-aragon-ballroom",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=byline-bank-aragon-ballroom",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=byline-bank-aragon-ballroom"
+      }
+    },
+    {
+      "id": "2026-04-25-nashville-tn-ryman-auditorium",
+      "date": "2026-04-25",
+      "city": "Nashville",
+      "region": "TN",
+      "country": "US",
+      "venueName": "Ryman Auditorium",
+      "venueSlug": "ryman-auditorium",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ryman-auditorium",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ryman-auditorium",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ryman-auditorium",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ryman-auditorium",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ryman-auditorium"
+      }
+    },
+    {
+  "id": "2026-04-27-nashville-tn-ryman-auditorium",
+  "date": "2026-04-27",
+  "city": "Nashville",
+  "region": "TN",
+  "country": "US",
+  "venueName": "Ryman Auditorium",
+  "venueSlug": "ryman-auditorium",
+  "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+  "links": {
+    "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ryman-auditorium",
+    "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ryman-auditorium",
+    "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ryman-auditorium",
+    "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ryman-auditorium",
+    "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ryman-auditorium"
+  }
+},
+        {
+      "id": "2026-04-28-nashville-tn-ryman-auditorium",
+      "date": "2026-04-28",
+      "city": "Nashville",
+      "region": "TN",
+      "country": "US",
+      "venueName": "Ryman Auditorium",
+      "venueSlug": "ryman-auditorium",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/273 [oai_citation:2‡Ticketmaster US](https://www.ticketmaster.com/search?q=hayley+williams&utm_source=chatgpt.com)"cityGuide": "https://concerto-venue-map.netlify.app/?venue=ryman-auditorium",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ryman-auditorium",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ryman-auditorium",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ryman-auditorium",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ryman-auditorium"
+      }
+    },
+    {
+      "id": "2026-05-02-austin-tx-acl-live-at-the-moody-theater",
+      "date": "2026-05-02",
+      "city": "Austin",
+      "region": "TX",
+      "country": "US",
+      "venueName": "ACL Live at The Moody Theater",
+      "venueSlug": "acl-live-at-the-moody-theater",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=acl-live-at-the-moody-theater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=acl-live-at-the-moody-theater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=acl-live-at-the-moody-theater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=acl-live-at-the-moody-theater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=acl-live-at-the-moody-theater"
+      }
+    },
+    {
+      "id": "2026-05-03-austin-tx-acl-live-at-the-moody-theater",
+      "date": "2026-05-03",
+      "city": "Austin",
+      "region": "TX",
+      "country": "US",
+      "venueName": "ACL Live at The Moody Theater",
+      "venueSlug": "acl-live-at-the-moody-theater",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=acl-live-at-the-moody-theater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=acl-live-at-the-moody-theater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=acl-live-at-the-moody-theater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=acl-live-at-the-moody-theater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=acl-live-at-the-moody-theater"
+      }
+    },
+    {
+      "id": "2026-05-05-phoenix-az-the-van-buren",
+      "date": "2026-05-05",
+      "city": "Phoenix",
+      "region": "AZ",
+      "country": "US",
+      "venueName": "The Van Buren",
+      "venueSlug": "the-van-buren",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-van-buren",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-van-buren",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-van-buren",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-van-buren",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-van-buren"
+      }
+    },
+    {
+      "id": "2026-05-07-oakland-ca-fox-theater-oakland",
+      "date": "2026-05-07",
+      "city": "Oakland",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Fox Theater - Oakland",
+      "venueSlug": "fox-theater-oakland",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fox-theater-oakland",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fox-theater-oakland",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fox-theater-oakland",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fox-theater-oakland",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fox-theater-oakland"
+      }
+    },
+    {
+      "id": "2026-05-09-oakland-ca-fox-theater-oakland",
+      "date": "2026-05-09",
+      "city": "Oakland",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Fox Theater - Oakland",
+      "venueSlug": "fox-theater-oakland",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fox-theater-oakland",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fox-theater-oakland",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fox-theater-oakland",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fox-theater-oakland",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fox-theater-oakland"
+      }
+    },
+    {
+      "id": "2026-05-10-oakland-ca-fox-theater-oakland",
+      "date": "2026-05-10",
+      "city": "Oakland",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Fox Theater - Oakland",
+      "venueSlug": "fox-theater-oakland",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fox-theater-oakland",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fox-theater-oakland",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fox-theater-oakland",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fox-theater-oakland",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fox-theater-oakland"
+      }
+    },
+    {
+      "id": "2026-05-12-los-angeles-ca-the-wiltern",
+      "date": "2026-05-12",
+      "city": "Los Angeles",
+      "region": "CA",
+      "country": "US",
+      "venueName": "The Wiltern",
+      "venueSlug": "the-wiltern",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-wiltern",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-wiltern",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-wiltern",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-wiltern",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-wiltern"
+      }
+    },
+    {
+      "id": "2026-05-13-los-angeles-ca-the-wiltern",
+      "date": "2026-05-13",
+      "city": "Los Angeles",
+      "region": "CA",
+      "country": "US",
+      "venueName": "The Wiltern",
+      "venueSlug": "the-wiltern",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-wiltern",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-wiltern",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-wiltern",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-wiltern",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-wiltern"
+      }
+    },
+    {
+      "id": "2026-05-15-los-angeles-ca-the-wiltern",
+      "date": "2026-05-15",
+      "city": "Los Angeles",
+      "region": "CA",
+      "country": "US",
+      "venueName": "The Wiltern",
+      "venueSlug": "the-wiltern",
+      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-wiltern",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-wiltern",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-wiltern",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-wiltern",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-wiltern"
+      }
+    }
+  ]
+} 
