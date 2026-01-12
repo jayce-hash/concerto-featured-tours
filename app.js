@@ -21,7 +21,8 @@ const TOUR_FILES = [
   'my-chemical-romance-the-black-parade-tour.json',
   'chris-stapleton-all-american-road-show-tour.json',
   'cardi-b-little-miss-drama-tour.json',
-  'hayley-williams-at-a-bachelorette-party-tour.json'
+  'hayley-williams-at-a-bachelorette-party-tour.json',
+  'florence-the-machine-everybody-scream-tour.json'
 ];
 
 let allTours = [];
