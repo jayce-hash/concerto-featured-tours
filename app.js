@@ -150,16 +150,9 @@ function renderTourLibrary(tours) {
     name.className = "browse-item-name";
     name.textContent = tour.tourName || "Untitled Tour";
 
-    const meta = document.createElement("div");
-    meta.className = "browse-item-meta";
-    const artist = tour.artist || "";
-    const showCount = tour.shows ? tour.shows.length : 0;
-    const year = tour.year || "";
-    const bits = [];
-    if (artist) bits.push(artist);
-    if (showCount) bits.push(`${showCount} show${showCount > 1 ? "s" : ""}`);
-    if (year) bits.push(year);
-    meta.textContent = bits.join(" · ");
+const meta = document.createElement("div");
+meta.className = "browse-item-meta";
+meta.textContent = tour.artist || "";
 
     item.appendChild(name);
     if (meta.textContent.trim()) item.appendChild(meta);
