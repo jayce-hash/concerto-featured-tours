@@ -16,7 +16,8 @@ const TOUR_FILES = [
   'demi-lovato-its-not-that-deep-tour.json',
   'bruno-mars-the-romantic-tour.json',
   'journey-final-frontier-tour.json',
-  'bon-jovi-forever-tour.json'
+  'bon-jovi-forever-tour.json',
+  'rush-fifty-something-tour.json'
 ];
 
 let allTours = [];
