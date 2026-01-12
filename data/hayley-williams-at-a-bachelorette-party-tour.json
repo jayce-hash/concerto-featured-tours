@@ -177,7 +177,7 @@
     "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=hammerstein-ballroom",
     "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=hammerstein-ballroom"
   }
-},
+     },
         {
       "id": "2026-04-14-baltimore-md-the-lyric",
       "date": "2026-04-14",
@@ -314,21 +314,23 @@
     "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ryman-auditorium"
   }
 },
-        {
-      "id": "2026-04-28-nashville-tn-ryman-auditorium",
-      "date": "2026-04-28",
-      "city": "Nashville",
-      "region": "TN",
-      "country": "US",
-      "venueName": "Ryman Auditorium",
-      "venueSlug": "ryman-auditorium",
-      "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/273 [oai_citation:2‡Ticketmaster US](https://www.ticketmaster.com/search?q=hayley+williams&utm_source=chatgpt.com)"cityGuide": "https://concerto-venue-map.netlify.app/?venue=ryman-auditorium",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ryman-auditorium",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ryman-auditorium",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ryman-auditorium",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ryman-auditorium"
-      }
-    },
+       {
+  "id": "2026-04-28-nashville-tn-ryman-auditorium",
+  "date": "2026-04-28",
+  "city": "Nashville",
+  "region": "TN",
+  "country": "US",
+  "venueName": "Ryman Auditorium",
+  "venueSlug": "ryman-auditorium",
+  "ticketUrl": "https://www.ticketmaster.com/hayley-williams-tickets/artist/2733627",
+  "links": {
+    "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ryman-auditorium",
+    "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ryman-auditorium",
+    "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ryman-auditorium",
+    "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ryman-auditorium",
+    "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ryman-auditorium"
+  }
+},
     {
       "id": "2026-05-02-austin-tx-acl-live-at-the-moody-theater",
       "date": "2026-05-02",
