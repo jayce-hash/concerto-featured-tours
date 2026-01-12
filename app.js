@@ -20,7 +20,8 @@ const TOUR_FILES = [
   'rush-fifty-something-tour.json',
   'my-chemical-romance-the-black-parade-tour.json',
   'chris-stapleton-all-american-road-show-tour.json',
-  'cardi-b-little-miss-drama-tour.json'
+  'cardi-b-little-miss-drama-tour.json',
+  'hayley-williams-at-a-bachelorette-party-tour.json'
 ];
 
 let allTours = [];
