@@ -22,7 +22,8 @@ const TOUR_FILES = [
   'chris-stapleton-all-american-road-show-tour.json',
   'cardi-b-little-miss-drama-tour.json',
   'hayley-williams-at-a-bachelorette-party-tour.json',
-  'florence-the-machine-everybody-scream-tour.json'
+  'florence-the-machine-everybody-scream-tour.json',
+  'louis-tomlinson-how-did-we-get-here-world-tour.json'
 ];
 
 let allTours = [];
