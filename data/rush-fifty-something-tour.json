@@ -601,6 +601,6 @@
         "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=t-mobile-arena",
         "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=t-mobile-arena",
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=t-mobile-arena"
-      }
+      },
     }
-  }  
+  }
