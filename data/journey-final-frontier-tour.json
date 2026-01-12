@@ -1,4 +1,3 @@
-[
 {
   "tourId": "journey-final-frontier-tour",
   "tourName": "Final Frontier Tour",
@@ -248,22 +247,23 @@
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=rupp-arena"
       }
     },
-    {
-  "id": "2026-03-25-columbus-oh-schottenstein-center",
-  "date": "2026-03-25",
-  "city": "Columbus",
-  "region": "OH",
-  "country": "US",
-  "venueName": "Schottenstein Center",
-  "venueSlug": "schottenstein-center",
-  "ticketUrl": "https://www.ticketmaster.com/journey-tickets/artist/735415",
-  "links": {
-    "cityGuide": "https://concerto-venue-map.netlify.app/?venue=schottenstein-center",
-    "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=schottenstein-center",
-    "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=schottenstein-center",
-    "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=schottenstein-center",
-    "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=schottenstein-center"
-  },
+        {
+      "id": "2026-03-25-columbus-oh-schottenstein-center",
+      "date": "2026-03-25",
+      "city": "Columbus",
+      "region": "OH",
+      "country": "US",
+      "venueName": "Schottenstein Center",
+      "venueSlug": "schottenstein-center",
+      "ticketUrl": "https://www.ticketmaster.com/journey-tickets/artist/735415",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=schottenstein-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=schottenstein-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=schottenstein-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=schottenstein-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=schottenstein-center"
+      }
+    },
           {
       "id": "2026-03-27-tulsa-ok-bok-center",
       "date": "2026-03-27",
@@ -1115,3 +1115,4 @@
       }
     }
   ]
+}
