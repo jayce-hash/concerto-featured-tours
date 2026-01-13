@@ -412,7 +412,7 @@
     "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-o2-london",
     "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-o2-london"
   }
-}.
+},
     {
   "id": "2026-06-04-seattle-wa-climate-pledge-arena",
   "date": "2026-06-04",
@@ -786,7 +786,7 @@
     "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kaseya-center",
     "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kaseya-center"
   }
-},
+}
   ]
 }
     
