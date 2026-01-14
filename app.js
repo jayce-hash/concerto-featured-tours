@@ -322,17 +322,23 @@ function renderShowsList(tour) {
     a.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      buildfire.actionItems.execute(
-        { title: label, action: "linkToApp", instanceId: IN_APP_INSTANCE_IDS[key] },
-        () => {}
-      );
+
+      try {
+        buildfire.navigation.navigateTo({
+          instanceId: IN_APP_INSTANCE_IDS[key],
+          title: label
+        });
+      } catch (err) {
+        // Fallback: if navigateTo fails for any reason, open the URL in-app
+        buildfire.navigation.openWindow(url, "_blank");
+      }
     });
 
     linksWrap.appendChild(a);
     return;
   }
 
-  // Default external link behavior (unchanged for Buy Tickets + anything else)
+  // Default external behavior (unchanged)
   a.href = url;
   a.target = "_blank";
   a.rel = "noopener noreferrer";
