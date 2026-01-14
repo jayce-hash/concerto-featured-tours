@@ -546,3 +546,99 @@ a{ color:inherit; text-decoration:none; }
   .show-row-header:hover{ background: transparent; }
   .browse-item:hover{ transform:none; box-shadow:var(--shadow2); }
 }
+
+/* ============================================================
+   Featured Tours — Shows List (FLAT, CLEAN, ALIGNED)
+   Paste at bottom of styles.css to override earlier rules
+   ============================================================ */
+
+/* Make the list truly flush under the hint text */
+#showsList{
+  margin: 12px 0 0 !important;      /* no negative margins */
+  padding: 0 !important;
+}
+
+/* Kill the inner container look entirely */
+.shows-list{
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+/* One clean top divider, then clean row dividers */
+.show-row{
+  border: 0 !important;
+  border-top: 1px solid rgba(18,30,54,.08) !important;
+}
+.show-row:last-child{
+  border-bottom: 0 !important;
+}
+
+/* Row spacing + alignment: left = venue, right cluster = city + date + chevron */
+.show-row-header{
+  padding: 14px 16px !important;
+  background: transparent !important;
+
+  display: grid !important;
+  grid-template-columns: 1fr auto auto 16px !important;
+  gap: 14px !important;
+  align-items: center !important;
+
+  font-family: var(--font) !important;
+}
+
+/* Venue: single line, clean */
+.show-venue{
+  font-size: var(--fs-14) !important;
+  font-weight: 750 !important;
+  line-height: 1.2 !important;
+
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* City + date: consistent size + baseline */
+.show-city,
+.show-date{
+  font-size: var(--fs-13) !important;
+  color: var(--muted) !important;
+  white-space: nowrap !important;
+}
+
+/* Chevron tighter + visually centered */
+.show-chevron{
+  font-size: 12px !important;
+  color: rgba(94,107,134,.9) !important;
+  transform: translateY(1px) !important;
+  text-align: right !important;
+}
+
+/* Dropdown: make it feel attached to the row (no shaded panel) */
+.show-dropdown{
+  display: none;
+  padding: 0 16px 14px 16px !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+.show-dropdown.open{ display:block; }
+
+/* Links align with the text column (not under the chevron cluster) */
+.show-links{
+  margin-top: 10px !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px !important;
+}
+
+/* Mobile: stack buttons */
+@media (max-width: 560px){
+  .show-links{ grid-template-columns: 1fr !important; }
+}
+
+/* Optional: remove hover background on iOS */
+@media (hover: none){
+  .show-row-header:hover{ background: transparent !important; }
+}
