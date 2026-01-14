@@ -294,12 +294,11 @@ function renderShowsList(tour) {
 
     const links = show.links || {};
 
-   function addLink(label, url, isPrimary = false) {
+function addLink(label, url, isPrimary = false) {
   const a = document.createElement("a");
   a.textContent = label;
   a.className = "show-link-btn" + (isPrimary ? " primary" : "");
 
-  // Disabled state (unchanged)
   if (!url) {
     a.href = "javascript:void(0)";
     a.style.opacity = "0.45";
@@ -308,39 +307,28 @@ function renderShowsList(tour) {
     return;
   }
 
-  const isBuildFire = typeof window.buildfire !== "undefined";
+  // These should stay INSIDE the WebView (no _blank)
+  const openInWebview = (
+    label === "City Guide" ||
+    label === "Rideshare" ||
+    label === "Bag Policy" ||
+    label === "Concessions" ||
+    label === "Parking"
+  );
 
-  const key =
-    label === "City Guide" ? "cityGuide" :
-    label === "Rideshare" ? "rideshare" :
-    label === "Bag Policy" ? "bagPolicy" :
-    label === "Concessions" ? "concessions" :
-    label === "Parking" ? "parking" :
-    null;
-
-  // In-app routing for those 5 buttons
-  if (isBuildFire && key && IN_APP_INSTANCE_IDS[key]) {
-    a.href = "javascript:void(0)";
+  if (openInWebview) {
+    // same-window navigation = stays inside the WebView
+    a.href = url;
     a.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
-
-      try {
-        buildfire.navigation.navigateTo({
-          instanceId: IN_APP_INSTANCE_IDS[key],
-          title: label
-        });
-      } catch (err) {
-        // Fallback: if navigateTo fails for any reason, open the URL in-app
-        buildfire.navigation.openWindow(url, "_blank");
-      }
+      window.location.href = url;
     });
-
     linksWrap.appendChild(a);
     return;
   }
 
-  // Default external behavior (unchanged)
+  // Default behavior (Buy Tickets): keep your existing external behavior
   a.href = url;
   a.target = "_blank";
   a.rel = "noopener noreferrer";
