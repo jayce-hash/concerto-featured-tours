@@ -29,6 +29,15 @@ const TOUR_FILES = [
 let allTours = [];
 let selectedTour = null;
 
+// BuildFire in-app destinations (instanceIds)
+const IN_APP_INSTANCE_IDS = {
+  cityGuide: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1764797790704",
+  rideshare: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1765237012145",
+  bagPolicy: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1765234047030",
+  concessions: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1765234072898",
+  parking: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1765234093628",
+};
+
 /* ---------- Loading ---------- */
 
 async function fetchTour(fileName) {
@@ -282,21 +291,52 @@ function renderShowsList(tour) {
 
     const links = show.links || {};
 
-    function addLink(label, url, isPrimary = false) {
-      const a = document.createElement("a");
-      a.textContent = label;
-      a.className = "show-link-btn" + (isPrimary ? " primary" : "");
-      if (url) {
-        a.href = url;
-        a.target = "_blank";
-        a.rel = "noopener noreferrer";
-      } else {
-        a.href = "javascript:void(0)";
-        a.style.opacity = "0.45";
-        a.style.pointerEvents = "none";
-      }
-      linksWrap.appendChild(a);
-    }
+   function addLink(label, url, isPrimary = false) {
+  const a = document.createElement("a");
+  a.textContent = label;
+  a.className = "show-link-btn" + (isPrimary ? " primary" : "");
+
+  // Disabled state (unchanged)
+  if (!url) {
+    a.href = "javascript:void(0)";
+    a.style.opacity = "0.45";
+    a.style.pointerEvents = "none";
+    linksWrap.appendChild(a);
+    return;
+  }
+
+  const isBuildFire = typeof window.buildfire !== "undefined";
+
+  const key =
+    label === "City Guide" ? "cityGuide" :
+    label === "Rideshare" ? "rideshare" :
+    label === "Bag Policy" ? "bagPolicy" :
+    label === "Concessions" ? "concessions" :
+    label === "Parking" ? "parking" :
+    null;
+
+  // In-app routing for those 5 buttons
+  if (isBuildFire && key && IN_APP_INSTANCE_IDS[key]) {
+    a.href = "javascript:void(0)";
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      buildfire.actionItems.execute(
+        { title: label, action: "linkToApp", instanceId: IN_APP_INSTANCE_IDS[key] },
+        () => {}
+      );
+    });
+
+    linksWrap.appendChild(a);
+    return;
+  }
+
+  // Default external link behavior (unchanged for Buy Tickets + anything else)
+  a.href = url;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  linksWrap.appendChild(a);
+}
 
     // Buy Tickets uses show.ticketUrl with fallback to links.ticketUrl
     addLink("Buy Tickets", show.ticketUrl || links.ticketUrl, true);
