@@ -25,7 +25,8 @@ const TOUR_FILES = [
   'florence-the-machine-everybody-scream-tour.json',
   'louis-tomlinson-how-did-we-get-here-world-tour.json',
   'charlie-puth-whatevers-clever-world-tour.json',
-  'bts-world-tour.json'
+  'bts-world-tour.json',
+  'madison-beer-the-locket-tour.json'
 ];
 
 let allTours = [];
