@@ -27,7 +27,8 @@ const TOUR_FILES = [
   'charlie-puth-whatevers-clever-world-tour.json',
   'bts-world-tour.json',
   'madison-beer-the-locket-tour.json',
-  'pitbull-im-back-tour.json'
+  'pitbull-im-back-tour.json',
+  'harry-styles-together-together-tour.json'
 ];
 
 let allTours = [];
