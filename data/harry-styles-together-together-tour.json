@@ -857,6 +857,6 @@
         "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=accor-stadium",
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=accor-stadium"
       }
-    },
+    }
   ]
 }
