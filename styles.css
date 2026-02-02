@@ -642,3 +642,37 @@ a{ color:inherit; text-decoration:none; }
 @media (hover: none){
   .show-row-header:hover{ background: transparent !important; }
 }
+
+/* ============================================================
+   Featured Tours — DETAIL MODE (hide search + tighten header)
+   ============================================================ */
+
+body.tour-detail .feature-title,
+body.tour-detail .tagline,
+body.tour-detail .search-wrapper{
+  display:none !important;
+}
+
+/* tighten header padding when in detail mode */
+body.tour-detail .page-header{
+  padding: 10px 0 8px !important;
+}
+
+/* remove extra gap in header stack */
+body.tour-detail .page-header-inner{
+  gap: 0 !important;
+}
+
+/* pull the tour profile up closer to the logo */
+body.tour-detail .layout{
+  padding-top: 10px !important;
+}
+
+body.tour-detail .info-content{
+  margin-top: 10px !important;
+}
+
+/* optional: if you want the back button to sit tighter */
+body.tour-detail .back-btn{
+  margin-bottom: 10px !important;
+}
