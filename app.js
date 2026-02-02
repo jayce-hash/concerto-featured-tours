@@ -34,10 +34,10 @@ const TOUR_FILES = [
 let allTours = [];
 let selectedTour = null;
 
-// NEW: preserve library scroll position so back feels native
+// preserve library scroll position so back feels native
 let libraryScrollY = 0;
 
-// NEW: prevent browser from auto-restoring scroll in history navigation (helps iOS)
+// prevent browser from auto-restoring scroll in history navigation (helps iOS)
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
@@ -51,7 +51,13 @@ const IN_APP_INSTANCE_IDS = {
   parking: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1765234093628",
 };
 
-/* ---------- Scroll helpers (NEW) ---------- */
+/* ---------- Detail Mode (NEW) ---------- */
+
+function setDetailMode(isDetail) {
+  document.body.classList.toggle("tour-detail", !!isDetail);
+}
+
+/* ---------- Scroll helpers ---------- */
 
 function scrollToTopInstant() {
   // Two frames helps iOS after layout changes (like hiding the library grid)
@@ -134,10 +140,8 @@ function getTourImageSrc(tour) {
 function formatShortDate(isoDateStr) {
   if (!isoDateStr) return "";
 
-  // Expect "YYYY-MM-DD"
   const m = String(isoDateStr).match(/^(\d{4})-(\d{2})-(\d{2})$/);
 
-  // Fallback if format is unexpected
   if (!m) {
     const dFallback = new Date(isoDateStr);
     if (Number.isNaN(dFallback.getTime())) return isoDateStr;
@@ -145,10 +149,9 @@ function formatShortDate(isoDateStr) {
   }
 
   const year = Number(m[1]);
-  const monthIndex = Number(m[2]) - 1; // 0-based
+  const monthIndex = Number(m[2]) - 1;
   const day = Number(m[3]);
 
-  // Create LOCAL date (prevents “day before” bug)
   const d = new Date(year, monthIndex, day);
 
   return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
@@ -165,6 +168,9 @@ function goBackToLibrary() {
   url.searchParams.delete("tour");
   window.history.pushState({}, "", url.toString());
 
+  // Exit detail mode (NEW)
+  setDetailMode(false);
+
   // Restore library view
   const browseSection = document.querySelector(".browse-list");
   const panel = document.getElementById("infoPanel");
@@ -178,7 +184,7 @@ function goBackToLibrary() {
 
   selectedTour = null;
 
-  // NEW: restore scroll position so returning feels like a “profile back”
+  // Restore scroll position so returning feels like a “profile back”
   restoreLibraryScrollInstant();
 }
 
@@ -233,14 +239,13 @@ function selectTour(tour, { hideLibrary = false } = {}) {
   if (content) content.hidden = false;
   panel.classList.remove("info-panel--empty");
 
-  // Ensure back button works (requires HTML element with id="backToLibrary")
+  // Ensure back button works
   const backBtn = document.getElementById("backToLibrary");
   if (backBtn && !backBtn.dataset.bound) {
     backBtn.addEventListener("click", goBackToLibrary);
     backBtn.dataset.bound = "1";
   }
 
-  // Header content
   const nameEl = document.getElementById("tourName");
   const artistEl = document.getElementById("tourArtist");
   const metaEl = document.getElementById("tourMeta");
@@ -284,7 +289,6 @@ function renderShowsList(tour) {
 
     const venueSpan = document.createElement("span");
     venueSpan.className = "show-venue";
-
     venueSpan.textContent = isFifa
       ? (show.matchup || show.match || show.title || "Match")
       : (show.venueName || "Venue");
@@ -385,20 +389,21 @@ function renderShowsList(tour) {
 /* ---------- URL Routing ---------- */
 
 function navigateToTour(tour) {
-  // NEW: store scroll before we hide the grid, so it doesn’t “jump”
   libraryScrollY = window.scrollY || 0;
 
   const slug = getTourSlug(tour);
   const url = new URL(window.location.href);
   url.searchParams.set("tour", slug);
 
-  // Update address bar without full reload
   window.history.pushState({ tourSlug: slug }, "", url.toString());
+
+  // Enter detail mode (NEW)
+  setDetailMode(true);
 
   // Enter "tour page" mode (hide library)
   selectTour(tour, { hideLibrary: true });
 
-  // NEW: force the “profile” to start under the logo every time
+  // Force the “profile” to start under the logo every time
   scrollToTopInstant();
 }
 
@@ -410,11 +415,12 @@ function enterFromUrl() {
   const match = allTours.find((t) => getTourSlug(t) === slug);
   if (!match) return null;
 
+  // Enter detail mode for deep links (NEW)
+  setDetailMode(true);
+
   selectTour(match, { hideLibrary: true });
 
-  // NEW: direct links should also land at top like a profile page
   scrollToTopInstant();
-
   return match;
 }
 
@@ -474,14 +480,13 @@ async function initFeaturedTours() {
   renderTourLibrary(allTours);
   setupSearch();
 
-  // Wire back button once
   const backBtn = document.getElementById("backToLibrary");
   if (backBtn && !backBtn.dataset.bound) {
     backBtn.addEventListener("click", goBackToLibrary);
     backBtn.dataset.bound = "1";
   }
 
-  // If URL has ?tour=..., go straight into that tour's page mode
+  // Enter tour page if deep-linked
   enterFromUrl();
 
   // Handle back/forward navigation
@@ -495,6 +500,8 @@ async function initFeaturedTours() {
 
     if (!slug) {
       // Back to library view
+      setDetailMode(false); // NEW
+
       if (browseSection) browseSection.style.display = "";
       if (content) content.hidden = true;
       if (emptyState) {
@@ -503,16 +510,16 @@ async function initFeaturedTours() {
       }
       selectedTour = null;
 
-      // NEW: restore previous library scroll spot
       restoreLibraryScrollInstant();
       return;
     }
 
+    // Tour view
+    setDetailMode(true); // NEW
+
     const match = allTours.find((t) => getTourSlug(t) === slug);
     if (match) {
       selectTour(match, { hideLibrary: true });
-
-      // NEW: make it feel like a true profile page
       scrollToTopInstant();
     }
   });
