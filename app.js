@@ -28,7 +28,9 @@ const TOUR_FILES = [
   'bts-world-tour.json',
   'madison-beer-the-locket-tour.json',
   'pitbull-im-back-tour.json',
-  'harry-styles-together-together-tour.json'
+  'harry-styles-together-together-tour.json',
+  'noah-kahan-the-great-divide-tour.json',
+  'post-malone-the-big-ass-stadium-tour.json'
 ];
 
 let allTours = [];
