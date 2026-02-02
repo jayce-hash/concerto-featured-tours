@@ -1,4 +1,4 @@
- // app.js
+// app.js
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
@@ -34,6 +34,14 @@ const TOUR_FILES = [
 let allTours = [];
 let selectedTour = null;
 
+// NEW: preserve library scroll position so back feels native
+let libraryScrollY = 0;
+
+// NEW: prevent browser from auto-restoring scroll in history navigation (helps iOS)
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
 // BuildFire in-app destinations (instanceIds)
 const IN_APP_INSTANCE_IDS = {
   cityGuide: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1764797790704",
@@ -42,6 +50,25 @@ const IN_APP_INSTANCE_IDS = {
   concessions: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1765234072898",
   parking: "169d5e94-6c5e-4769-b4ca-a7d0175985e7-1765234093628",
 };
+
+/* ---------- Scroll helpers (NEW) ---------- */
+
+function scrollToTopInstant() {
+  // Two frames helps iOS after layout changes (like hiding the library grid)
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    });
+  });
+}
+
+function restoreLibraryScrollInstant() {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: libraryScrollY || 0, left: 0, behavior: "auto" });
+    });
+  });
+}
 
 /* ---------- Loading ---------- */
 
@@ -150,6 +177,9 @@ function goBackToLibrary() {
   panel?.classList.add("info-panel--empty");
 
   selectedTour = null;
+
+  // NEW: restore scroll position so returning feels like a “profile back”
+  restoreLibraryScrollInstant();
 }
 
 /* ---------- UI: Tour Library ---------- */
@@ -169,9 +199,9 @@ function renderTourLibrary(tours) {
     name.className = "browse-item-name";
     name.textContent = tour.tourName || "Untitled Tour";
 
-const meta = document.createElement("div");
-meta.className = "browse-item-meta";
-meta.textContent = tour.artist || "";
+    const meta = document.createElement("div");
+    meta.className = "browse-item-meta";
+    meta.textContent = tour.artist || "";
 
     item.appendChild(name);
     if (meta.textContent.trim()) item.appendChild(meta);
@@ -255,8 +285,6 @@ function renderShowsList(tour) {
     const venueSpan = document.createElement("span");
     venueSpan.className = "show-venue";
 
-    // FIFA: main line should be the matchup (fallbacks included)
-    // Other tours: keep venue name
     venueSpan.textContent = isFifa
       ? (show.matchup || show.match || show.title || "Match")
       : (show.venueName || "Venue");
@@ -264,8 +292,6 @@ function renderShowsList(tour) {
     const citySpan = document.createElement("span");
     citySpan.className = "show-city";
 
-    // FIFA: show city only (no state)
-    // Other tours: keep city + state
     if (isFifa) {
       citySpan.textContent = show.city || "";
     } else {
@@ -296,48 +322,44 @@ function renderShowsList(tour) {
 
     const links = show.links || {};
 
-function addLink(label, url, isPrimary = false) {
-  const a = document.createElement("a");
-  a.textContent = label;
-  a.className = "show-link-btn" + (isPrimary ? " primary" : "");
+    function addLink(label, url, isPrimary = false) {
+      const a = document.createElement("a");
+      a.textContent = label;
+      a.className = "show-link-btn" + (isPrimary ? " primary" : "");
 
-  if (!url) {
-    a.href = "javascript:void(0)";
-    a.style.opacity = "0.45";
-    a.style.pointerEvents = "none";
-    linksWrap.appendChild(a);
-    return;
-  }
+      if (!url) {
+        a.href = "javascript:void(0)";
+        a.style.opacity = "0.45";
+        a.style.pointerEvents = "none";
+        linksWrap.appendChild(a);
+        return;
+      }
 
-  // These should stay INSIDE the WebView (no _blank)
-  const openInWebview = (
-    label === "City Guide" ||
-    label === "Rideshare" ||
-    label === "Bag Policy" ||
-    label === "Concessions" ||
-    label === "Parking"
-  );
+      const openInWebview = (
+        label === "City Guide" ||
+        label === "Rideshare" ||
+        label === "Bag Policy" ||
+        label === "Concessions" ||
+        label === "Parking"
+      );
 
-  if (openInWebview) {
-    // same-window navigation = stays inside the WebView
-    a.href = url;
-    a.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      window.location.href = url;
-    });
-    linksWrap.appendChild(a);
-    return;
-  }
+      if (openInWebview) {
+        a.href = url;
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          window.location.href = url;
+        });
+        linksWrap.appendChild(a);
+        return;
+      }
 
-  // Default behavior (Buy Tickets): keep your existing external behavior
-  a.href = url;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
-  linksWrap.appendChild(a);
-}
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      linksWrap.appendChild(a);
+    }
 
-    // Buy Tickets uses show.ticketUrl with fallback to links.ticketUrl
     addLink("Buy Tickets", show.ticketUrl || links.ticketUrl, true);
     addLink("City Guide", links.cityGuide);
     addLink("Rideshare", links.rideshare);
@@ -363,6 +385,9 @@ function addLink(label, url, isPrimary = false) {
 /* ---------- URL Routing ---------- */
 
 function navigateToTour(tour) {
+  // NEW: store scroll before we hide the grid, so it doesn’t “jump”
+  libraryScrollY = window.scrollY || 0;
+
   const slug = getTourSlug(tour);
   const url = new URL(window.location.href);
   url.searchParams.set("tour", slug);
@@ -372,6 +397,9 @@ function navigateToTour(tour) {
 
   // Enter "tour page" mode (hide library)
   selectTour(tour, { hideLibrary: true });
+
+  // NEW: force the “profile” to start under the logo every time
+  scrollToTopInstant();
 }
 
 function enterFromUrl() {
@@ -382,8 +410,11 @@ function enterFromUrl() {
   const match = allTours.find((t) => getTourSlug(t) === slug);
   if (!match) return null;
 
-  // Direct link to this tour: hide library so it feels like its own page
   selectTour(match, { hideLibrary: true });
+
+  // NEW: direct links should also land at top like a profile page
+  scrollToTopInstant();
+
   return match;
 }
 
@@ -443,7 +474,7 @@ async function initFeaturedTours() {
   renderTourLibrary(allTours);
   setupSearch();
 
-  // Wire back button once (requires HTML element with id="backToLibrary")
+  // Wire back button once
   const backBtn = document.getElementById("backToLibrary");
   if (backBtn && !backBtn.dataset.bound) {
     backBtn.addEventListener("click", goBackToLibrary);
@@ -451,7 +482,7 @@ async function initFeaturedTours() {
   }
 
   // If URL has ?tour=..., go straight into that tour's page mode
-  const fromUrl = enterFromUrl();
+  enterFromUrl();
 
   // Handle back/forward navigation
   window.addEventListener("popstate", () => {
@@ -471,12 +502,18 @@ async function initFeaturedTours() {
         panel.classList.add("info-panel--empty");
       }
       selectedTour = null;
+
+      // NEW: restore previous library scroll spot
+      restoreLibraryScrollInstant();
       return;
     }
 
     const match = allTours.find((t) => getTourSlug(t) === slug);
     if (match) {
       selectTour(match, { hideLibrary: true });
+
+      // NEW: make it feel like a true profile page
+      scrollToTopInstant();
     }
   });
 }
