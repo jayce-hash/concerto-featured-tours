@@ -3,7 +3,6 @@
 
 const TOUR_FILES = [
   'backstreet-boys-into-the-millenium-sphere-las-vegas.json',
-  'halsey-back-to-the-badlands-tour.json',
   'hilary-duff-small-rooms-big-nerves-tour.json',
   'jessie-j-no-secrets-tour.json',
   'lady-gaga-the-mayhem-ball-na-2026.json',
