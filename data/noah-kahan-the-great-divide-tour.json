@@ -13,7 +13,7 @@
       "country": "US",
       "venueName": "Kia Center",
       "venueSlug": "kia-center",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Orlando",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kia-center",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kia-center",
@@ -30,7 +30,7 @@
       "country": "US",
       "venueName": "Citizens Bank Park",
       "venueSlug": "citizens-bank-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Philadelphia",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=citizens-bank-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=citizens-bank-park",
@@ -47,7 +47,7 @@
       "country": "CA",
       "venueName": "Rogers Stadium",
       "venueSlug": "rogers-stadium",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.ca/search?q=Noah%20Kahan%20Toronto",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=rogers-stadium",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=rogers-stadium",
@@ -64,7 +64,7 @@
       "country": "US",
       "venueName": "Great American Ball Park",
       "venueSlug": "great-american-ball-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Cincinnati",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=great-american-ball-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=great-american-ball-park",
@@ -81,7 +81,7 @@
       "country": "US",
       "venueName": "PNC Park",
       "venueSlug": "pnc-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Pittsburgh",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=pnc-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=pnc-park",
@@ -98,7 +98,7 @@
       "country": "US",
       "venueName": "Fenway Park",
       "venueSlug": "fenway-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Boston",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fenway-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fenway-park",
@@ -115,7 +115,7 @@
       "country": "US",
       "venueName": "Fenway Park",
       "venueSlug": "fenway-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Boston",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fenway-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fenway-park",
@@ -132,7 +132,7 @@
       "country": "US",
       "venueName": "Wrigley Field",
       "venueSlug": "wrigley-field",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Chicago",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=wrigley-field",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=wrigley-field",
@@ -149,7 +149,7 @@
       "country": "US",
       "venueName": "Citi Field",
       "venueSlug": "citi-field",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20New%20York",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=citi-field",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=citi-field",
@@ -166,7 +166,7 @@
       "country": "US",
       "venueName": "Nationals Park",
       "venueSlug": "nationals-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Washington%20DC",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=nationals-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=nationals-park",
@@ -183,7 +183,7 @@
       "country": "US",
       "venueName": "Carter-Finley Stadium",
       "venueSlug": "carter-finley-stadium",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Raleigh",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=carter-finley-stadium",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=carter-finley-stadium",
@@ -200,7 +200,7 @@
       "country": "US",
       "venueName": "Truist Park",
       "venueSlug": "truist-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Atlanta",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=truist-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=truist-park",
@@ -217,7 +217,7 @@
       "country": "US",
       "venueName": "Globe Life Field",
       "venueSlug": "globe-life-field",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Arlington%20TX",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=globe-life-field",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=globe-life-field",
@@ -234,7 +234,7 @@
       "country": "US",
       "venueName": "Busch Stadium",
       "venueSlug": "busch-stadium",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20St.%20Louis",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=busch-stadium",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=busch-stadium",
@@ -251,7 +251,7 @@
       "country": "US",
       "venueName": "Target Field",
       "venueSlug": "target-field",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Minneapolis",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=target-field",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=target-field",
@@ -268,7 +268,7 @@
       "country": "US",
       "venueName": "Coors Field",
       "venueSlug": "coors-field",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Denver",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=coors-field",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=coors-field",
@@ -285,7 +285,7 @@
       "country": "US",
       "venueName": "Rose Bowl",
       "venueSlug": "rose-bowl",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Pasadena",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=rose-bowl",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=rose-bowl",
@@ -302,7 +302,7 @@
       "country": "US",
       "venueName": "Petco Park",
       "venueSlug": "petco-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20San%20Diego",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=petco-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=petco-park",
@@ -319,7 +319,7 @@
       "country": "US",
       "venueName": "Chase Field",
       "venueSlug": "chase-field",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Phoenix",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=chase-field",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=chase-field",
@@ -336,7 +336,7 @@
       "country": "US",
       "venueName": "Oracle Park",
       "venueSlug": "oracle-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20San%20Francisco",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=oracle-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=oracle-park",
@@ -353,7 +353,7 @@
       "country": "US",
       "venueName": "America First Field",
       "venueSlug": "america-first-field",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Sandy%20UT",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=america-first-field",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=america-first-field",
@@ -370,7 +370,7 @@
       "country": "CA",
       "venueName": "BC Place",
       "venueSlug": "bc-place",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.ca/search?q=Noah%20Kahan%20Vancouver",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=bc-place",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=bc-place",
@@ -387,7 +387,7 @@
       "country": "US",
       "venueName": "T-Mobile Park",
       "venueSlug": "t-mobile-park",
-      "ticketUrl": "",
+      "ticketUrl": "https://www.ticketmaster.com/search?q=Noah%20Kahan%20Seattle",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=t-mobile-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=t-mobile-park",
