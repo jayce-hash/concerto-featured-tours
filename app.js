@@ -29,7 +29,8 @@ const TOUR_FILES = [
   'pitbull-im-back-tour.json',
   'harry-styles-together-together-tour.json',
   'noah-kahan-the-great-divide-tour.json',
-  'post-malone-the-big-ass-stadium-tour.json'
+  'post-malone-the-big-ass-stadium-tour.json',
+  'tame-impala-the-deadbeat-tour.json'
 ];
 
 let allTours = [];
