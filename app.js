@@ -2,9 +2,6 @@
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
-  'backstreet-boys-into-the-millenium-sphere-las-vegas.json',
-  'hilary-duff-the-lucky-me-tour.json',
-  'jessie-j-no-secrets-tour.json',
   'lady-gaga-the-mayhem-ball-na-2026.json',
   'conan-gray-wishbone-world-tour-na.json',
   'alex-warren-little-orphan-alex-live.json',
