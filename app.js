@@ -27,7 +27,13 @@ const TOUR_FILES = [
   'harry-styles-together-together-tour.json',
   'noah-kahan-the-great-divide-tour.json',
   'post-malone-the-big-ass-stadium-tour.json',
-  'tame-impala-the-deadbeat-tour.json'
+  'tame-impala-the-deadbeat-tour.json',
+  'raye-this-tour-may-contain-new-music.json',
+  'the-kid-laroi-a-perfect-world-tour.json',
+  'j-cole-the-fall-off-tour.json',
+  'summer-walker-still-finally-over-it-tour.json',
+  'don-toliver-octane-tour.json',
+  'mumford-and-sons-prizefighter-tour.json'
 ];
 
 let allTours = [];
