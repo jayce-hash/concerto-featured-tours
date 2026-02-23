@@ -1,25 +1,25 @@
 {
-  "tourId": "the-kid-laroi-a-perfect-world-tour-2026",
+  "tourId": "the-kid-laroi-a-perfect-world-tour",
   "artist": "The Kid LAROI",
   "tourName": "A Perfect World Tour",
   "year": 2026,
-  "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+  "notes": "Full 2026 A Perfect World Tour — North American leg April–June, Canadian dates May, European leg October–November.",
   "shows": [
     {
-      "id": "2026-04-27-fort-lauderdale-fl-war-memorial-auditorium-fl",
+      "id": "2026-04-27-fort-lauderdale-fl-war-memorial-auditorium",
       "date": "2026-04-27",
       "city": "Fort Lauderdale",
       "region": "FL",
       "country": "US",
       "venueName": "War Memorial Auditorium",
-      "venueSlug": "war-memorial-auditorium-fort-lauderdale",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "war-memorial-auditorium-fl",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=war-memorial-auditorium-fort-lauderdale",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=war-memorial-auditorium-fort-lauderdale",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=war-memorial-auditorium-fort-lauderdale",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=war-memorial-auditorium-fort-lauderdale",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=war-memorial-auditorium-fort-lauderdale"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=war-memorial-auditorium-fl",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=war-memorial-auditorium-fl",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=war-memorial-auditorium-fl",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=war-memorial-auditorium-fl",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=war-memorial-auditorium-fl"
       }
     },
     {
@@ -30,7 +30,7 @@
       "country": "US",
       "venueName": "Coca-Cola Roxy",
       "venueSlug": "coca-cola-roxy",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=coca-cola-roxy",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=coca-cola-roxy",
@@ -46,31 +46,31 @@
       "region": "FL",
       "country": "US",
       "venueName": "Yuengling Center",
-      "venueSlug": "yuengling-center-tampa",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "yuengling-center",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=yuengling-center-tampa",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=yuengling-center-tampa",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=yuengling-center-tampa",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=yuengling-center-tampa",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=yuengling-center-tampa"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=yuengling-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=yuengling-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=yuengling-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=yuengling-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=yuengling-center"
       }
     },
     {
-      "id": "2026-05-03-charlotte-nc-the-fillmore-charlotte",
+      "id": "2026-05-03-charlotte-nc-fillmore-charlotte",
       "date": "2026-05-03",
       "city": "Charlotte",
       "region": "NC",
       "country": "US",
       "venueName": "The Fillmore Charlotte",
-      "venueSlug": "the-fillmore-charlotte",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "fillmore-charlotte",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-fillmore-charlotte",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-fillmore-charlotte",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-fillmore-charlotte",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-fillmore-charlotte",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-fillmore-charlotte"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fillmore-charlotte",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fillmore-charlotte",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fillmore-charlotte",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fillmore-charlotte",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fillmore-charlotte"
       }
     },
     {
@@ -81,7 +81,7 @@
       "country": "US",
       "venueName": "Leader Bank Pavilion",
       "venueSlug": "leader-bank-pavilion",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=leader-bank-pavilion",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=leader-bank-pavilion",
@@ -98,7 +98,7 @@
       "country": "US",
       "venueName": "Toyota Oakdale Theatre",
       "venueSlug": "toyota-oakdale-theatre",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=toyota-oakdale-theatre",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=toyota-oakdale-theatre",
@@ -108,23 +108,22 @@
       }
     },
     {
-      "id": "2026-05-08-philadelphia-pa-the-met-presented-by-highmark",
+      "id": "2026-05-08-philadelphia-pa-the-met",
       "date": "2026-05-08",
       "city": "Philadelphia",
       "region": "PA",
       "country": "US",
       "venueName": "The Met Presented by Highmark",
-      "venueSlug": "the-met-presented-by-highmark",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "the-met-philadelphia",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-met-presented-by-highmark",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-met-presented-by-highmark",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-met-presented-by-highmark",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-met-presented-by-highmark",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-met-presented-by-highmark"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-met-philadelphia",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-met-philadelphia",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-met-philadelphia",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-met-philadelphia",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-met-philadelphia"
       }
     },
-
     {
       "id": "2026-05-11-washington-dc-the-anthem",
       "date": "2026-05-11",
@@ -132,17 +131,50 @@
       "region": "DC",
       "country": "US",
       "venueName": "The Anthem",
-      "venueSlug": "the-anthem-dc",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "the-anthem",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-anthem-dc",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-anthem-dc",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-anthem-dc",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-anthem-dc",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-anthem-dc"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-anthem",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-anthem",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-anthem",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-anthem",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-anthem"
       }
     },
-
+    {
+      "id": "2026-05-15-toronto-on-coca-cola-coliseum",
+      "date": "2026-05-15",
+      "city": "Toronto",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "Coca-Cola Coliseum",
+      "venueSlug": "coca-cola-coliseum",
+      "ticketUrl": "",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=coca-cola-coliseum",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=coca-cola-coliseum",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=coca-cola-coliseum",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=coca-cola-coliseum",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=coca-cola-coliseum"
+      }
+    },
+    {
+      "id": "2026-05-16-laval-qc-place-bell",
+      "date": "2026-05-16",
+      "city": "Laval",
+      "region": "QC",
+      "country": "CA",
+      "venueName": "Place Bell",
+      "venueSlug": "place-bell",
+      "ticketUrl": "",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=place-bell",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=place-bell",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=place-bell",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=place-bell",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=place-bell"
+      }
+    },
     {
       "id": "2026-05-18-brooklyn-ny-brooklyn-paramount",
       "date": "2026-05-18",
@@ -151,7 +183,7 @@
       "country": "US",
       "venueName": "Brooklyn Paramount",
       "venueSlug": "brooklyn-paramount",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=brooklyn-paramount",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=brooklyn-paramount",
@@ -168,7 +200,7 @@
       "country": "US",
       "venueName": "Brooklyn Paramount",
       "venueSlug": "brooklyn-paramount",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=brooklyn-paramount",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=brooklyn-paramount",
@@ -178,54 +210,54 @@
       }
     },
     {
-      "id": "2026-05-22-chicago-il-the-salt-shed-outdoors",
+      "id": "2026-05-22-chicago-il-salt-shed-outdoors",
       "date": "2026-05-22",
       "city": "Chicago",
       "region": "IL",
       "country": "US",
       "venueName": "The Salt Shed Outdoors (Fairgrounds)",
-      "venueSlug": "the-salt-shed-outdoors",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "salt-shed-outdoors",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-salt-shed-outdoors",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-salt-shed-outdoors",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-salt-shed-outdoors",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-salt-shed-outdoors",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-salt-shed-outdoors"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=salt-shed-outdoors",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=salt-shed-outdoors",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=salt-shed-outdoors",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=salt-shed-outdoors",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=salt-shed-outdoors"
       }
     },
     {
-      "id": "2026-05-23-sterling-heights-mi-michigan-lottery-amphitheatre-at-freedom-hill",
+      "id": "2026-05-23-sterling-heights-mi-michigan-lottery-amphitheatre",
       "date": "2026-05-23",
       "city": "Sterling Heights",
       "region": "MI",
       "country": "US",
       "venueName": "Michigan Lottery Amphitheatre at Freedom Hill",
-      "venueSlug": "michigan-lottery-amphitheatre-at-freedom-hill",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "michigan-lottery-amphitheatre-freedom-hill",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=michigan-lottery-amphitheatre-at-freedom-hill",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=michigan-lottery-amphitheatre-at-freedom-hill",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=michigan-lottery-amphitheatre-at-freedom-hill",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=michigan-lottery-amphitheatre-at-freedom-hill",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=michigan-lottery-amphitheatre-at-freedom-hill"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=michigan-lottery-amphitheatre-freedom-hill",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=michigan-lottery-amphitheatre-freedom-hill",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=michigan-lottery-amphitheatre-freedom-hill",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=michigan-lottery-amphitheatre-freedom-hill",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=michigan-lottery-amphitheatre-freedom-hill"
       }
     },
     {
-      "id": "2026-05-24-cincinnati-oh-the-andrew-j-brady-music-center",
+      "id": "2026-05-24-cincinnati-oh-andrew-j-brady-music-center",
       "date": "2026-05-24",
       "city": "Cincinnati",
       "region": "OH",
       "country": "US",
       "venueName": "The Andrew J Brady Music Center",
-      "venueSlug": "the-andrew-j-brady-music-center",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "andrew-j-brady-music-center",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-andrew-j-brady-music-center",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-andrew-j-brady-music-center",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-andrew-j-brady-music-center",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-andrew-j-brady-music-center",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-andrew-j-brady-music-center"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=andrew-j-brady-music-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=andrew-j-brady-music-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=andrew-j-brady-music-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=andrew-j-brady-music-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=andrew-j-brady-music-center"
       }
     },
     {
@@ -236,7 +268,7 @@
       "country": "US",
       "venueName": "Marathon Music Works",
       "venueSlug": "marathon-music-works",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=marathon-music-works",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=marathon-music-works",
@@ -253,7 +285,7 @@
       "country": "US",
       "venueName": "Bayou Music Center",
       "venueSlug": "bayou-music-center",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=bayou-music-center",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=bayou-music-center",
@@ -263,37 +295,37 @@
       }
     },
     {
-      "id": "2026-05-29-irving-tx-the-pavilion-at-toyota-music-factory",
+      "id": "2026-05-29-irving-tx-pavilion-at-toyota-music-factory",
       "date": "2026-05-29",
       "city": "Irving",
       "region": "TX",
       "country": "US",
       "venueName": "The Pavilion at Toyota Music Factory",
-      "venueSlug": "the-pavilion-at-toyota-music-factory",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "pavilion-at-toyota-music-factory",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-pavilion-at-toyota-music-factory",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-pavilion-at-toyota-music-factory",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-pavilion-at-toyota-music-factory",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-pavilion-at-toyota-music-factory",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-pavilion-at-toyota-music-factory"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=pavilion-at-toyota-music-factory",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=pavilion-at-toyota-music-factory",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=pavilion-at-toyota-music-factory",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=pavilion-at-toyota-music-factory",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=pavilion-at-toyota-music-factory"
       }
     },
     {
-      "id": "2026-05-30-austin-tx-stubbs-waller-creek-amphitheatre",
+      "id": "2026-05-30-austin-tx-stubbs-waller-creek-amphitheater",
       "date": "2026-05-30",
       "city": "Austin",
       "region": "TX",
       "country": "US",
-      "venueName": "Stubb’s Waller Creek Amphitheatre",
-      "venueSlug": "stubbs-waller-creek-amphitheatre",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueName": "Stubb's Waller Creek Amphitheater",
+      "venueSlug": "stubbs-waller-creek-amphitheater",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=stubbs-waller-creek-amphitheatre",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=stubbs-waller-creek-amphitheatre",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=stubbs-waller-creek-amphitheatre",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=stubbs-waller-creek-amphitheatre",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=stubbs-waller-creek-amphitheatre"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=stubbs-waller-creek-amphitheater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=stubbs-waller-creek-amphitheater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=stubbs-waller-creek-amphitheater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=stubbs-waller-creek-amphitheater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=stubbs-waller-creek-amphitheater"
       }
     },
     {
@@ -304,7 +336,7 @@
       "country": "US",
       "venueName": "Revel Entertainment Center",
       "venueSlug": "revel-entertainment-center",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=revel-entertainment-center",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=revel-entertainment-center",
@@ -321,7 +353,7 @@
       "country": "US",
       "venueName": "Arizona Financial Theatre",
       "venueSlug": "arizona-financial-theatre",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=arizona-financial-theatre",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=arizona-financial-theatre",
@@ -338,7 +370,7 @@
       "country": "US",
       "venueName": "Petco Park",
       "venueSlug": "petco-park",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=petco-park",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=petco-park",
@@ -355,7 +387,7 @@
       "country": "US",
       "venueName": "The Masonic",
       "venueSlug": "the-masonic",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-masonic",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-masonic",
@@ -371,14 +403,14 @@
       "region": "CA",
       "country": "US",
       "venueName": "Greek Theatre",
-      "venueSlug": "greek-theatre",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "greek-theatre-los-angeles",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=greek-theatre",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=greek-theatre",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=greek-theatre",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=greek-theatre",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=greek-theatre"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=greek-theatre-los-angeles",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=greek-theatre-los-angeles",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=greek-theatre-los-angeles",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=greek-theatre-los-angeles",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=greek-theatre-los-angeles"
       }
     },
     {
@@ -388,14 +420,14 @@
       "region": "UT",
       "country": "US",
       "venueName": "The Union",
-      "venueSlug": "the-union",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "the-union-salt-lake-city",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-union",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-union",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-union",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-union",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-union"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-union-salt-lake-city",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-union-salt-lake-city",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-union-salt-lake-city",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-union-salt-lake-city",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-union-salt-lake-city"
       }
     },
     {
@@ -406,7 +438,7 @@
       "country": "US",
       "venueName": "Fontainebleau Las Vegas",
       "venueSlug": "fontainebleau-las-vegas",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fontainebleau-las-vegas",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fontainebleau-las-vegas",
@@ -415,7 +447,6 @@
         "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fontainebleau-las-vegas"
       }
     },
-
     {
       "id": "2026-10-27-birmingham-gb-o2-academy-birmingham",
       "date": "2026-10-27",
@@ -424,7 +455,7 @@
       "country": "GB",
       "venueName": "O2 Academy Birmingham",
       "venueSlug": "o2-academy-birmingham",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=o2-academy-birmingham",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=o2-academy-birmingham",
@@ -434,14 +465,14 @@
       }
     },
     {
-      "id": "2026-10-29-manchester-gb-o2-victoria-warehouse-manchester",
+      "id": "2026-10-29-manchester-gb-o2-victoria-warehouse",
       "date": "2026-10-29",
       "city": "Manchester",
       "region": "",
       "country": "GB",
       "venueName": "O2 Victoria Warehouse Manchester",
       "venueSlug": "o2-victoria-warehouse-manchester",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=o2-victoria-warehouse-manchester",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=o2-victoria-warehouse-manchester",
@@ -451,14 +482,14 @@
       }
     },
     {
-      "id": "2026-10-30-manchester-gb-o2-victoria-warehouse-manchester",
+      "id": "2026-10-30-manchester-gb-o2-victoria-warehouse",
       "date": "2026-10-30",
       "city": "Manchester",
       "region": "",
       "country": "GB",
       "venueName": "O2 Victoria Warehouse Manchester",
       "venueSlug": "o2-victoria-warehouse-manchester",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=o2-victoria-warehouse-manchester",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=o2-victoria-warehouse-manchester",
@@ -475,7 +506,7 @@
       "country": "GB",
       "venueName": "Eventim Apollo",
       "venueSlug": "eventim-apollo",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=eventim-apollo",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=eventim-apollo",
@@ -485,20 +516,20 @@
       }
     },
     {
-      "id": "2026-11-04-forest-brussels-be-vorst-nationaal-forest-national",
+      "id": "2026-11-04-brussels-be-forest-national",
       "date": "2026-11-04",
-      "city": "Forest (Brussels)",
+      "city": "Brussels",
       "region": "",
       "country": "BE",
-      "venueName": "Vorst Nationaal / Forest National",
-      "venueSlug": "vorst-nationaal-forest-national",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueName": "Vorst Nationaal/Forest National",
+      "venueSlug": "forest-national",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=vorst-nationaal-forest-national",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=vorst-nationaal-forest-national",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=vorst-nationaal-forest-national",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=vorst-nationaal-forest-national",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=vorst-nationaal-forest-national"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=forest-national",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=forest-national",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=forest-national",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=forest-national",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=forest-national"
       }
     },
     {
@@ -509,7 +540,7 @@
       "country": "NL",
       "venueName": "AFAS Live",
       "venueSlug": "afas-live",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=afas-live",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=afas-live",
@@ -526,7 +557,7 @@
       "country": "FR",
       "venueName": "Le Bataclan",
       "venueSlug": "le-bataclan",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=le-bataclan",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=le-bataclan",
@@ -543,7 +574,7 @@
       "country": "CH",
       "venueName": "Halle 622",
       "venueSlug": "halle-622",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=halle-622",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=halle-622",
@@ -559,14 +590,14 @@
       "region": "",
       "country": "IT",
       "venueName": "Fabrique",
-      "venueSlug": "fabrique",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "fabrique-milan",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fabrique",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fabrique",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fabrique",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fabrique",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fabrique"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fabrique-milan",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fabrique-milan",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fabrique-milan",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fabrique-milan",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fabrique-milan"
       }
     },
     {
@@ -577,7 +608,7 @@
       "country": "DE",
       "venueName": "Uber Eats Music Hall",
       "venueSlug": "uber-eats-music-hall",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "ticketUrl": "",
       "links": {
         "cityGuide": "https://concerto-venue-map.netlify.app/?venue=uber-eats-music-hall",
         "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=uber-eats-music-hall",
@@ -587,20 +618,20 @@
       }
     },
     {
-      "id": "2026-11-17-praha-9-cz-o2-arena",
+      "id": "2026-11-17-prague-cz-o2-arena",
       "date": "2026-11-17",
-      "city": "Praha 9",
+      "city": "Prague",
       "region": "",
       "country": "CZ",
       "venueName": "O2 Arena",
-      "venueSlug": "o2-arena",
-      "ticketUrl": "https://www.ticketmaster.com/the-kid-laroi-tickets/artist/2791888",
+      "venueSlug": "o2-arena-prague",
+      "ticketUrl": "",
       "links": {
-        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=o2-arena",
-        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=o2-arena",
-        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=o2-arena",
-        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=o2-arena",
-        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=o2-arena"
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=o2-arena-prague",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=o2-arena-prague",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=o2-arena-prague",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=o2-arena-prague",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=o2-arena-prague"
       }
     }
   ]
