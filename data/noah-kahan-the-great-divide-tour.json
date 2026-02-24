@@ -1,13 +1,30 @@
 {
-  "tourId": "noah-kahan-the-great-divide-tour-2026",
+  "tourId": "noah-kahan-the-great-divide-tour",
   "artist": "Noah Kahan",
   "tourName": "The Great Divide Tour",
   "year": 2026,
-  "notes": "Dates taken from the official tour poster (North American Tour 2026). Special guest: Gigi Perez.",
+  "notes": "Full 2026 Great Divide Tour — stadium leg June–August, Canadian dates June/August. Excludes Bonnaroo festival 6/14.",
   "shows": [
     {
       "id": "2026-06-11-orlando-fl-kia-center",
       "date": "2026-06-11",
+      "city": "Orlando",
+      "region": "FL",
+      "country": "US",
+      "venueName": "Kia Center",
+      "venueSlug": "kia-center",
+      "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=kia-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=kia-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=kia-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=kia-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=kia-center"
+      }
+    },
+    {
+      "id": "2026-06-12-orlando-fl-kia-center",
+      "date": "2026-06-12",
       "city": "Orlando",
       "region": "FL",
       "country": "US",
@@ -91,6 +108,40 @@
       }
     },
     {
+      "id": "2026-07-07-boston-ma-fenway-park",
+      "date": "2026-07-07",
+      "city": "Boston",
+      "region": "MA",
+      "country": "US",
+      "venueName": "Fenway Park",
+      "venueSlug": "fenway-park",
+      "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fenway-park",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fenway-park",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fenway-park",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fenway-park",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fenway-park"
+      }
+    },
+    {
+      "id": "2026-07-08-boston-ma-fenway-park",
+      "date": "2026-07-08",
+      "city": "Boston",
+      "region": "MA",
+      "country": "US",
+      "venueName": "Fenway Park",
+      "venueSlug": "fenway-park",
+      "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=fenway-park",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=fenway-park",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=fenway-park",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=fenway-park",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=fenway-park"
+      }
+    },
+    {
       "id": "2026-07-10-boston-ma-fenway-park",
       "date": "2026-07-10",
       "city": "Boston",
@@ -142,8 +193,42 @@
       }
     },
     {
+      "id": "2026-07-15-chicago-il-wrigley-field",
+      "date": "2026-07-15",
+      "city": "Chicago",
+      "region": "IL",
+      "country": "US",
+      "venueName": "Wrigley Field",
+      "venueSlug": "wrigley-field",
+      "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=wrigley-field",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=wrigley-field",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=wrigley-field",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=wrigley-field",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=wrigley-field"
+      }
+    },
+    {
       "id": "2026-07-18-queens-ny-citi-field",
       "date": "2026-07-18",
+      "city": "Queens",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Citi Field",
+      "venueSlug": "citi-field",
+      "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=citi-field",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=citi-field",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=citi-field",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=citi-field",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=citi-field"
+      }
+    },
+    {
+      "id": "2026-07-19-queens-ny-citi-field",
+      "date": "2026-07-19",
       "city": "Queens",
       "region": "NY",
       "country": "US",
@@ -181,7 +266,7 @@
       "city": "Raleigh",
       "region": "NC",
       "country": "US",
-      "venueName": "Carter-Finley Stadium",
+      "venueName": "Carter Finley Stadium",
       "venueSlug": "carter-finley-stadium",
       "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
       "links": {
@@ -227,9 +312,9 @@
       }
     },
     {
-      "id": "2026-08-02-st-louis-mo-busch-stadium",
+      "id": "2026-08-02-saint-louis-mo-busch-stadium",
       "date": "2026-08-02",
-      "city": "St. Louis",
+      "city": "Saint Louis",
       "region": "MO",
       "country": "US",
       "venueName": "Busch Stadium",
@@ -263,6 +348,23 @@
     {
       "id": "2026-08-08-denver-co-coors-field",
       "date": "2026-08-08",
+      "city": "Denver",
+      "region": "CO",
+      "country": "US",
+      "venueName": "Coors Field",
+      "venueSlug": "coors-field",
+      "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=coors-field",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=coors-field",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=coors-field",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=coors-field",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=coors-field"
+      }
+    },
+    {
+      "id": "2026-08-09-denver-co-coors-field",
+      "date": "2026-08-09",
       "city": "Denver",
       "region": "CO",
       "country": "US",
@@ -382,6 +484,23 @@
     {
       "id": "2026-08-30-seattle-wa-t-mobile-park",
       "date": "2026-08-30",
+      "city": "Seattle",
+      "region": "WA",
+      "country": "US",
+      "venueName": "T-Mobile Park",
+      "venueSlug": "t-mobile-park",
+      "ticketUrl": "https://www.ticketmaster.com/noah-kahan-tickets/artist/2385568",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=t-mobile-park",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=t-mobile-park",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=t-mobile-park",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=t-mobile-park",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=t-mobile-park"
+      }
+    },
+    {
+      "id": "2026-08-31-seattle-wa-t-mobile-park",
+      "date": "2026-08-31",
       "city": "Seattle",
       "region": "WA",
       "country": "US",
