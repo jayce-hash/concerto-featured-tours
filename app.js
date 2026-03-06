@@ -34,7 +34,8 @@ const TOUR_FILES = [
   'summer-walker-still-finally-over-it-tour.json',
   'don-toliver-octane-tour.json',
   'mumford-and-sons-prizefighter-tour.json',
-  'jonas-brothers-greetings-from-your-hometown-tour.json'
+  'jonas-brothers-greetings-from-your-hometown-tour.json',
+  'zara-larsson-midnight-sun-tour'
 ];
 
 let allTours = [];
