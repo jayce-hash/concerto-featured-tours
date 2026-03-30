@@ -36,7 +36,8 @@ const TOUR_FILES = [
   'mumford-and-sons-prizefighter-tour.json',
   'jonas-brothers-greetings-from-your-hometown-tour.json',
   'zara-larsson-midnight-sun-tour.json',
-  'kesha-freedom-tour-2026.json'
+  'kesha-freedom-tour-2026.json',
+  'the-pussycat-dolls-pcd-forever-tour.json'
 ];
 
 let allTours = [];
