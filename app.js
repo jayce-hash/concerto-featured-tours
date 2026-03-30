@@ -38,7 +38,8 @@ const TOUR_FILES = [
   'zara-larsson-midnight-sun-tour.json',
   'kesha-freedom-tour-2026.json',
   'the-pussycat-dolls-pcd-forever-tour.json',
-  'benson-boone-wanted-man-tour.json'
+  'benson-boone-wanted-man-tour.json',
+  'ella-langley-the-dandelion-tour.json'
 ];
 
 let allTours = [];
