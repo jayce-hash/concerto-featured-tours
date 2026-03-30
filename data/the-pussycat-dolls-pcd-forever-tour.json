@@ -1,0 +1,859 @@
+{
+  "tourId": "the-pussycat-dolls-pcd-forever-tour",
+  "artist": "The Pussycat Dolls",
+  "tourName": "PCD FOREVER TOUR",
+  "year": 2026,
+  "notes": "2026 headline tour dates. Promoted non-tour events and duplicate premium/presale listings excluded.",
+  "shows": [
+    {
+      "id": "2026-06-05-palm-desert-ca-acrisure-arena-greater-palm-springs",
+      "date": "2026-06-05",
+      "city": "Palm Desert",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Acrisure Arena at Greater Palm Springs",
+      "venueSlug": "acrisure-arena-greater-palm-springs",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=acrisure-arena-greater-palm-springs",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=acrisure-arena-greater-palm-springs",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=acrisure-arena-greater-palm-springs",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=acrisure-arena-greater-palm-springs",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=acrisure-arena-greater-palm-springs"
+      }
+    },
+    {
+      "id": "2026-06-09-phoenix-az-talking-stick-resort-amphitheatre",
+      "date": "2026-06-09",
+      "city": "Phoenix",
+      "region": "AZ",
+      "country": "US",
+      "venueName": "Talking Stick Resort Amphitheatre",
+      "venueSlug": "talking-stick-resort-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=talking-stick-resort-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=talking-stick-resort-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=talking-stick-resort-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=talking-stick-resort-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=talking-stick-resort-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-06-10-chula-vista-ca-north-island-credit-union-amphitheatre",
+      "date": "2026-06-10",
+      "city": "Chula Vista",
+      "region": "CA",
+      "country": "US",
+      "venueName": "North Island Credit Union Amphitheatre",
+      "venueSlug": "north-island-credit-union-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=north-island-credit-union-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=north-island-credit-union-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=north-island-credit-union-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=north-island-credit-union-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=north-island-credit-union-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-06-12-mountain-view-ca-shoreline-amphitheatre",
+      "date": "2026-06-12",
+      "city": "Mountain View",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Shoreline Amphitheatre",
+      "venueSlug": "shoreline-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=shoreline-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=shoreline-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=shoreline-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=shoreline-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=shoreline-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-06-13-wheatland-ca-toyota-amphitheatre",
+      "date": "2026-06-13",
+      "city": "Wheatland",
+      "region": "CA",
+      "country": "US",
+      "venueName": "Toyota Amphitheatre",
+      "venueSlug": "toyota-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=toyota-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=toyota-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=toyota-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=toyota-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=toyota-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-06-15-west-valley-city-ut-utah-first-credit-union-amphitheatre",
+      "date": "2026-06-15",
+      "city": "West Valley City",
+      "region": "UT",
+      "country": "US",
+      "venueName": "Utah First Credit Union Amphitheatre",
+      "venueSlug": "utah-first-credit-union-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=utah-first-credit-union-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=utah-first-credit-union-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=utah-first-credit-union-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=utah-first-credit-union-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=utah-first-credit-union-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-06-18-kansas-city-mo-morton-amphitheater",
+      "date": "2026-06-18",
+      "city": "Kansas City",
+      "region": "MO",
+      "country": "US",
+      "venueName": "Morton Amphitheater",
+      "venueSlug": "morton-amphitheater",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=morton-amphitheater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=morton-amphitheater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=morton-amphitheater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=morton-amphitheater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=morton-amphitheater"
+      }
+    },
+    {
+      "id": "2026-06-19-tinley-park-il-credit-union-1-amphitheatre",
+      "date": "2026-06-19",
+      "city": "Tinley Park",
+      "region": "IL",
+      "country": "US",
+      "venueName": "Credit Union 1 Amphitheatre",
+      "venueSlug": "credit-union-1-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=credit-union-1-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=credit-union-1-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=credit-union-1-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=credit-union-1-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=credit-union-1-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-06-21-milwaukee-wi-american-family-insurance-amphitheater-summerfest-grounds",
+      "date": "2026-06-21",
+      "city": "Milwaukee",
+      "region": "WI",
+      "country": "US",
+      "venueName": "American Family Insurance Amphitheater - Summerfest Grounds",
+      "venueSlug": "american-family-insurance-amphitheater-summerfest-grounds",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=american-family-insurance-amphitheater-summerfest-grounds",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=american-family-insurance-amphitheater-summerfest-grounds",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=american-family-insurance-amphitheater-summerfest-grounds",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=american-family-insurance-amphitheater-summerfest-grounds",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=american-family-insurance-amphitheater-summerfest-grounds"
+      }
+    },
+    {
+      "id": "2026-06-23-maryland-heights-mo-hollywood-casino-amphitheater",
+      "date": "2026-06-23",
+      "city": "Maryland Heights",
+      "region": "MO",
+      "country": "US",
+      "venueName": "Hollywood Casino Amphitheater",
+      "venueSlug": "hollywood-casino-amphitheater",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=hollywood-casino-amphitheater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=hollywood-casino-amphitheater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=hollywood-casino-amphitheater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=hollywood-casino-amphitheater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=hollywood-casino-amphitheater"
+      }
+    },
+    {
+      "id": "2026-06-25-cincinnati-oh-riverbend-music-center",
+      "date": "2026-06-25",
+      "city": "Cincinnati",
+      "region": "OH",
+      "country": "US",
+      "venueName": "Riverbend Music Center",
+      "venueSlug": "riverbend-music-center",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=riverbend-music-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=riverbend-music-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=riverbend-music-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=riverbend-music-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=riverbend-music-center"
+      }
+    },
+    {
+      "id": "2026-06-27-cuyahoga-falls-oh-blossom-music-center",
+      "date": "2026-06-27",
+      "city": "Cuyahoga Falls",
+      "region": "OH",
+      "country": "US",
+      "venueName": "Blossom Music Center",
+      "venueSlug": "blossom-music-center",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=blossom-music-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=blossom-music-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=blossom-music-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=blossom-music-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=blossom-music-center"
+      }
+    },
+    {
+      "id": "2026-06-28-noblesville-in-ruoff-music-center",
+      "date": "2026-06-28",
+      "city": "Noblesville",
+      "region": "IN",
+      "country": "US",
+      "venueName": "Ruoff Music Center",
+      "venueSlug": "ruoff-music-center",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ruoff-music-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ruoff-music-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ruoff-music-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ruoff-music-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ruoff-music-center"
+      }
+    },
+    {
+      "id": "2026-06-30-grand-rapids-mi-acrisure-amphitheater",
+      "date": "2026-06-30",
+      "city": "Grand Rapids",
+      "region": "MI",
+      "country": "US",
+      "venueName": "Acrisure Amphitheater",
+      "venueSlug": "acrisure-amphitheater",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=acrisure-amphitheater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=acrisure-amphitheater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=acrisure-amphitheater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=acrisure-amphitheater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=acrisure-amphitheater"
+      }
+    },
+    {
+      "id": "2026-07-01-clarkston-mi-pine-knob-music-theatre",
+      "date": "2026-07-01",
+      "city": "Clarkston",
+      "region": "MI",
+      "country": "US",
+      "venueName": "Pine Knob Music Theatre",
+      "venueSlug": "pine-knob-music-theatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=pine-knob-music-theatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=pine-knob-music-theatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=pine-knob-music-theatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=pine-knob-music-theatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=pine-knob-music-theatre"
+      }
+    },
+    {
+      "id": "2026-07-03-toronto-on-rbc-amphitheatre",
+      "date": "2026-07-03",
+      "city": "Toronto",
+      "region": "ON",
+      "country": "CA",
+      "venueName": "RBC Amphitheatre",
+      "venueSlug": "rbc-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=rbc-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=rbc-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=rbc-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=rbc-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=rbc-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-07-06-montreal-qc-centre-bell",
+      "date": "2026-07-06",
+      "city": "Montreal",
+      "region": "QC",
+      "country": "CA",
+      "venueName": "Centre Bell",
+      "venueSlug": "centre-bell",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=centre-bell",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=centre-bell",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=centre-bell",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=centre-bell",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=centre-bell"
+      }
+    },
+    {
+      "id": "2026-07-08-syracuse-ny-empower-federal-credit-union-amphitheater-at-lakeview",
+      "date": "2026-07-08",
+      "city": "Syracuse",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Empower Federal Credit Union Amphitheater at Lakeview",
+      "venueSlug": "empower-federal-credit-union-amphitheater-at-lakeview",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=empower-federal-credit-union-amphitheater-at-lakeview",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=empower-federal-credit-union-amphitheater-at-lakeview",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=empower-federal-credit-union-amphitheater-at-lakeview",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=empower-federal-credit-union-amphitheater-at-lakeview",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=empower-federal-credit-union-amphitheater-at-lakeview"
+      }
+    },
+    {
+      "id": "2026-07-10-bangor-me-maine-savings-amphitheater",
+      "date": "2026-07-10",
+      "city": "Bangor",
+      "region": "ME",
+      "country": "US",
+      "venueName": "Maine Savings Amphitheater",
+      "venueSlug": "maine-savings-amphitheater",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=maine-savings-amphitheater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=maine-savings-amphitheater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=maine-savings-amphitheater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=maine-savings-amphitheater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=maine-savings-amphitheater"
+      }
+    },
+    {
+      "id": "2026-07-11-mansfield-ma-xfinity-center-mansfield",
+      "date": "2026-07-11",
+      "city": "Mansfield",
+      "region": "MA",
+      "country": "US",
+      "venueName": "Xfinity Center",
+      "venueSlug": "xfinity-center-mansfield",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=xfinity-center-mansfield",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=xfinity-center-mansfield",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=xfinity-center-mansfield",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=xfinity-center-mansfield",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=xfinity-center-mansfield"
+      }
+    },
+    {
+      "id": "2026-07-12-uncasville-ct-mohegan-sun-arena",
+      "date": "2026-07-12",
+      "city": "Uncasville",
+      "region": "CT",
+      "country": "US",
+      "venueName": "Mohegan Sun Arena",
+      "venueSlug": "mohegan-sun-arena",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=mohegan-sun-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=mohegan-sun-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=mohegan-sun-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=mohegan-sun-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=mohegan-sun-arena"
+      }
+    },
+    {
+      "id": "2026-07-14-camden-nj-freedom-mortgage-pavilion",
+      "date": "2026-07-14",
+      "city": "Camden",
+      "region": "NJ",
+      "country": "US",
+      "venueName": "Freedom Mortgage Pavilion",
+      "venueSlug": "freedom-mortgage-pavilion",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=freedom-mortgage-pavilion",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=freedom-mortgage-pavilion",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=freedom-mortgage-pavilion",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=freedom-mortgage-pavilion",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=freedom-mortgage-pavilion"
+      }
+    },
+    {
+      "id": "2026-07-15-holmdel-nj-pnc-bank-arts-center",
+      "date": "2026-07-15",
+      "city": "Holmdel",
+      "region": "NJ",
+      "country": "US",
+      "venueName": "PNC Bank Arts Center",
+      "venueSlug": "pnc-bank-arts-center",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=pnc-bank-arts-center",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=pnc-bank-arts-center",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=pnc-bank-arts-center",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=pnc-bank-arts-center",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=pnc-bank-arts-center"
+      }
+    },
+    {
+      "id": "2026-07-16-bristow-va-jiffy-lube-live",
+      "date": "2026-07-16",
+      "city": "Bristow",
+      "region": "VA",
+      "country": "US",
+      "venueName": "Jiffy Lube Live",
+      "venueSlug": "jiffy-lube-live",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=jiffy-lube-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=jiffy-lube-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=jiffy-lube-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=jiffy-lube-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=jiffy-lube-live"
+      }
+    },
+    {
+      "id": "2026-07-20-new-york-ny-madison-square-garden",
+      "date": "2026-07-20",
+      "city": "New York",
+      "region": "NY",
+      "country": "US",
+      "venueName": "Madison Square Garden",
+      "venueSlug": "madison-square-garden",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=madison-square-garden",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=madison-square-garden",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=madison-square-garden",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=madison-square-garden",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=madison-square-garden"
+      }
+    },
+    {
+      "id": "2026-07-22-charlotte-nc-truliant-amphitheater",
+      "date": "2026-07-22",
+      "city": "Charlotte",
+      "region": "NC",
+      "country": "US",
+      "venueName": "Truliant Amphitheater",
+      "venueSlug": "truliant-amphitheater",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=truliant-amphitheater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=truliant-amphitheater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=truliant-amphitheater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=truliant-amphitheater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=truliant-amphitheater"
+      }
+    },
+    {
+      "id": "2026-07-24-west-palm-beach-fl-ithink-financial-amphitheatre",
+      "date": "2026-07-24",
+      "city": "West Palm Beach",
+      "region": "FL",
+      "country": "US",
+      "venueName": "iTHINK Financial Amphitheatre",
+      "venueSlug": "ithink-financial-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ithink-financial-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ithink-financial-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ithink-financial-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ithink-financial-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ithink-financial-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-07-25-tampa-fl-midflorida-credit-union-amphitheatre-at-the-fl-state-fairgrounds",
+      "date": "2026-07-25",
+      "city": "Tampa",
+      "region": "FL",
+      "country": "US",
+      "venueName": "MIDFLORIDA Credit Union Amphitheatre at the FL State Fairgrounds",
+      "venueSlug": "midflorida-credit-union-amphitheatre-at-the-fl-state-fairgrounds",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=midflorida-credit-union-amphitheatre-at-the-fl-state-fairgrounds",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=midflorida-credit-union-amphitheatre-at-the-fl-state-fairgrounds",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=midflorida-credit-union-amphitheatre-at-the-fl-state-fairgrounds",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=midflorida-credit-union-amphitheatre-at-the-fl-state-fairgrounds",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=midflorida-credit-union-amphitheatre-at-the-fl-state-fairgrounds"
+      }
+    },
+    {
+      "id": "2026-07-26-alpharetta-ga-ameris-bank-amphitheatre",
+      "date": "2026-07-26",
+      "city": "Alpharetta",
+      "region": "GA",
+      "country": "US",
+      "venueName": "Ameris Bank Amphitheatre",
+      "venueSlug": "ameris-bank-amphitheatre",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ameris-bank-amphitheatre",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ameris-bank-amphitheatre",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ameris-bank-amphitheatre",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ameris-bank-amphitheatre",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ameris-bank-amphitheatre"
+      }
+    },
+    {
+      "id": "2026-07-29-nashville-tn-ascend-amphitheater",
+      "date": "2026-07-29",
+      "city": "Nashville",
+      "region": "TN",
+      "country": "US",
+      "venueName": "Ascend Amphitheater",
+      "venueSlug": "ascend-amphitheater",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ascend-amphitheater",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ascend-amphitheater",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ascend-amphitheater",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ascend-amphitheater",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ascend-amphitheater"
+      }
+    },
+    {
+      "id": "2026-07-31-the-woodlands-tx-the-cynthia-woods-mitchell-pavilion-sponsored-by-huntsman",
+      "date": "2026-07-31",
+      "city": "The Woodlands",
+      "region": "TX",
+      "country": "US",
+      "venueName": "The Cynthia Woods Mitchell Pavilion sponsored by Huntsman",
+      "venueSlug": "the-cynthia-woods-mitchell-pavilion-sponsored-by-huntsman",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-cynthia-woods-mitchell-pavilion-sponsored-by-huntsman",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-cynthia-woods-mitchell-pavilion-sponsored-by-huntsman",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-cynthia-woods-mitchell-pavilion-sponsored-by-huntsman",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-cynthia-woods-mitchell-pavilion-sponsored-by-huntsman",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-cynthia-woods-mitchell-pavilion-sponsored-by-huntsman"
+      }
+    },
+    {
+      "id": "2026-08-01-dallas-tx-dos-equis-pavilion",
+      "date": "2026-08-01",
+      "city": "Dallas",
+      "region": "TX",
+      "country": "US",
+      "venueName": "Dos Equis Pavilion",
+      "venueSlug": "dos-equis-pavilion",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=dos-equis-pavilion",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=dos-equis-pavilion",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=dos-equis-pavilion",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=dos-equis-pavilion",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=dos-equis-pavilion"
+      }
+    },
+    {
+      "id": "2026-09-09-kobenhavn-s-dk-royal-arena",
+      "date": "2026-09-09",
+      "city": "København S",
+      "region": "",
+      "country": "DK",
+      "venueName": "Royal Arena",
+      "venueSlug": "royal-arena",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=royal-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=royal-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=royal-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=royal-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=royal-arena"
+      }
+    },
+    {
+      "id": "2026-09-10-oslo-no-oslo-spektrum",
+      "date": "2026-09-10",
+      "city": "Oslo",
+      "region": "",
+      "country": "NO",
+      "venueName": "Oslo Spektrum",
+      "venueSlug": "oslo-spektrum",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=oslo-spektrum",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=oslo-spektrum",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=oslo-spektrum",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=oslo-spektrum",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=oslo-spektrum"
+      }
+    },
+    {
+      "id": "2026-09-14-munich-de-olympiahalle",
+      "date": "2026-09-14",
+      "city": "Munich",
+      "region": "",
+      "country": "DE",
+      "venueName": "Olympiahalle",
+      "venueSlug": "olympiahalle",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=olympiahalle",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=olympiahalle",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=olympiahalle",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=olympiahalle",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=olympiahalle"
+      }
+    },
+    {
+      "id": "2026-09-16-warsaw-pl-cos-torwar",
+      "date": "2026-09-16",
+      "city": "Warsaw",
+      "region": "",
+      "country": "PL",
+      "venueName": "COS Torwar",
+      "venueSlug": "cos-torwar",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=cos-torwar",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=cos-torwar",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=cos-torwar",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=cos-torwar",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=cos-torwar"
+      }
+    },
+    {
+      "id": "2026-09-18-merksem-antwerpen-be-afas-dome",
+      "date": "2026-09-18",
+      "city": "Merksem (Antwerpen)",
+      "region": "",
+      "country": "BE",
+      "venueName": "AFAS Dome",
+      "venueSlug": "afas-dome",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=afas-dome",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=afas-dome",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=afas-dome",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=afas-dome",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=afas-dome"
+      }
+    },
+    {
+      "id": "2026-09-21-zurich-ch-hallenstadion",
+      "date": "2026-09-21",
+      "city": "Zürich",
+      "region": "",
+      "country": "CH",
+      "venueName": "Hallenstadion",
+      "venueSlug": "hallenstadion",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=hallenstadion",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=hallenstadion",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=hallenstadion",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=hallenstadion",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=hallenstadion"
+      }
+    },
+    {
+      "id": "2026-09-23-praha-9-cz-o2-arena-praha",
+      "date": "2026-09-23",
+      "city": "Praha 9",
+      "region": "",
+      "country": "CZ",
+      "venueName": "O2 Arena",
+      "venueSlug": "o2-arena-praha",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=o2-arena-praha",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=o2-arena-praha",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=o2-arena-praha",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=o2-arena-praha",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=o2-arena-praha"
+      }
+    },
+    {
+      "id": "2026-09-26-dusseldorf-de-psd-bank-dome",
+      "date": "2026-09-26",
+      "city": "Düsseldorf",
+      "region": "",
+      "country": "DE",
+      "venueName": "PSD BANK DOME",
+      "venueSlug": "psd-bank-dome",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=psd-bank-dome",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=psd-bank-dome",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=psd-bank-dome",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=psd-bank-dome",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=psd-bank-dome"
+      }
+    },
+    {
+      "id": "2026-09-27-amsterdam-nl-ziggo-dome",
+      "date": "2026-09-27",
+      "city": "Amsterdam",
+      "region": "",
+      "country": "NL",
+      "venueName": "Ziggo Dome",
+      "venueSlug": "ziggo-dome",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ziggo-dome",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ziggo-dome",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ziggo-dome",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ziggo-dome",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ziggo-dome"
+      }
+    },
+    {
+      "id": "2026-09-29-birmingham-gb-utilita-arena-birmingham",
+      "date": "2026-09-29",
+      "city": "Birmingham",
+      "region": "",
+      "country": "GB",
+      "venueName": "Utilita Arena Birmingham",
+      "venueSlug": "utilita-arena-birmingham",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=utilita-arena-birmingham",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=utilita-arena-birmingham",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=utilita-arena-birmingham",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=utilita-arena-birmingham",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=utilita-arena-birmingham"
+      }
+    },
+    {
+      "id": "2026-09-30-nottingham-gb-motorpoint-arena-nottingham",
+      "date": "2026-09-30",
+      "city": "Nottingham",
+      "region": "",
+      "country": "GB",
+      "venueName": "Motorpoint Arena Nottingham",
+      "venueSlug": "motorpoint-arena-nottingham",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=motorpoint-arena-nottingham",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=motorpoint-arena-nottingham",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=motorpoint-arena-nottingham",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=motorpoint-arena-nottingham",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=motorpoint-arena-nottingham"
+      }
+    },
+    {
+      "id": "2026-10-02-leeds-gb-first-direct-arena",
+      "date": "2026-10-02",
+      "city": "Leeds",
+      "region": "",
+      "country": "GB",
+      "venueName": "Leeds First Direct Bank Arena",
+      "venueSlug": "first-direct-arena",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=first-direct-arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=first-direct-arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=first-direct-arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=first-direct-arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=first-direct-arena"
+      }
+    },
+    {
+      "id": "2026-10-03-liverpool-gb-ms-bank-arena-liverpool",
+      "date": "2026-10-03",
+      "city": "Liverpool",
+      "region": "",
+      "country": "GB",
+      "venueName": "M&S Bank Arena Liverpool",
+      "venueSlug": "ms-bank-arena-liverpool",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ms-bank-arena-liverpool",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ms-bank-arena-liverpool",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ms-bank-arena-liverpool",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ms-bank-arena-liverpool",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ms-bank-arena-liverpool"
+      }
+    },
+    {
+      "id": "2026-10-05-dublin-ie-3arena",
+      "date": "2026-10-05",
+      "city": "Dublin",
+      "region": "",
+      "country": "IE",
+      "venueName": "3Arena",
+      "venueSlug": "3arena",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=3arena",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=3arena",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=3arena",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=3arena",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=3arena"
+      }
+    },
+    {
+      "id": "2026-10-07-glasgow-gb-ovo-hydro",
+      "date": "2026-10-07",
+      "city": "Glasgow",
+      "region": "",
+      "country": "GB",
+      "venueName": "OVO Hydro",
+      "venueSlug": "ovo-hydro",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=ovo-hydro",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=ovo-hydro",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=ovo-hydro",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=ovo-hydro",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=ovo-hydro"
+      }
+    },
+    {
+      "id": "2026-10-09-newcastle-upon-tyne-gb-utilita-arena-newcastle",
+      "date": "2026-10-09",
+      "city": "Newcastle Upon Tyne",
+      "region": "",
+      "country": "GB",
+      "venueName": "Utilita Arena Newcastle",
+      "venueSlug": "utilita-arena-newcastle",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=utilita-arena-newcastle",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=utilita-arena-newcastle",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=utilita-arena-newcastle",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=utilita-arena-newcastle",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=utilita-arena-newcastle"
+      }
+    },
+    {
+      "id": "2026-10-10-manchester-gb-co-op-live",
+      "date": "2026-10-10",
+      "city": "Manchester",
+      "region": "",
+      "country": "GB",
+      "venueName": "Co-op Live",
+      "venueSlug": "co-op-live",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=co-op-live",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=co-op-live",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=co-op-live",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=co-op-live",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=co-op-live"
+      }
+    },
+    {
+      "id": "2026-10-13-london-gb-the-o2-london",
+      "date": "2026-10-13",
+      "city": "London",
+      "region": "",
+      "country": "GB",
+      "venueName": "The O2",
+      "venueSlug": "the-o2-london",
+      "ticketUrl": "https://www.ticketmaster.com/the-pussycat-dolls-tickets/artist/1033455",
+      "links": {
+        "cityGuide": "https://concerto-venue-map.netlify.app/?venue=the-o2-london",
+        "bagPolicy": "https://concerto-microfeatures.netlify.app/bag-policy/?venue=the-o2-london",
+        "concessions": "https://concerto-microfeatures.netlify.app/concessions/?venue=the-o2-london",
+        "parking": "https://concerto-microfeatures.netlify.app/parking/?venue=the-o2-london",
+        "rideshare": "https://concerto-microfeatures.netlify.app/rideshare/?venue=the-o2-london"
+      }
+    }
+  ]
+}
