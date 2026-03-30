@@ -37,7 +37,8 @@ const TOUR_FILES = [
   'jonas-brothers-greetings-from-your-hometown-tour.json',
   'zara-larsson-midnight-sun-tour.json',
   'kesha-freedom-tour-2026.json',
-  'the-pussycat-dolls-pcd-forever-tour.json'
+  'the-pussycat-dolls-pcd-forever-tour.json',
+  'benson-boone-wanted-man-tour.json'
 ];
 
 let allTours = [];
