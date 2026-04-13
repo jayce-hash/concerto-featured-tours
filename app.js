@@ -40,7 +40,8 @@ const TOUR_FILES = [
   'the-pussycat-dolls-pcd-forever-tour.json',
   'benson-boone-wanted-man-tour.json',
   'ella-langley-the-dandelion-tour.json',
-  'doja-cat-tour-ma-vie-world-tour.json'
+  'doja-cat-tour-ma-vie-world-tour.json',
+  'sombr-you-are-the-reason-tour.json'
 ];
 
 let allTours = [];
