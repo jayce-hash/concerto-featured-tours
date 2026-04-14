@@ -2,7 +2,6 @@
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
-  'lady-gaga-the-mayhem-ball-na-2026.json',
   'conan-gray-wishbone-world-tour-na.json',
   'alex-warren-little-orphan-alex-live.json',
   'ariana-grande-the-eternal-sunshine-tour-na-2026.json',
@@ -35,7 +34,6 @@ const TOUR_FILES = [
   'don-toliver-octane-tour.json',
   'mumford-and-sons-prizefighter-tour.json',
   'jonas-brothers-greetings-from-your-hometown-tour.json',
-  'zara-larsson-midnight-sun-tour.json',
   'kesha-freedom-tour-2026.json',
   'the-pussycat-dolls-pcd-forever-tour.json',
   'benson-boone-wanted-man-tour.json',
