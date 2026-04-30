@@ -39,7 +39,9 @@ const TOUR_FILES = [
   'benson-boone-wanted-man-tour.json',
   'ella-langley-the-dandelion-tour.json',
   'doja-cat-tour-ma-vie-world-tour.json',
-  'sombr-you-are-the-reason-tour.json'
+  'sombr-you-are-the-reason-tour.json',
+  'olivia-rodrigo-the-unraveled-tour.json',
+  'karol-g-viajando-por-el-mundo-tropitour.json'
 ];
 
 let allTours = [];
