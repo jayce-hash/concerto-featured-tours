@@ -2,7 +2,6 @@
 // Concerto — Featured Tours (Library + Dedicated Tour Pages via ?tour=ID)
 
 const TOUR_FILES = [
-  'conan-gray-wishbone-world-tour-na.json',
   'alex-warren-little-orphan-alex-live.json',
   'ariana-grande-the-eternal-sunshine-tour-na-2026.json',
   'ed-sheeran-the-loop-tour-na-2026.json',
@@ -15,7 +14,6 @@ const TOUR_FILES = [
   'rush-fifty-something-tour.json',
   'my-chemical-romance-the-black-parade-tour.json',
   'chris-stapleton-all-american-road-show-tour.json',
-  'cardi-b-little-miss-drama-tour.json',
   'hayley-williams-at-a-bachelorette-party-tour.json',
   'florence-the-machine-everybody-scream-tour.json',
   'louis-tomlinson-how-did-we-get-here-world-tour.json',
