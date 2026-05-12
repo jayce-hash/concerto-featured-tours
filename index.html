@@ -2,104 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Concerto · Featured Tours</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
-  <!-- Fonts (match Festivals pairing) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <meta name="theme-color" content="#F8F9F9"/>
+  <title>Featured Tours — Concerto</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+  
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="page">
-    <!-- Header with logo + tour search -->
-    <header class="page-header">
-      <div class="page-header-inner">
-        <img
-          src="./images/brand/concerto-logo.png"
-          alt="Concerto"
-          class="brand-logo"
-        />
+  <div id="app">
+    <div class="topbar">
+      <div class="topbar-logo">
+        <span class="topbar-logo-word">CONCERTO - TOURS</span>
+        <span class="topbar-logo-sub">A Premium Experience</span>
+      </div>
+      <div class="topbar-right"></div>
+    </div>
 
-        <!-- Festivals-style title + tagline -->
-        <h1 class="feature-title">Featured Tours</h1>
-        <p class="tagline">Pick a tour. Plan every stop.</p>
+    <main class="scroll-area active" id="s-home">
+      
+      <section class="hero">
+        <div class="eyebrow">Plan Every Stop.</div>
+        <h1 class="headline">Pick a tour.<br><em>Plan your night.</em></h1>
+        <p class="sub">Search tours or artists to get City Guides, tickets, policies, and parking.</p>
 
-        <div class="search-wrapper">
+        <div class="dropdown-wrap search-row">
           <input
             id="tourSearch"
+            class="light-input"
             type="search"
-            placeholder="Search tours or artists"
+            placeholder="Search tours or artists..."
             autocomplete="off"
           />
-          <button id="clearSearchBtn" class="icon-btn" title="Clear" aria-label="Clear">×</button>
-          <div id="searchResults" class="search-results"></div>
+          <button id="clearSearchBtn" class="clear-btn" title="Clear" aria-label="Clear">×</button>
+          
+          <div id="searchResults" class="dropdown-list search-results"></div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <!-- Main content -->
-    <main class="layout">
       <section id="infoPanel" class="info-panel info-panel--empty">
-        <!-- Empty state (library mode) -->
-        <div class="info-empty">
-          <h2>Browse Featured Tours</h2>
-          <p>
-            Search above or pick one from the library below. Once selected, you’ll see
-            each date with quick links to City Guides, tickets, rideshare, bag policies,
-            concessions, and parking.
-          </p>
+        
+        <div class="info-empty explainer-card" style="flex-direction: column; gap: 4px;">
+          <div class="explainer-text">
+            <div class="et-title">Browse Featured Tours</div>
+            <div class="et-sub">Search above or pick one from the library below. Once selected, you'll see each date with quick links to City Guides, bag policies, and tickets.</div>
+          </div>
         </div>
 
-        <!-- Selected tour content (detail “page” mode) -->
         <div class="info-content" hidden>
-          <button id="backToLibrary" class="back-btn" type="button" aria-label="Back to Tour Library">
-            ← Tour Library
+          <button id="backToLibrary" class="action-btn ghost" type="button" aria-label="Back to Tour Library" style="margin-bottom: 20px; padding: 14px;">
+            ← Back to Tour Library
           </button>
 
-          <header class="info-header">
-            <div>
-              <h2 id="tourName"></h2>
-              <p id="tourArtist" class="tour-artist-line"></p>
-              <p id="tourMeta" class="tour-meta-line"></p>
+          <header class="bag-id-card info-header" style="margin-bottom: 14px; flex-direction: column; align-items: flex-start; padding: 18px 20px;">
+            <div class="bag-id-info" style="width: 100%;">
+              <h2 id="tourName" class="bi-type" style="font-style: normal; font-weight: 700; margin-bottom: 4px;"></h2>
+              <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <p id="tourArtist" class="bi-dims tour-artist-line" style="margin: 0;"></p>
+                <div id="tourMeta" class="bc-label tour-meta-line" style="text-align: right; margin: 0;"></div>
+              </div>
             </div>
           </header>
 
           <div class="info-cards">
-            <article class="info-card">
-              <h3>Tour Dates</h3>
-              <p class="card-body card-body--hint">
-                Tap a date row to reveal City Guides, tickets, rideshare, bag policies,
-                concessions, and parking.
-              </p>
-              <div id="showsList" class="shows-list"></div>
+            <article class="policy-card info-card">
+              <div class="policy-card-header section-head" style="margin-bottom: 4px;">
+                <div class="policy-card-title section-title" style="font-size: 14px; letter-spacing: .02em; text-transform: uppercase;">Tour Dates</div>
+              </div>
+              <div class="policy-card-link section-sub" style="text-decoration: none; margin-bottom: 14px; display: block;">Tap a date row to reveal logistics & links.</div>
+              
+              <div class="section-body">
+                <div id="showsList" class="shows-list"></div>
+              </div>
             </article>
           </div>
         </div>
 
-        <!-- Library of all tours -->
         <section class="browse-list">
-          <div class="browse-head">
-            <h3 class="browse-title">Tour Library</h3>
-            <div class="browse-meta" id="libraryMeta"></div>
+          <div class="grid-head">
+            <div class="field-label muted" id="libraryMeta" style="margin-top: 28px; margin-bottom: 10px;"></div>
+            <div class="right"></div>
           </div>
-
-          <div id="toursBrowseList">
-            <!-- JS injects .browse-item for each tour -->
-          </div>
+          <div id="toursBrowseList" class="grid explainer-row" style="margin-top: 0;"></div>
         </section>
+
       </section>
     </main>
   </div>
 
   <script src="./app.js" defer></script>
 
-  <!-- UI-only helpers (does not change your app logic) -->
   <script>
     window.addEventListener("DOMContentLoaded", () => {
       const input = document.getElementById("tourSearch");
@@ -117,12 +112,12 @@
         });
       }
 
-      // Simple library count label (optional)
+      // Simple library count label
       const list = document.getElementById("toursBrowseList");
       if (metaEl && list) {
         const observer = new MutationObserver(() => {
           const count = list.querySelectorAll(".browse-item").length;
-          metaEl.textContent = count ? `${count} tours` : "";
+          metaEl.textContent = count ? `${count} FEATURED TOURS` : "";
         });
         observer.observe(list, { childList: true });
       }
